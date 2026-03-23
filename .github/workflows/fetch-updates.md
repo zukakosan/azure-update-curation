@@ -49,15 +49,21 @@ Azure の公式アップデート情報を API から取得し、前週分をま
    - それ以外 → `category: "change"`
 8. 各エントリを以下の形に変換する:
    - `id`: そのまま
-   - `title`: 先頭の `[Launched]` や `[In preview]` プレフィックスを除去
+   - `title`: 先頭の `[Launched]` や `[In preview]` プレフィックスを除去し、**日本語に翻訳する**
    - `date`: `modified` の値
    - `category`: 上記の分類結果
-   - `summary`: `description` から HTML タグを除去し、先頭 500 文字に切り詰め
-   - `products`: そのまま（配列）
-   - `productCategories`: そのまま（配列）
-   - `tags`: そのまま（配列）
+   - `summary`: `description` から HTML タグを除去し、先頭 500 文字に切り詰めたうえで **日本語に翻訳する**
+   - `products`: そのまま（配列、英語のまま）
+   - `productCategories`: そのまま（配列、英語のまま）
+   - `tags`: そのまま（配列、英語のまま）
    - `url`: `https://azure.microsoft.com/updates?id={id}` で構築
    - `actionRequired`: category が `retirement` なら `true`、それ以外は `false`
+
+> **重要: 翻訳ルール**
+> - `title` と `summary` は必ず **自然な日本語** に翻訳すること。
+> - 固有名詞（Azure サービス名、製品名、技術用語）は英語のまま残す。例: "Azure SQL Database", "Kubernetes", "Copilot"
+> - `products`, `productCategories`, `tags` は翻訳しない（フィルタの整合性のため）。
+> - Issue 本文のテーブルの `タイトル` 列も日本語翻訳済みの `title` を使うこと。
 9. カテゴリ別の件数を集計する（`stats` オブジェクト）
 10. 結果を以下の JSON 構造でファイル `site/data/weekly/{WEEK}.json` に書き出す:
     ```json
