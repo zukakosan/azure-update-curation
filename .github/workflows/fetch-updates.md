@@ -14,6 +14,8 @@ network:
 
 safe-outputs:
   scripts: {}
+  create-pull-request:
+    max: 1
   create-issue:
     max: 1
 ---
@@ -76,7 +78,10 @@ Azure の公式アップデート情報を API から取得し、前週分をま
       "entries": [ ... ]
     }
     ```
-11. 変更があれば `git add site/data/weekly/` して `git commit -m "data: weekly Azure updates for {WEEK}"` して `git push` する
+11. JSON ファイル `site/data/weekly/{WEEK}.json` を含む Pull Request を作成する:
+    - **ブランチ名**: `data/weekly-{WEEK}`
+    - **タイトル**: `data: weekly Azure updates for {WEEK}`
+    - **本文**: 追加・更新されたエントリの件数とカテゴリ別内訳を記載
 12. GitHub Issue を以下の形式で作成する:
     - **タイトル**: `Azure Weekly Updates: {WEEK} ({MM/DD}〜{MM/DD})`
     - **本文**: Retirement を先頭に、GA、Preview、Change の順でテーブル表示し、末尾に統計を記載
