@@ -13,6 +13,11 @@
   </header>
 
   <main>
+    <nav class="tab-bar" id="tab-bar">
+      <button class="tab-btn active" data-tab="official">📋 公式アップデート</button>
+      <button class="tab-btn" data-tab="community">📝 コミュニティ記事</button>
+    </nav>
+
     <section class="controls">
       <label for="week-picker">週を選択:</label>
       <input type="week" id="week-picker">
@@ -20,12 +25,25 @@
       <div class="stats" id="stats"></div>
     </section>
 
-    <section class="filters" id="filters">
+    <section class="filters" id="filters-official">
       <button class="filter-btn active" data-category="all">すべて</button>
       <button class="filter-btn" data-category="ga">✅ GA</button>
       <button class="filter-btn" data-category="preview">🆕 Preview</button>
       <button class="filter-btn" data-category="retirement">⚠️ Retirement</button>
       <button class="filter-btn" data-category="change">🔄 Change</button>
+    </section>
+
+    <section class="filters hidden" id="filters-community">
+      <button class="filter-btn active" data-category="all">すべて</button>
+      <button class="filter-btn" data-category="ai">🤖 AI</button>
+      <button class="filter-btn" data-category="devops">🔧 DevOps</button>
+      <button class="filter-btn" data-category="security">🔒 Security</button>
+      <button class="filter-btn" data-category="database">🗄️ Database</button>
+      <button class="filter-btn" data-category="container">📦 Container</button>
+      <button class="filter-btn" data-category="serverless">⚡ Serverless</button>
+      <button class="filter-btn" data-category="storage">💾 Storage</button>
+      <button class="filter-btn" data-category="network">🌐 Network</button>
+      <button class="filter-btn" data-category="other">🏷️ Other</button>
     </section>
 
     <section id="entries" class="entries">
@@ -34,7 +52,11 @@
   </main>
 
   <footer>
-    <p>Data source: <a href="https://azure.microsoft.com/updates/" target="_blank" rel="noopener">Azure Updates</a></p>
+    <p>Data sources:
+      <a href="https://azure.microsoft.com/updates/" target="_blank" rel="noopener">Azure Updates</a> |
+      <a href="https://zenn.dev/p/microsoft" target="_blank" rel="noopener">Zenn</a> |
+      <a href="https://qiita.com/organizations/microsoft" target="_blank" rel="noopener">Qiita</a>
+    </p>
   </footer>
 
   <script src="app.js"></script>
