@@ -1,0 +1,194 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --bg:#0f1117;
+  --surface:#1a1d27;
+  --border:#2a2d3a;
+  --text:#e4e4e7;
+  --text-muted:#9ca3af;
+  --accent:#3b82f6;
+  --ga:#22c55e;
+  --preview:#3b82f6;
+  --retirement:#ef4444;
+  --change:#f59e0b;
+}
+
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+  min-height:100vh;
+}
+
+header{
+  text-align:center;
+  padding:2rem 1rem 1rem;
+  border-bottom:1px solid var(--border);
+}
+header h1{font-size:1.8rem;font-weight:700}
+.subtitle{color:var(--text-muted);margin-top:.25rem;font-size:.95rem}
+
+main{
+  max-width:900px;
+  margin:0 auto;
+  padding:1.5rem 1rem;
+}
+
+/* Controls */
+.controls{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  flex-wrap:wrap;
+  margin-bottom:1rem;
+}
+.controls label{font-weight:600;font-size:.9rem}
+#date-picker{
+  padding:.4rem .6rem;
+  border:1px solid var(--border);
+  border-radius:6px;
+  background:var(--surface);
+  color:var(--text);
+  font-size:.9rem;
+}
+.stats{
+  margin-left:auto;
+  display:flex;
+  gap:.75rem;
+  font-size:.85rem;
+}
+.stat-badge{
+  padding:.2rem .6rem;
+  border-radius:999px;
+  font-weight:600;
+  font-size:.8rem;
+}
+.stat-badge.ga{background:rgba(34,197,94,.15);color:var(--ga)}
+.stat-badge.preview{background:rgba(59,130,246,.15);color:var(--preview)}
+.stat-badge.retirement{background:rgba(239,68,68,.15);color:var(--retirement)}
+.stat-badge.change{background:rgba(245,158,11,.15);color:var(--change)}
+
+/* Filters */
+.filters{
+  display:flex;
+  gap:.5rem;
+  margin-bottom:1.5rem;
+  flex-wrap:wrap;
+}
+.filter-btn{
+  padding:.4rem 1rem;
+  border:1px solid var(--border);
+  border-radius:999px;
+  background:transparent;
+  color:var(--text-muted);
+  cursor:pointer;
+  font-size:.85rem;
+  transition:all .15s;
+}
+.filter-btn:hover{border-color:var(--accent);color:var(--text)}
+.filter-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* Entry cards */
+.entries{display:flex;flex-direction:column;gap:.75rem}
+
+.entry-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:1rem 1.25rem;
+  transition:border-color .15s;
+}
+.entry-card:hover{border-color:var(--accent)}
+.entry-card.hidden{display:none}
+
+.entry-header{
+  display:flex;
+  align-items:center;
+  gap:.6rem;
+  margin-bottom:.4rem;
+}
+.category-tag{
+  font-size:.75rem;
+  font-weight:700;
+  padding:.15rem .55rem;
+  border-radius:4px;
+  white-space:nowrap;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+}
+.category-tag.ga{background:rgba(34,197,94,.15);color:var(--ga)}
+.category-tag.preview{background:rgba(59,130,246,.15);color:var(--preview)}
+.category-tag.retirement{background:rgba(239,68,68,.15);color:var(--retirement)}
+.category-tag.change{background:rgba(245,158,11,.15);color:var(--change)}
+
+.entry-title{
+  font-size:1rem;
+  font-weight:600;
+  line-height:1.4;
+}
+.entry-title a{color:var(--text);text-decoration:none}
+.entry-title a:hover{text-decoration:underline}
+
+.entry-meta{
+  display:flex;
+  gap:1rem;
+  margin-top:.5rem;
+  font-size:.8rem;
+  color:var(--text-muted);
+  flex-wrap:wrap;
+}
+.entry-products{
+  display:flex;
+  gap:.35rem;
+  flex-wrap:wrap;
+  margin-top:.5rem;
+}
+.product-chip{
+  font-size:.75rem;
+  padding:.1rem .5rem;
+  border-radius:4px;
+  background:rgba(255,255,255,.06);
+  color:var(--text-muted);
+}
+
+.entry-summary{
+  margin-top:.5rem;
+  font-size:.85rem;
+  color:var(--text-muted);
+  line-height:1.5;
+}
+
+.action-badge{
+  display:inline-block;
+  font-size:.7rem;
+  font-weight:700;
+  padding:.1rem .45rem;
+  border-radius:3px;
+  background:rgba(239,68,68,.2);
+  color:var(--retirement);
+  margin-left:.5rem;
+}
+
+/* Loading & empty */
+.loading,.empty-state{
+  text-align:center;
+  padding:3rem 1rem;
+  color:var(--text-muted);
+  font-size:.95rem;
+}
+
+footer{
+  text-align:center;
+  padding:2rem 1rem;
+  font-size:.8rem;
+  color:var(--text-muted);
+  border-top:1px solid var(--border);
+  margin-top:2rem;
+}
+footer a{color:var(--accent)}
+
+@media(max-width:600px){
+  .stats{margin-left:0;width:100%}
+  .entry-header{flex-wrap:wrap}
+}

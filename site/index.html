@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azure Update Curation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>☁️ Azure Update Curation</h1>
+    <p class="subtitle">Azure の最新アップデートを日次で自動収集・分類</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <label for="date-picker">日付を選択:</label>
+      <input type="date" id="date-picker">
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <section class="filters" id="filters">
+      <button class="filter-btn active" data-category="all">すべて</button>
+      <button class="filter-btn" data-category="ga">✅ GA</button>
+      <button class="filter-btn" data-category="preview">🆕 Preview</button>
+      <button class="filter-btn" data-category="retirement">⚠️ Retirement</button>
+      <button class="filter-btn" data-category="change">🔄 Change</button>
+    </section>
+
+    <section id="entries" class="entries">
+      <p class="loading">読み込み中…</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Data source: <a href="https://azure.microsoft.com/updates/" target="_blank" rel="noopener">Azure Updates</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
