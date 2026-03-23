@@ -9,13 +9,14 @@
 <body>
   <header>
     <h1>☁️ Azure Update Curation</h1>
-    <p class="subtitle">Azure の最新アップデートを日次で自動収集・分類</p>
+    <p class="subtitle">Azure の最新アップデートを週次で自動収集・分類</p>
   </header>
 
   <main>
     <section class="controls">
-      <label for="date-picker">日付を選択:</label>
-      <input type="date" id="date-picker">
+      <label for="week-picker">週を選択:</label>
+      <input type="week" id="week-picker">
+      <span class="period-label" id="period-label"></span>
       <div class="stats" id="stats"></div>
     </section>
 

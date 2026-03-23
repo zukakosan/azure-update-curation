@@ -44,13 +44,17 @@ main{
   margin-bottom:1rem;
 }
 .controls label{font-weight:600;font-size:.9rem}
-#date-picker{
+#date-picker,#week-picker{
   padding:.4rem .6rem;
   border:1px solid var(--border);
   border-radius:6px;
   background:var(--surface);
   color:var(--text);
   font-size:.9rem;
+}
+.period-label{
+  font-size:.85rem;
+  color:var(--text-muted);
 }
 .stats{
   margin-left:auto;

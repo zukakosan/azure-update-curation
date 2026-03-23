@@ -8,17 +8,17 @@
     change:     { label: "Change",     emoji: "🔄" },
   };
 
-  const entriesEl = document.getElementById("entries");
-  const statsEl   = document.getElementById("stats");
-  const datePicker = document.getElementById("date-picker");
+  const entriesEl   = document.getElementById("entries");
+  const statsEl     = document.getElementById("stats");
+  const weekPicker  = document.getElementById("week-picker");
+  const periodLabel = document.getElementById("period-label");
 
   let allEntries = [];
 
   // --- Init ---
   function init() {
-    const today = toDateString(new Date());
-    datePicker.value = today;
-    datePicker.addEventListener("change", () => loadDay(datePicker.value));
+    weekPicker.value = currentISOWeek();
+    weekPicker.addEventListener("change", () => loadWeek(weekPicker.value));
 
     document.getElementById("filters").addEventListener("click", (e) => {
       if (!e.target.matches(".filter-btn")) return;
@@ -27,23 +27,34 @@
       applyFilter(e.target.dataset.category);
     });
 
-    loadDay(today);
+    loadWeek(weekPicker.value);
   }
 
-  // --- Load JSON for a given date ---
-  async function loadDay(dateStr) {
+  // --- Load JSON for a given ISO week (e.g. "2026-W12") ---
+  async function loadWeek(weekStr) {
     entriesEl.innerHTML = '<p class="loading">読み込み中…</p>';
     statsEl.innerHTML = "";
+    periodLabel.textContent = "";
 
     try {
-      const resp = await fetch(`./data/${dateStr}.json`);
+      const resp = await fetch(`./data/weekly/${weekStr}.json`);
       if (!resp.ok) throw new Error(resp.status);
       const data = await resp.json();
       allEntries = data.entries || [];
+
+      if (data.period) {
+        periodLabel.textContent = `(${data.period.from} 〜 ${data.period.to})`;
+      }
+
       render(allEntries);
-      renderStats(allEntries);
+
+      if (data.stats) {
+        renderStatsFromObj(data.stats);
+      } else {
+        renderStats(allEntries);
+      }
     } catch {
-      entriesEl.innerHTML = `<p class="empty-state">📭 ${dateStr} のデータはまだありません</p>`;
+      entriesEl.innerHTML = `<p class="empty-state">📭 ${weekStr} のデータはまだありません</p>`;
     }
   }
 
@@ -80,14 +91,18 @@
     }).join("");
   }
 
-  // --- Stats badges ---
+  // --- Stats from pre-computed stats object ---
+  function renderStatsFromObj(stats) {
+    statsEl.innerHTML = Object.entries(CATEGORY_META).map(([key, meta]) =>
+      `<span class="stat-badge ${key}">${meta.emoji} ${meta.label}: ${stats[key] || 0}</span>`
+    ).join("");
+  }
+
+  // --- Stats from entries (fallback) ---
   function renderStats(entries) {
     const counts = { ga: 0, preview: 0, retirement: 0, change: 0 };
     entries.forEach(e => { counts[e.category] = (counts[e.category] || 0) + 1; });
-
-    statsEl.innerHTML = Object.entries(CATEGORY_META).map(([key, meta]) =>
-      `<span class="stat-badge ${key}">${meta.emoji} ${meta.label}: ${counts[key]}</span>`
-    ).join("");
+    renderStatsFromObj(counts);
   }
 
   // --- Filter ---
@@ -98,8 +113,13 @@
   }
 
   // --- Helpers ---
-  function toDateString(d) {
-    return d.toISOString().slice(0, 10);
+  function currentISOWeek() {
+    const now = new Date();
+    const thu = new Date(now);
+    thu.setDate(thu.getDate() - ((thu.getDay() + 6) % 7) + 3);
+    const jan4 = new Date(thu.getFullYear(), 0, 4);
+    const weekNum = Math.ceil(((thu - jan4) / 86400000 + jan4.getDay() + 1) / 7);
+    return `${thu.getFullYear()}-W${String(weekNum).padStart(2, "0")}`;
   }
 
   function truncate(str, len) {
