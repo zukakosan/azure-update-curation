@@ -36,7 +36,7 @@
     statsEl.innerHTML = "";
 
     try {
-      const resp = await fetch(`../data/${dateStr}.json`);
+      const resp = await fetch(`./data/${dateStr}.json`);
       if (!resp.ok) throw new Error(resp.status);
       const data = await resp.json();
       allEntries = data.entries || [];
