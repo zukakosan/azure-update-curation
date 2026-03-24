@@ -17,24 +17,49 @@ jobs:
     if: github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
-      - name: Find and merge data PR
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Find and merge data PRs
         env:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
         run: |
           echo "Looking for open data PRs from github-actions[bot]..."
-          prs=$(gh pr list --repo "$REPO" --author "app/github-actions" --state open --json number,title --jq '.[].number')
+          prs=$(gh pr list --repo "$REPO" --author "app/github-actions" --state open --json number,title,createdAt --jq 'sort_by(.createdAt) | reverse | .[].number')
           if [ -z "$prs" ]; then
-            echo "No open PRs found from github-actions[bot]"
+            echo "No open PRs found"
             exit 0
           fi
+
+          merged=false
           for pr in $prs; do
             echo "Checking PR #$pr..."
             files=$(gh pr view "$pr" --repo "$REPO" --json files --jq '.files[].path')
-            if echo "$files" | grep -q '^site/data/'; then
-              echo "Merging PR #$pr"
-              gh pr merge "$pr" --repo "$REPO" --squash --delete-branch
-            else
+            if ! echo "$files" | grep -q '^site/data/'; then
               echo "PR #$pr does not touch site/data/, skipping"
+              continue
+            fi
+
+            # Check if PR is mergeable
+            mergeable=$(gh pr view "$pr" --repo "$REPO" --json mergeable --jq '.mergeable')
+            if [ "$mergeable" = "MERGEABLE" ]; then
+              echo "Merging PR #$pr"
+              if gh pr merge "$pr" --repo "$REPO" --squash --delete-branch; then
+                merged=true
+              else
+                echo "Failed to merge PR #$pr"
+              fi
+            elif [ "$mergeable" = "CONFLICTING" ]; then
+              echo "PR #$pr has conflicts, closing as superseded"
+              gh pr close "$pr" --repo "$REPO" --comment "Closed: merge conflict with main (superseded by a newer run)"
+            else
+              echo "PR #$pr mergeable status: $mergeable, skipping"
             fi
           done
+
+          if [ "$merged" = false ]; then
+            echo "No PRs were merged"
+          fi
