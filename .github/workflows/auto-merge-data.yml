@@ -22,12 +22,19 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
         run: |
-          # Find open PRs from github-actions[bot] that modify site/data/
-          prs=$(gh pr list --repo "$REPO" --author "github-actions[bot]" --state open --json number,title --jq '.[].number')
+          echo "Looking for open data PRs from github-actions[bot]..."
+          prs=$(gh pr list --repo "$REPO" --author "app/github-actions" --state open --json number,title --jq '.[].number')
+          if [ -z "$prs" ]; then
+            echo "No open PRs found from github-actions[bot]"
+            exit 0
+          fi
           for pr in $prs; do
+            echo "Checking PR #$pr..."
             files=$(gh pr view "$pr" --repo "$REPO" --json files --jq '.files[].path')
             if echo "$files" | grep -q '^site/data/'; then
               echo "Merging PR #$pr"
-              gh pr merge "$pr" --repo "$REPO" --squash --admin
+              gh pr merge "$pr" --repo "$REPO" --squash --delete-branch
+            else
+              echo "PR #$pr does not touch site/data/, skipping"
             fi
           done
