@@ -1,0 +1,55 @@
+{
+  "week": "2026-W12",
+  "period": {
+    "from": "2026-03-16",
+    "to": "2026-03-22"
+  },
+  "fetchedAt": "2026-03-24T00:40:47Z",
+  "count": 3,
+  "stats": {
+    "ai": 2,
+    "devops": 1,
+    "security": 0,
+    "network": 0,
+    "database": 0,
+    "container": 0,
+    "serverless": 0,
+    "storage": 0,
+    "other": 0
+  },
+  "entries": [
+    {
+      "id": "3d15ba3939168a",
+      "title": "Bicep + AVM で Hub-Spoke PoC 環境を組んでみた",
+      "date": "2026-03-21T06:10:08+00:00",
+      "category": "devops",
+      "summary": "はじめに AI App Solution Engineer の Matsumoto です。 今回は､Azure のネットワーク構成を Bicep で書く練習がしたくて、Hub-Spoke の PoC 環境テンプレートを作りました。 ちょうど Azure Verified Modules（AVM）の存在を知り「リソースを直書きするよりモジュール経由のほうが楽なのでは」と思ったのがきっかけです。実際に触ってみると、楽な部分とハマる部分の両方がありました。この記事ではその過程を書いていきます。",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/3d15ba3939168a",
+      "source": "zenn",
+      "author": "Naoki Matsumoto"
+    },
+    {
+      "id": "codex_best_practice",
+      "title": "CodexのBestPracticeを学ぶ会",
+      "date": "2026-03-18T06:36:15+00:00",
+      "category": "ai",
+      "summary": "はじめに 本記事はCodexの始め方と、より良い結果を得るための実証済みの方法を紹介します。 Codexやコーディングエージェントは昨今非常に多くの方から注目されており、多くの人が「とりあえず使ってみる」段階に入っています。 この記事は、そんな「とりあえず使ってみる」フェーズを超えて、使いこなすフェーズに入るためのガイドです。 CLI、IDE拡張、Codexアプリに共通して、プロンプト、計画、検証、MCP、Skills、Automationsまで、Codexをより効果的に使うための内容を記載しました。",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/codex_best_practice",
+      "source": "zenn",
+      "author": "Yusuke Satake"
+    },
+    {
+      "id": "81a0ebb04e4861",
+      "title": "Azure APIMでREST APIをそのままMCP化し、Foundry Agentに組み込んでM365 CopilotにPublish！",
+      "date": "2026-03-16T01:17:51+00:00",
+      "category": "ai",
+      "summary": "この記事の情報は 2026 年 3 月 16 日時点のものです。Azure サービスのプレビュー機能を含むため、公式ドキュメントで最新の仕様を確認してください。 何を作ったか M365 Copilot（Teams）から「PRD-004 の在庫教えて」と聞くと、Azure 上の在庫データベースを参照して回答してくれるエージェントを作りました。デモなら動くけど VNet + PE にしたらけっこうハマったので、その過程を残しておきます。",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/81a0ebb04e4861",
+      "source": "zenn",
+      "author": "Naoki Matsumoto"
+    }
+  ]
+}
