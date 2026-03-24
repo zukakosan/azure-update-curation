@@ -1,11 +1,351 @@
 {
+  "week": "2026-W12",
+  "period": {
+    "from": "2026-03-16",
+    "to": "2026-03-22"
+  },
+  "fetchedAt": "2026-03-24T01:29:13.319Z",
+  "count": 25,
+  "stats": {
+    "ga": 7,
+    "preview": 7,
+    "retirement": 11,
+    "change": 0
+  },
   "entries": [
     {
+      "id": "516070",
+      "title": "廃止: Azure Batch プールにおける NVv3 および NVv4 シリーズ Azure 仮想マシンのサポート終了に関するリマインダー",
+      "date": "2026-03-16T18:30:34.1207616Z",
+      "category": "retirement",
+      "summary": "Microsoft Azure は 2026年9月30日に NVv3 および NVv4 シリーズ VM のサポートを廃止します。対象は NVv3 シリーズ（NVIDIA Tesla M60 GPU）: Standard_NV12s_v3、Standard_NV12hs_v3、Standard_NV24s_v3 など、および NVv4 シリーズ（AMD Radeon Instinct MI25 GPU）: Standard_NV4as_v4、Standard_NV8as_v4 などです。Azure Batch は Microsoft Azure のサポート終了に合わせて廃止予定です。",
+      "products": [
+        "Batch"
+      ],
+      "productCategories": [
+        "Compute"
+      ],
+      "tags": [
+        "Features",
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=516070",
+      "actionRequired": true
+    },
+    {
+      "id": "543279",
+      "title": "廃止: Azure Batch 低優先度 VM の Spot VM への移行（3月上旬）",
+      "date": "2026-03-16T18:45:11.5147114Z",
+      "category": "retirement",
+      "summary": "Azure Batch は 2025年9月30日に低優先度 VM を廃止し、2026年3月1日より Spot VM へのシステム起動による移行を開始します。この変更により Batch はより広範な Azure Spot インフラと統合されます。影響: 移行は自動的に実行され数日以内に完了します。既存ワークロードへの中断は想定されておらず、3月の請求書から Spot ベースの課金が適用されます。必要なアクション: 対応は不要です。",
+      "products": [
+        "Batch"
+      ],
+      "productCategories": [
+        "Compute"
+      ],
+      "tags": [
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=543279",
+      "actionRequired": true
+    },
+    {
+      "id": "548497",
+      "title": "廃止: NP シリーズ Azure Virtual Machines が 2027年5月31日に廃止されます",
+      "date": "2026-03-19T16:30:27.9756937Z",
+      "category": "retirement",
+      "summary": "2027年5月31日に Microsoft Azure は NP シリーズ仮想マシン（VM）サイズ Standard_NP10s、Standard_NP20s、Standard_NP40s を廃止します。継続性と最適なパフォーマンスを確保するため、ワークロードのニーズに応じて NDv2 VM（GPU アクセラレーション AI・HPC 向け）や NCads_H100_v5 VM（Applied AI トレーニングおよびバッチ推論向け）などの Azure GPU VM ファミリへの移行をお勧めします。",
+      "products": [
+        "Virtual Machines"
+      ],
+      "productCategories": [
+        "Compute"
+      ],
+      "tags": [
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=548497",
+      "actionRequired": true
+    },
+    {
+      "id": "548525",
+      "title": "廃止: HBv2 シリーズ Azure Virtual Machines が 2027年5月31日に廃止されます",
+      "date": "2026-03-19T16:30:27.9756937Z",
+      "category": "retirement",
+      "summary": "2027年5月31日に Microsoft Azure は HBv2 シリーズ VM（Standard_HB120rs_v2 など 5 サイズ）を廃止します。継続性とパフォーマンス向上のため、現行世代 HPC VM ファミリへの移行をお勧めします。Azure HBv5 シリーズ VM は HB シリーズの最新世代で、ほとんどのコンピューティングおよびメモリ集約型ワークロードで HBv4 より大幅に高いパフォーマンスとコストパフォーマンスを提供します。",
+      "products": [
+        "Virtual Machines"
+      ],
+      "productCategories": [
+        "Compute"
+      ],
+      "tags": [
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=548525",
+      "actionRequired": true
+    },
+    {
+      "id": "548543",
+      "title": "廃止: HC シリーズ Azure Virtual Machines が 2027年5月31日に廃止されます",
+      "date": "2026-03-19T16:30:27.9756937Z",
+      "category": "retirement",
+      "summary": "2027年5月31日に Microsoft Azure は HC シリーズ VM（Standard_HC44rs、Standard_HC44-16rs、Standard_HC44-32rs）を廃止します。継続性とパフォーマンス向上のため、Azure HBv5 シリーズ VM や Azure HX シリーズ VM などの現行世代 HPC VM ファミリへの移行をお勧めします。",
+      "products": [
+        "Virtual Machines"
+      ],
+      "productCategories": [
+        "Compute"
+      ],
+      "tags": [
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=548543",
+      "actionRequired": true
+    },
+    {
+      "id": "549077",
+      "title": "廃止: Azure Batch プールでの Windows Server 2016 Marketplace イメージのサポートが 2027年1月12日に終了します",
+      "date": "2026-03-16T18:45:11.5147114Z",
+      "category": "retirement",
+      "summary": "Azure Batch はサポート終了に達した OS のサポートを定期的に廃止します。Windows Server 2016 の延長サポートは 2027年1月12日に終了予定です。MicrosoftWindowsServer オファー下で公開されている Windows Server 2016 の Marketplace イメージは利用できなくなります。対象 SKU: 2016-datacenter-gensecond、2016-datacenter、2016-datacenter-gs、2016-datacenter-smalldisk などです。",
+      "products": [
+        "Batch"
+      ],
+      "productCategories": [
+        "Compute"
+      ],
+      "tags": [
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=549077",
+      "actionRequired": true
+    },
+    {
+      "id": "557094",
+      "title": "廃止: Azure VMware Solution の AV36P および AV52 ノードが 2029年6月30日に廃止されます",
+      "date": "2026-03-17T17:30:11.8113182Z",
+      "category": "retirement",
+      "summary": "Microsoft は 2029年6月30日に AV36P および AV52 ノードの廃止を発表します。現在の予約インスタンス（RI）の条件はこの発表の影響を受けません。現時点では現在の RI 有効期限のタイムラインを確認し、Microsoft アカウントチームと次のステップについて協議することをお勧めします。移行支援として AV36P および AV52 VCF BYOL 3年間 RI を 2026年6月30日まで、1年間 RI を 2028年6月30日まで提供します。",
+      "products": [
+        "Azure VMware Solution"
+      ],
+      "productCategories": [
+        "Compute"
+      ],
+      "tags": [
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=557094",
+      "actionRequired": true
+    },
+    {
+      "id": "557123",
+      "title": "廃止: Azure Sphere が 2031年7月31日に廃止されます",
+      "date": "2026-03-20T17:15:50.3317724Z",
+      "category": "retirement",
+      "summary": "Azure Sphere サービスは廃止となり、2031年7月31日にすべてのお客様向けアプリケーション、OS、バグ・セキュリティアップデート、および DAA 証明書の発行サポートを停止します。Azure Sphere はカスタムハードウェア、セキュアな Linux ベース OS、クラウドベースのセキュリティサービスを組み合わせてセキュアな IoT 接続を先駆けて実現しました。IoT の環境が進化するにつれ、お客様はさまざまなベンダーからセキュアなマイクロコントローラにアクセスできるようになりました。",
+      "products": [
+        "Azure Sphere"
+      ],
+      "productCategories": [
+        "Internet of Things"
+      ],
+      "tags": [
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=557123",
+      "actionRequired": true
+    },
+    {
+      "id": "557929",
+      "title": "廃止: AKS 向け Flatcar Container Linux（プレビュー）",
+      "date": "2026-03-16T18:15:54.3746863Z",
+      "category": "retirement",
+      "summary": "Azure Kubernetes Service の Flatcar Container Linux for AKS（プレビュー）のサポートは 2026年6月8日に廃止されます。現在から 2026年6月7日まで引き続き使用できますが、2026年6月8日以降は新しいノードプールの作成ができなくなり、AKS は新しいノードイメージの提供とセキュリティパッチの適用を停止します。それまでにサポートされている代替手段に移行してください。",
+      "products": [
+        "Azure Kubernetes Service (AKS)"
+      ],
+      "productCategories": [
+        "Compute",
+        "Containers"
+      ],
+      "tags": [
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=557929",
+      "actionRequired": true
+    },
+    {
+      "id": "558086",
+      "title": "廃止: Azure SQL Elastic query の Shard_Map_Manager モード",
+      "date": "2026-03-20T19:00:50.8123240Z",
+      "category": "retirement",
+      "summary": "2027年3月31日より、Shard_Map_Manager 外部データソースタイプを使用した Elastic query はサポート終了となります。既存のワークロードは Azure SQL Elastic query の Shard_Map_Manager モードを引き続き実行できますが、Microsoft からのアップデートやサポートは提供されなくなります。",
+      "products": [
+        "Azure SQL Database"
+      ],
+      "productCategories": [
+        "Databases",
+        "Hybrid + multicloud"
+      ],
+      "tags": [
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558086",
+      "actionRequired": true
+    },
+    {
+      "id": "558278",
+      "title": "廃止: Azure の Emissions Impact Dashboard",
+      "date": "2026-03-18T18:45:54.5925446Z",
+      "category": "retirement",
+      "summary": "2027年3月31日より、Power BI でホストされている Azure の Emissions Impact Dashboard は廃止されます。この日以降、ダッシュボードにアクセスできなくなりテクニカルサポートも終了します。履歴レポートを保持するため排出量データのエクスポートを強くお勧めします。廃止日前に代替ソリューションとして Azure Carbon Optimizer をご検討ください。",
+      "products": [],
+      "productCategories": [],
+      "tags": [
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558278",
+      "actionRequired": true
+    },
+    {
+      "id": "557141",
+      "title": "一般提供開始: Foundry Agent Service",
+      "date": "2026-03-17T17:45:45.6987595Z",
+      "category": "ga",
+      "summary": "次世代 Foundry Agent Service の一般提供（GA）を発表します。再設計された API フォーマットとランタイム体験により、チームがプロトタイプから本番環境へ自信を持って移行できるエージェントの構築と運用を支援します。このリリースはエンタープライズグレードの AI エージェント（設計によるセキュリティ、デフォルトの可観測性）という約束に基づいています。",
+      "products": [
+        "Microsoft Foundry"
+      ],
+      "productCategories": [
+        "AI + machine learning"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=557141",
+      "actionRequired": false
+    },
+    {
+      "id": "557917",
+      "title": "一般提供開始: Azure Red Hat OpenShift のマネージド ID とワークロード ID",
+      "date": "2026-03-18T18:30:05.9257189Z",
+      "category": "ga",
+      "summary": "Azure Red Hat OpenShift がマネージド ID とワークロード ID を一般提供（GA）機能としてサポートしました。これにより、長期間有効なサービスプリンシパル資格情報なしで Azure 上の OpenShift クラスターとアプリケーションを実行できます。Azure 全体で使用される短期トークンと最小権限の ID パターンに合わせながら、既存の Azure ID、アクセス、ガバナンスモデルとの統合を維持します。",
+      "products": [
+        "Azure Red Hat OpenShift"
+      ],
+      "productCategories": [
+        "Containers"
+      ],
+      "tags": [
+        "Compliance",
+        "Management"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=557917",
+      "actionRequired": false
+    },
+    {
+      "id": "558016",
+      "title": "一般提供開始: Default Rule Set 2.2 とルールセットサポートポリシーの更新",
+      "date": "2026-03-17T17:45:45.6987595Z",
+      "category": "ga",
+      "summary": "Azure Application Gateway および Azure Front Door での Default Rule Set（DRS）2.2 の一般提供に伴い、Azure Web Application Firewall（WAF）のマネージドルールセットサポートポリシーを更新します。DRS 2.2 以降、Azure WAF は常に最新 3 バージョン（N、N-1、N-2）をサポートし、より明確で予測可能なライフサイクルを提供しながら最新のセキュリティ保護の恩恵を継続して提供します。",
+      "products": [
+        "Application Gateway",
+        "Azure Front Door",
+        "Web Application Firewall"
+      ],
+      "productCategories": [
+        "Networking",
+        "Security"
+      ],
+      "tags": [
+        "Features",
+        "Security"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558016",
+      "actionRequired": false
+    },
+    {
+      "id": "558121",
+      "title": "一般提供開始: 2026年3月中旬の Azure SQL 更新",
+      "date": "2026-03-18T18:30:05.9257189Z",
+      "category": "ga",
+      "summary": "2026年3月中旬に Azure SQL に対して以下の更新が行われました。Visual Studio Code から SQL データベースプロジェクトを直接公開してデプロイメントワークフローを効率化。MSSQL 拡張機能のインタラクティブグリッドで SQL テーブルデータを直接表示・編集。Azure SQL Database がトランスペアレントデータ暗号化（TDE）のバージョンレスキーをサポートし、独自の暗号化キーをより簡単かつ確実に管理できるようになりました。",
+      "products": [
+        "Azure SQL Database"
+      ],
+      "productCategories": [
+        "Databases",
+        "Hybrid + multicloud"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558121",
+      "actionRequired": false
+    },
+    {
+      "id": "558134",
+      "title": "一般提供開始: SQL Server Management Studio 22 での GitHub Copilot",
+      "date": "2026-03-18T18:15:04.6151584Z",
+      "category": "ga",
+      "summary": "GitHub Copilot が SQL Server Management Studio（SSMS）22 で一般提供（GA）となり、毎日使用するアプリケーションに AI アシスタンスを直接提供します。自然言語で T-SQL の開発、説明、修正、最適化、クエリのトラブルシューティングをワークフローを離れずに実行できます。クエリエディターでのインテリジェントなコード補完により T-SQL をより速く、より自信を持って記述できます。",
+      "products": [],
+      "productCategories": [],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558134",
+      "actionRequired": false
+    },
+    {
+      "id": "558183",
+      "title": "一般提供開始: Azure SQL Database のトランスペアレントデータ暗号化におけるバージョンレスキーのサポート",
+      "date": "2026-03-18T17:00:05.1025868Z",
+      "category": "ga",
+      "summary": "Azure SQL Database がトランスペアレントデータ暗号化（TDE）のバージョンレスキーをサポートしました。カスタマーマネージドキーで TDE を設定する際、Azure Key Vault または Managed HSM の特定のキーバージョンを参照する必要がなくなりました。バージョンレスキー URI を指定するだけで Azure SQL が自動的に最新バージョンを使用します。これにより運用オーバーヘッドと設定ミスのリスクが軽減されます。",
+      "products": [
+        "Azure SQL Database"
+      ],
+      "productCategories": [
+        "Databases",
+        "Hybrid + multicloud"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558183",
+      "actionRequired": false
+    },
+    {
+      "id": "558810",
+      "title": "一般提供開始: Azure Databricks で Lakeflow Connect 無料枠が利用可能に",
+      "date": "2026-03-18T17:00:05.1025868Z",
+      "category": "ga",
+      "summary": "Azure Databricks が Lakeflow Connect 無料枠を提供するようになりました。SaaS アプリケーションやデータベースからのインジェスト用に、ワークスペースあたり 1 日 100 DBU を無料で提供します。標準料金が適用される前に 1 日約 1 億件のデータレコードを無料で Lakehouse に取り込めます。Unity Catalog でガバナンスし、分析および AI アプリケーションを容易に活用できます。",
+      "products": [
+        "Azure Databricks"
+      ],
+      "productCategories": [
+        "AI + machine learning",
+        "Analytics"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558810",
+      "actionRequired": false
+    },
+    {
       "id": "558116",
-      "title": "Public Preview: Azure SQL updates for mid-March 2026",
-      "date": "2026-03-20T19:15:35Z",
+      "title": "パブリックプレビュー: 2026年3月中旬の Azure SQL 更新",
+      "date": "2026-03-20T19:15:35.2206794Z",
       "category": "preview",
-      "summary": "In mid-March 2026, the following updates and enhancements were made to Azure SQL: Reduce the consumption of storage space, I/O, and memory and improve performance without investing time and effort into index maintenance jobs. Configure automatic tuning for your databases.",
+      "summary": "2026年3月中旬に Azure SQL に対して以下の更新が行われました。インデックスメンテナンスジョブへの投資なしでストレージ、I/O、メモリの消費を削減しパフォーマンスを改善。Azure SQL Server のソフト削除保持設定による誤削除防止と自己復元の実現。Azure SQL Database Hyperscale Premium シリーズが新しい 160 および 192 vCore オプション（それぞれ 25%、50% 増）で拡張性を拡大。",
       "products": [
         "Azure SQL Database",
         "Azure SQL Managed Instance"
@@ -15,19 +355,17 @@
         "Hybrid + multicloud"
       ],
       "tags": [
-        "In preview",
-        "Databases",
         "Features"
       ],
       "url": "https://azure.microsoft.com/updates?id=558116",
       "actionRequired": false
     },
     {
-      "id": "558121",
-      "title": "General availability: Azure SQL updates for mid-March 2026",
-      "date": "2026-03-18T18:30:05Z",
-      "category": "ga",
-      "summary": "In mid-March 2026, the following updates and enhancements were made to Azure SQL: Publish SQL database projects directly from Visual Studio Code to streamline database deployment workflows. View and edit SQL table data directly in the MSSQL extension.",
+      "id": "558150",
+      "title": "パブリックプレビュー: SQL MCP Server",
+      "date": "2026-03-18T18:15:04.6151584Z",
+      "category": "preview",
+      "summary": "本番データベース向け Model Context Protocol（MCP）コネクタである SQL MCP Server を発表します。SQL MCP Server は data API builder（DAB）のコンポーネントで、データベースを危険にさらしたり自然言語に依存したりすることなく、AI エージェントをデータワークフローに組み込むシンプルで予測可能かつセキュアな方法を提供します。ローカル、オンプレミス、またはコンテナ化されたサービスとして任意のクラウドで実行されます。",
       "products": [
         "Azure SQL Database"
       ],
@@ -36,39 +374,92 @@
         "Hybrid + multicloud"
       ],
       "tags": [
-        "Launched",
-        "Databases",
         "Features"
       ],
-      "url": "https://azure.microsoft.com/updates?id=558121",
+      "url": "https://azure.microsoft.com/updates?id=558150",
       "actionRequired": false
     },
     {
-      "id": "557141",
-      "title": "Generally Available: Foundry Agent Service",
-      "date": "2026-03-17T17:45:45Z",
-      "category": "ga",
-      "summary": "Announcing general availability (GA) of the next-gen Foundry Agent Service—a redesigned API format and runtime experience designed to help teams build and operate agents that can move from prototype to production with confidence.",
+      "id": "558155",
+      "title": "パブリックプレビュー: SQL プロジェクトによる SSMS でのデータベース DevOps",
+      "date": "2026-03-18T18:15:04.6151584Z",
+      "category": "preview",
+      "summary": "スキーマをコードとして管理するメリットをデータベース開発ワークフローにもたらします。SQL データベースプロジェクトを使用すると、SQL Server Management Studio（SSMS）内からデータベーススキーマのソース管理、あらゆる環境への信頼性の高いデプロイ、開発プロセスへのコード品質チェックの統合を実現できます。SQL データベースプロジェクトはテーブル、ストアドプロシージャ、関数などの SQL オブジェクトのローカル表現です。",
       "products": [
-        "Microsoft Foundry"
+        "Azure SQL Database"
       ],
       "productCategories": [
-        "AI + machine learning"
+        "Databases",
+        "Hybrid + multicloud"
       ],
       "tags": [
-        "Launched",
-        "AI + machine learning",
         "Features"
       ],
-      "url": "https://azure.microsoft.com/updates?id=557141",
+      "url": "https://azure.microsoft.com/updates?id=558155",
+      "actionRequired": false
+    },
+    {
+      "id": "558169",
+      "title": "パブリックプレビュー: MSSQL 拡張機能の Schema Designer への GitHub Copilot 統合",
+      "date": "2026-03-18T18:15:04.6151584Z",
+      "category": "preview",
+      "summary": "Visual Studio Code の MSSQL 拡張機能に Schema Designer への GitHub Copilot 統合が導入され、AI 支援機能でビジュアルスキーマ設計体験が拡張されました。自然言語を使用してデータベーススキーマを理解、設計、変更できるようになりました。希望するテーブルや変更を説明すると GitHub Copilot が Schema Designer 内で更新案を計画・生成し、各スキーマ変更がカラーコードでビジュアルプレビューされます。",
+      "products": [
+        "Azure SQL Database"
+      ],
+      "productCategories": [
+        "Databases",
+        "Hybrid + multicloud"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558169",
+      "actionRequired": false
+    },
+    {
+      "id": "558178",
+      "title": "パブリックプレビュー: MSSQL 拡張機能の GitHub Copilot 内蔵 Data API builder",
+      "date": "2026-03-18T17:00:05.1025868Z",
+      "category": "preview",
+      "summary": "Visual Studio Code の MSSQL 拡張機能に GitHub Copilot 統合を内蔵した Data API builder がパブリックプレビューとして導入されました。インフラストラクチャや接続文字列を手動で設定することなく、SQL データベーススキーマから REST、GraphQL、MCP エンドポイントを Visual Studio Code 内で生成できます。テーブルを選択し CRUD 操作を定義し、認証ロールなどのエンティティごとの設定を構成できます。",
+      "products": [
+        "Azure SQL Database"
+      ],
+      "productCategories": [
+        "Databases",
+        "Hybrid + multicloud"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558178",
+      "actionRequired": false
+    },
+    {
+      "id": "558662",
+      "title": "パブリックプレビュー: Azure Blob Storage SFTP への Entra ID ベースのアクセス",
+      "date": "2026-03-16T18:30:34.1207616Z",
+      "category": "preview",
+      "summary": "Azure Blob Storage SFTP 向け Microsoft Entra ID ベースのアクセスがパブリックプレビューになりました。ローカルユーザーの作成と管理なしに、Microsoft Entra ID の ID（Entra External Identities 経由のゲストユーザーを含む）を使用して SFTP 経由で Azure Blob Storage に安全に接続できます。シングルサインオンと多要素認証（MFA）をサポートし、既存の企業資格情報で認証できます。",
+      "products": [
+        "Azure Blob Storage"
+      ],
+      "productCategories": [
+        "Storage"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558662",
       "actionRequired": false
     },
     {
       "id": "558927",
-      "title": "Public Preview: Azure Databricks OneLake Catalog Federation",
-      "date": "2026-03-19T17:00:53Z",
+      "title": "パブリックプレビュー: Azure Databricks OneLake カタログフェデレーション",
+      "date": "2026-03-19T17:00:53.0406938Z",
       "category": "preview",
-      "summary": "You can now enable OneLake catalog federation in Azure Databricks to query Microsoft Fabric OneLake data without copying or moving it. By connecting Unity Catalog to a OneLake catalog, Azure Databricks automatically syncs schemas and tables.",
+      "summary": "Azure Databricks で OneLake カタログフェデレーションを有効にすると、Microsoft Fabric OneLake のデータをコピーや移動なしにクエリできるようになりました。Unity Catalog を OneLake カタログに接続することで Azure Databricks がスキーマとテーブルを自動同期し、Fabric Lakehouse アイテムが既存のデータアセットと並んで表示されます。クエリは Azure Databricks のコンピューティングで実行され、データの散在を削減するゼロコピー体験が得られます。",
       "products": [
         "Azure Databricks"
       ],
@@ -77,64 +468,10 @@
         "Analytics"
       ],
       "tags": [
-        "In preview",
-        "Analytics",
         "Features"
       ],
       "url": "https://azure.microsoft.com/updates?id=558927",
       "actionRequired": false
-    },
-    {
-      "id": "557123",
-      "title": "Retirement: Azure Sphere will be retired on July 31, 2031",
-      "date": "2026-03-20T17:15:50Z",
-      "category": "retirement",
-      "summary": "The Azure Sphere service is retiring and will stop supporting all customer application, OS, bug and security updates, along with DAA certificate issuance, on July 31, 2031. Azure Sphere pioneered secure IoT connectivity.",
-      "products": [
-        "Azure Sphere"
-      ],
-      "productCategories": [
-        "Internet of Things"
-      ],
-      "tags": [
-        "Retirements",
-        "Internet of Things"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=557123",
-      "actionRequired": true
-    },
-    {
-      "id": "558086",
-      "title": "Retirement: Azure SQL Elastic query - Shard_Map_Manager mode",
-      "date": "2026-03-20T19:00:50Z",
-      "category": "retirement",
-      "summary": "Starting March 31, 2027 Elastic query using Shard_Map_Manager external data source type reaches end of support. Existing workloads can continue to run, but will no longer receive updates or support.",
-      "products": [
-        "Azure SQL Database"
-      ],
-      "productCategories": [
-        "Databases",
-        "Hybrid + multicloud"
-      ],
-      "tags": [
-        "Retirements",
-        "Databases"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=558086",
-      "actionRequired": true
     }
-  ],
-  "fetchedAt": "2026-03-23T00:00:00Z",
-  "week": "2026-W12",
-  "count": 6,
-  "stats": {
-    "change": 0,
-    "preview": 2,
-    "ga": 2,
-    "retirement": 2
-  },
-  "period": {
-    "to": "2026-03-22",
-    "from": "2026-03-16"
-  }
+  ]
 }
