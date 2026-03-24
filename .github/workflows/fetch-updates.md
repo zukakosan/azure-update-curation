@@ -16,6 +16,7 @@ safe-outputs:
   scripts: {}
   create-pull-request:
     max: 1
+    draft: false
   create-issue:
     max: 1
 ---
