@@ -1,0 +1,33 @@
+{
+  "week": "2026-W13",
+  "period": {
+    "from": "2026-03-23",
+    "to": "2026-03-29"
+  },
+  "fetchedAt": "2026-03-30T05:25:56Z",
+  "count": 1,
+  "stats": {
+    "ai": 0,
+    "devops": 1,
+    "security": 0,
+    "network": 0,
+    "database": 0,
+    "container": 0,
+    "serverless": 0,
+    "storage": 0,
+    "other": 0
+  },
+  "entries": [
+    {
+      "id": "github-copilot-cli-presentation",
+      "title": "GitHub Copilot CLI でプレゼンテーションをする技術",
+      "date": "2026-03-25T12:40:42Z",
+      "category": "devops",
+      "summary": "はじめに 技術というかちょっとした変わった使い方の紹介です。先日開催された「GitHub Copilot Dev Days Tokyo 2026 〜 GitHub Vibe Riders〜」で 10 分のショートセッションに登壇してきました。セッションタイトルは「GitHub Copilot CLI の個人的な好きなところ」です。 このセッションでは、ちょっと変わった試みとして「GitHub Copilot CLI 自体にプレゼンテーションをさせる」というデモをやりました。PowerPoint は使わず、ターミナル上でスライド風のアスキーアートを表示してプレゼンを進行するという形です...",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/github-copilot-cli-presentation",
+      "source": "zenn",
+      "author": "Kazuki Ota"
+    }
+  ]
+}
