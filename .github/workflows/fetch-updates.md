@@ -1,6 +1,6 @@
 ---
 on:
-  schedule: 40 1 * * 1
+  schedule: hourly
   workflow_dispatch:
 
 permissions:
