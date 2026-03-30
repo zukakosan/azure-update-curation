@@ -4,15 +4,34 @@
     "from": "2026-03-30",
     "to": "2026-04-05"
   },
-  "fetchedAt": "2026-03-30T21:53:29.192927Z",
-  "count": 4,
+  "fetchedAt": "2026-03-30T22:48:22.814Z",
+  "count": 5,
   "stats": {
     "ga": 2,
-    "preview": 0,
+    "preview": 1,
     "retirement": 2,
     "change": 0
   },
   "entries": [
+    {
+      "id": "559322",
+      "title": "パブリックプレビュー: VM/VMSS 向けフルキャッシュ対応エフェメラル OS ディスク",
+      "date": "2026-03-30",
+      "category": "preview",
+      "summary": "Azure VM/VMSS 向けフルキャッシングを使用したエフェメラル OS ディスクがパブリックプレビューで利用可能になりました。OS ディスクイメージ全体をローカル VM ストレージ（キャッシュディスク、リソースディスク、または NVMe ディスク）にキャッシュすることで、IO パフォーマンスの向上と一貫した低レイテンシを実現し、リモートストレージの障害時でも優れた耐障害性を発揮します。AI ワークロードを含むステートレスで IO 集約型のワークロードに非常に有効な機能です。",
+      "products": [
+        "Virtual Machine Scale Sets",
+        "Virtual Machines"
+      ],
+      "productCategories": [
+        "Compute"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=559322",
+      "actionRequired": false
+    },
     {
       "id": "550519",
       "title": "Retirement: Azure Monitor managed service for Prometheus のリモートライト用サイドカーの廃止",
