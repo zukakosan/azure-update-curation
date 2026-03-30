@@ -1,6 +1,6 @@
 ---
 on:
-  schedule: weekly on monday
+  schedule: 40 1 * * 1
   workflow_dispatch:
 
 permissions:
