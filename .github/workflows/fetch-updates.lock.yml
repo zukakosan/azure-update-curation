@@ -26,7 +26,7 @@
 name: "Azure Update 週次収集"
 "on":
   schedule:
-  - cron: "40 1 * * 1"
+  - cron: "55 1 * * 1"
   workflow_dispatch:
 
 permissions: {}
