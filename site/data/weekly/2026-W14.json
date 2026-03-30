@@ -4,21 +4,35 @@
     "from": "2026-03-30",
     "to": "2026-04-05"
   },
-  "fetchedAt": "2026-03-30T17:07:16Z",
-  "count": 1,
+  "fetchedAt": "2026-03-30T19:09:26Z",
+  "count": 2,
   "stats": {
     "ga": 1,
     "preview": 0,
-    "retirement": 0,
+    "retirement": 1,
     "change": 0
   },
   "entries": [
     {
+      "id": "556085",
+      "title": "Azure Cosmos DB for PostgreSQL が 2029年3月31日に廃止予定",
+      "date": "2026-03-30T17:45:08.2587317Z",
+      "category": "retirement",
+      "summary": "2029年3月31日、Azure Cosmos DB for PostgreSQL が廃止されます。それまでに Azure Database for PostgreSQL Elastic Cluster へ移行する必要があります。Elastic Cluster は Citus 拡張機能に基づく完全な機能パリティを持ち、同等の分散 PostgreSQL 機能を提供します。シンプルで透明な料金モデル、幅広いコンピューティング選択肢、新しい PostgreSQL バージョンのサポートを追加しており、組み込みの高可用性、自動バックアップ、ポイントインタイムリストア、ディザスターリカバリーも提供します。アプリケーション コードの変更なしに移行できます。",
+      "products": [],
+      "productCategories": [],
+      "tags": [
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=556085",
+      "actionRequired": true
+    },
+    {
       "id": "559526",
       "title": "Azure Premium SSD v2 Disk が South India で一般提供開始",
-      "date": "2026-03-30",
+      "date": "2026-03-30T16:30:50.9886051Z",
       "category": "ga",
-      "summary": "Azure Premium SSD v2 が South India（可用性ゾーンのないリージョン）で利用可能になりました。Azure Premium SSD v2 ディスクは、Azure Virtual Machines 向けの次世代汎用ブロック ストレージ オプションであり、サブミリ秒のレイテンシーと IO 集中型ワークロードに対する優れたコスト パフォーマンスを低コストで提供します。Premium SSD v2 は、SQL Server、Oracle、MariaDB、SAP、Cassandra、MongoDB、ビッグ データ/分析、Virtual Machines やステートフル コンテナーでのゲームなど、幅広いエンタープライズ本番シナリオに対応しています。",
+      "summary": "Azure Premium SSD v2 が South India（可用性ゾーンのないリージョン）で利用可能になりました。Azure Premium SSD v2 ディスクは、Azure Virtual Machines 向けの次世代汎用ブロック ストレージ オプションであり、サブミリ秒のレイテンシーと IO 集中型ワークロードに対する優れたコスト パフォーマンスを低コストで提供します。SQL Server、Oracle、MariaDB、SAP、Cassandra、MongoDB、ビッグ データ/分析、ゲームなど、幅広いエンタープライズ本番シナリオに対応しています。",
       "products": [
         "Azure Disk Storage",
         "Virtual Machines"
