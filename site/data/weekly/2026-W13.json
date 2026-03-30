@@ -4,40 +4,21 @@
     "from": "2026-03-23",
     "to": "2026-03-29"
   },
-  "fetchedAt": "2026-03-30T10:26:07Z",
+  "fetchedAt": "2026-03-30T12:03:11Z",
   "count": 19,
   "stats": {
-    "ga": 10,
-    "preview": 9,
+    "ga": 11,
+    "preview": 8,
     "retirement": 0,
     "change": 0
   },
   "entries": [
     {
-      "id": "558879",
-      "title": "Azure SQL 2026年3月後半のアップデート",
-      "date": "2026-03-26",
-      "category": "ga",
-      "summary": "2026年3月後半、Azure SQL に以下のアップデートと機能強化が加わりました。プロジェクト XML を編集せずに SQL コード分析ルールと重大度設定を構成できるようになりました。MSSQL 拡張機能から Fabric ワークスペースやデータベースへ接続しながら新しいデータベースを作成できる Fabric 接続・プロビジョニングオプションが利用可能になりました。MSSQL 拡張機能の Data-tier Application を使用して .dacpac および .bacpac ファイルをインポート・エクスポートできるようになりました。",
-      "products": [
-        "Azure SQL Database"
-      ],
-      "productCategories": [
-        "Databases",
-        "Hybrid + multicloud"
-      ],
-      "tags": [
-        "Features"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=558879",
-      "actionRequired": false
-    },
-    {
       "id": "557862",
-      "title": "AKS の Blue-green エージェントプールアップグレード",
-      "date": "2026-03-25",
+      "title": "パブリックプレビュー: AKS のブルーグリーンエージェントプールアップグレード",
+      "date": "2026-03-25T20:00:39.2632249Z",
       "category": "preview",
-      "summary": "インプレースノードプールのアップグレードは、実行中の環境に変更を直接適用するためリスクが伴います。Blue-green エージェントプールアップグレードでは、新しい構成で並列ノードプールを作成し、ワークロードを移行する前に検証を行い、明確なロールバックパスを提供します。これによりアップグレードリスクが軽減され、サービスの継続性を維持できます。",
+      "summary": "ノードプールのインプレースアップグレードは、実行中の環境に直接変更を適用するためリスクが伴います。ブルーグリーンエージェントプールアップグレードでは、新しい構成の並列ノードプールを作成し、ワークロードを移行する前に検証でき、明確なロールバックパスを提供します。これによりアップグレードリスクが軽減され、より制御されたクラスターライフサイクル管理が実現します。",
       "products": [
         "Azure Kubernetes Service (AKS)"
       ],
@@ -52,182 +33,11 @@
       "actionRequired": false
     },
     {
-      "id": "558836",
-      "title": "プライベートエンドポイントを使用した Microsoft Fabric の Cosmos DB Mirroring",
-      "date": "2026-03-25",
-      "category": "ga",
-      "summary": "Azure Cosmos DB Mirroring in Microsoft Fabric のプライベートエンドポイントサポートが一般提供になりました。強化されたネットワークセキュリティポスチャを維持しながら、運用データに対して強力な分析を実行できます。仮想ネットワークリソースを構成することで、トラフィックが Azure のバックボーンネットワーク経由でルーティングされるようになります。",
-      "products": [
-        "Azure Cosmos DB"
-      ],
-      "productCategories": [
-        "Databases",
-        "Internet of Things"
-      ],
-      "tags": [
-        "Features"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=558836",
-      "actionRequired": false
-    },
-    {
-      "id": "558841",
-      "title": "Azure Database for MySQL の Fabric Mirroring 統合",
-      "date": "2026-03-25",
-      "category": "preview",
-      "summary": "Azure Database for MySQL フレキシブルサーバーの Fabric Mirroring 統合のパブリックプレビューが発表されました。ETL パイプラインの構築や維持なしに、MySQL の運用データをほぼリアルタイムで Microsoft Fabric にレプリケートできます。ミラーリングされたデータは OneLake に Delta 形式で格納されます。",
-      "products": [
-        "Azure Database for MySQL"
-      ],
-      "productCategories": [
-        "Databases"
-      ],
-      "tags": [
-        "Features"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=558841",
-      "actionRequired": false
-    },
-    {
-      "id": "558846",
-      "title": "オンラインマイグレーションが pgoutput プラグインを使用するように変更",
-      "date": "2026-03-25",
-      "category": "ga",
-      "summary": "オンライン（最小ダウンタイム）マイグレーションで pgoutput を活用できるようになり、信頼性とパフォーマンスが向上しました。PostgreSQL のネイティブ論理レプリケーションフレームワークに対応することで、最新の PostgreSQL 環境との互換性が向上し、レガシーへの依存度が低下します。",
-      "products": [
-        "Azure Database for PostgreSQL"
-      ],
-      "productCategories": [
-        "Databases",
-        "Hybrid + multicloud"
-      ],
-      "tags": [
-        "Features"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=558846",
-      "actionRequired": false
-    },
-    {
-      "id": "558851",
-      "title": "Azure Database for PostgreSQL への Google AlloyDB からの移行サポート",
-      "date": "2026-03-25",
-      "category": "ga",
-      "summary": "Google AlloyDB が Azure Database for PostgreSQL へのマイグレーションのソースとしてサポートされました。最小ダウンタイムで設計されたセキュアで信頼性の高いワークフローを使用して、Google AlloyDB から Azure に PostgreSQL 資産を移行・統合できます。",
-      "products": [
-        "Azure Database for PostgreSQL"
-      ],
-      "productCategories": [
-        "Databases",
-        "Hybrid + multicloud"
-      ],
-      "tags": [
-        "Features"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=558851",
-      "actionRequired": false
-    },
-    {
-      "id": "558865",
-      "title": "Azure Database for PostgreSQL への EDB ワークロードの移行サポート",
-      "date": "2026-03-25",
-      "category": "ga",
-      "summary": "EDB PostgreSQL が Azure Database for PostgreSQL へのマイグレーションのソースとしてサポートされました。最小ダウンタイムで設計されたセキュアで信頼性の高いワークフローを使用して、EDB Postgres Extended Server から Azure に PostgreSQL 資産を移行・統合できます。",
-      "products": [
-        "Azure Database for PostgreSQL"
-      ],
-      "productCategories": [
-        "Databases",
-        "Hybrid + multicloud"
-      ],
-      "tags": [
-        "Features"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=558865",
-      "actionRequired": false
-    },
-    {
-      "id": "558870",
-      "title": "Azure Database for PostgreSQL での pg_cron カスタムタイムゾーンサポート",
-      "date": "2026-03-25",
-      "category": "ga",
-      "summary": "Azure Database for PostgreSQL で cron.timezone サーバーパラメーターを変更できるようになりました。このパラメーターは、スケジュールされたジョブを評価する際に pg_cron が使用するタイムゾーンを制御します。cron.timezone を設定することで、UTC に依存せず希望のタイムゾーンに基づいてスケジュールされたジョブを実行できます。",
-      "products": [
-        "Azure Database for PostgreSQL"
-      ],
-      "productCategories": [
-        "Databases",
-        "Hybrid + multicloud"
-      ],
-      "tags": [
-        "Features"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=558870",
-      "actionRequired": false
-    },
-    {
-      "id": "558884",
-      "title": "Azure SQL Managed Instance の変更イベントストリーミング",
-      "date": "2026-03-25",
-      "category": "preview",
-      "summary": "Azure SQL Managed Instance から Azure Event Hubs へ、変更イベントストリーミング（CES）によって行レベルのデータ変更（挿入・更新・削除）をほぼリアルタイムでストリーミングできるようになりました。SQL はトランザクションのコミット時に変更をパブリッシュするため、ワークロードへの運用オーバーヘッドを最小限に抑えながらレイテンシを削減します。",
-      "products": [
-        "Azure SQL Database",
-        "Azure SQL Managed Instance"
-      ],
-      "productCategories": [
-        "Databases",
-        "Hybrid + multicloud"
-      ],
-      "tags": [
-        "Features"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=558884",
-      "actionRequired": false
-    },
-    {
-      "id": "557902",
-      "title": "AKS のコンテナネットワークメトリクスフィルタリング",
-      "date": "2026-03-24",
-      "category": "ga",
-      "summary": "ネットワークオブザーバビリティは大量のメトリクスを生成するため、運用上関連するデータに集中することが難しくなります。Azure Container Networking Services（ACNS）のコンテナネットワークメトリクスフィルタリングにより、オペレーターは収集するコンテナレベルのネットワークメトリクスを制御できます。",
-      "products": [
-        "Azure Kubernetes Service (AKS)"
-      ],
-      "productCategories": [
-        "Compute",
-        "Containers"
-      ],
-      "tags": [
-        "Features"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=557902",
-      "actionRequired": false
-    },
-    {
-      "id": "557887",
-      "title": "コンテナネットワーキングトラブルシューティング用 AI エージェント",
-      "date": "2026-03-24",
-      "category": "preview",
-      "summary": "Kubernetes のネットワーク問題のトラブルシューティングは、複数のツールに分散したログとメトリクスによって遅延し、インシデント中にエンジニアが手動でシグナルを関連付ける必要があります。コンテナネットワーキングエージェントは、自然言語による問題の説明を診断ステップに変換する軽量なウェブベースのインターフェースを提供します。",
-      "products": [
-        "Azure Kubernetes Service (AKS)"
-      ],
-      "productCategories": [
-        "Compute",
-        "Containers"
-      ],
-      "tags": [
-        "Features"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=557887",
-      "actionRequired": false
-    },
-    {
       "id": "557877",
-      "title": "Azure Kubernetes Fleet Manager のクロスクラスターネットワーキング",
-      "date": "2026-03-24",
+      "title": "パブリックプレビュー: Azure Kubernetes Fleet Manager のクロスクラスターネットワーキング",
+      "date": "2026-03-24T18:30:36.2493256Z",
       "category": "preview",
-      "summary": "複数の Kubernetes クラスター上でアプリケーションを実行する組織は、分散マイクロサービス環境の複雑さにより、パフォーマンス、グローバルサービスディスカバリー、オブザーバビリティに課題を抱えることがあります。Azure Kubernetes Fleet Manager にクロスクラスターネットワーキングが追加され、クラスター間でのサービス接続が提供されるようになりました。",
+      "summary": "複数の Kubernetes クラスター間でアプリケーションを実行する組織は、分散マイクロサービス環境の複雑さにより、パフォーマンス、グローバルサービス検出、可観測性の課題に直面することがよくあります。Azure Kubernetes Fleet Manager はクロスクラスターネットワーキングを提供し、マネージド Cilium クラスターメッシュによってマルチクラスターネットワーキングの構成と管理を簡素化します。これにより AKS クラスター間の統合接続が実現し、グローバルサービス検出と可観測性が向上します。",
       "products": [
         "Azure Kubernetes Fleet Manager",
         "Azure Kubernetes Service (AKS)"
@@ -244,10 +54,10 @@
     },
     {
       "id": "557882",
-      "title": "Azure Monitor での AKS マネージド GPU メトリクス",
-      "date": "2026-03-24",
+      "title": "パブリックプレビュー: Azure Monitor における AKS マネージド GPU メトリクス",
+      "date": "2026-03-24T18:30:36.2493256Z",
       "category": "preview",
-      "summary": "GPU を使用したワークロードを実行するチームは、Kubernetes メトリクスと合わせた GPU 使用率の統合的な可視化が不足していることが多いです。AKS マネージド GPU メトリクスは、NVIDIA GPU 対応ノードプールのパフォーマンスと使用率データを自動的にマネージド Prometheus および Grafana 環境に公開します。",
+      "summary": "GPU ベースのワークロードを実行するチームは、Kubernetes メトリクスと並んで GPU 使用率を統合的に可視化する手段が不足していることがよくあります。AKS マネージド GPU メトリクスは、NVIDIA GPU 対応ノードプールのパフォーマンスと使用率データを自動的にマネージド Prometheus および Grafana 環境に公開します。これにより、手動でのエクスポーターセットアップなしに GPU テレメトリをクラスターメトリクスと同じ可観測性スタックで管理できます。",
       "products": [
         "Azure Kubernetes Service (AKS)"
       ],
@@ -262,11 +72,30 @@
       "actionRequired": false
     },
     {
+      "id": "557887",
+      "title": "パブリックプレビュー: コンテナーネットワークのトラブルシューティング向け AI エージェント",
+      "date": "2026-03-24T21:45:26.0157634Z",
+      "category": "preview",
+      "summary": "Kubernetes ネットワークの問題のトラブルシューティングは、複数のツールにわたってログやメトリクスが分散しているため、インシデント発生時にエンジニアが手動でシグナルを関連付ける必要があり、時間がかかります。コンテナーネットワーキングエージェントは、自然言語による問題の説明をライブクラスターテレメトリを使用した読み取り専用の診断に変換し、構造化された修正ガイドを提供する軽量な Web ベースインターフェイスです。",
+      "products": [
+        "Azure Kubernetes Service (AKS)"
+      ],
+      "productCategories": [
+        "Compute",
+        "Containers"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=557887",
+      "actionRequired": false
+    },
+    {
       "id": "557892",
-      "title": "AKS のコンテナネットワークログ",
-      "date": "2026-03-24",
+      "title": "一般提供: AKS のコンテナーネットワークログ",
+      "date": "2026-03-24T18:15:48.9582197Z",
       "category": "ga",
-      "summary": "Kubernetes 環境でのネットワーク問題の診断は、トラフィックフローの可視性が低く、障害に関するコンテキストが不足しているため困難です。Azure Kubernetes Service（AKS）のコンテナネットワークログが一般提供になり、ネットワークフローの豊富なコンテキスト情報を提供します。",
+      "summary": "Kubernetes 環境でのネットワークの問題は、トラフィックフローの可視性が限られているため診断が困難です。AKS のコンテナーネットワークログ（一般提供）は、IP、ポート、名前空間、Pod とサービス名、フロー方向、L3/L4 および HTTP、gRPC、Kafka などの Layer 7 プロトコルにわたるポリシー評決などの詳細なフローメタデータを取得することで、ネットワークフローへのコンテキスト豊富な可視性を提供します。",
       "products": [
         "Azure Kubernetes Service (AKS)"
       ],
@@ -281,11 +110,30 @@
       "actionRequired": false
     },
     {
-      "id": "557912",
-      "title": "Azure Container Storage v2.1.0 - Elastic SAN 統合とオンデマンドインストール",
-      "date": "2026-03-24",
+      "id": "557902",
+      "title": "一般提供: AKS のコンテナーネットワークメトリクスフィルタリング",
+      "date": "2026-03-24T23:00:18.1861028Z",
       "category": "ga",
-      "summary": "コンテナ化されたワークロードは、多数の個別ディスクを管理せずに高く一貫したストレージパフォーマンスを必要とすることが多いです。Azure Container Storage と Elastic SAN の統合により、Kubernetes クラスターは共有された容量とパフォーマンスのプールからストレージを使用できます。これにより個別ディスクの管理が簡素化されます。",
+      "summary": "ネットワーク可観測性は大量のメトリクスを生成する可能性があり、チームが運用上関連するデータに集中することが難しくなります。Azure Container Networking Services (ACNS) のコンテナーネットワークメトリクスフィルタリングにより、オペレーターは Kubernetes カスタムリソースを使用して収集するコンテナーレベルのネットワークメトリクスを動的に制御できます。これにより監視ノイズの削減、データ量の管理、ダッシュボードの実用的なシグナルへの集中が実現します。",
+      "products": [
+        "Azure Kubernetes Service (AKS)"
+      ],
+      "productCategories": [
+        "Compute",
+        "Containers"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=557902",
+      "actionRequired": false
+    },
+    {
+      "id": "557912",
+      "title": "一般提供: Azure Container Storage v2.1.0 - Elastic SAN 統合とオンデマンドインストール",
+      "date": "2026-03-24T18:15:48.9582197Z",
+      "category": "ga",
+      "summary": "コンテナー化されたワークロードは、多数の個別ディスクを管理することなく、より高く一定したストレージパフォーマンスを必要とすることが多くあります。Azure Container Storage と Elastic SAN の統合により、Kubernetes クラスターは共有の容量とパフォーマンスプールからストレージを使用できます。これによりプロビジョニングが簡素化され、使用率が改善され、一元管理されたストレージモデルで可変のストレージ要求に対応できます。",
       "products": [
         "Azure Container Storage",
         "Azure Kubernetes Service (AKS)"
@@ -302,10 +150,10 @@
     },
     {
       "id": "557922",
-      "title": "Microsoft Azure Kubernetes Application Network",
-      "date": "2026-03-24",
+      "title": "パブリックプレビュー: Microsoft Azure Kubernetes Application Network",
+      "date": "2026-03-24T17:30:29.8186836Z",
       "category": "preview",
-      "summary": "Kubernetes 環境が複数のリージョンやクラスターにわたってスケールするにつれ、IP ベースのネットワーキングは管理が困難になり、アプリケーションレベルの可視性とセキュリティコントロールが制限されます。Azure Kubernetes Application Network は、相互 TLS（mTLS）などを含む Kubernetes トラフィックにアプリケーション層の抽象化を導入します。",
+      "summary": "Kubernetes 環境がリージョンやクラスターをまたいでスケールすると、IP ベースのネットワーキングは管理が困難になり、アプリケーションレベルの可視性とセキュリティ制御が限られます。Azure Kubernetes Application Network は、Pod 間通信のための相互 TLS、アプリケーション対応の認可ポリシー、イングレスおよびクラスター内通信の詳細なトラフィックテレメトリなど、Kubernetes トラフィックへのアプリケーション層の抽象化を導入します。",
       "products": [
         "Azure Kubernetes Service (AKS)"
       ],
@@ -321,10 +169,10 @@
     },
     {
       "id": "557927",
-      "title": "AKS でのメッシュレス Istio を使用したアプリケーションルーティング",
-      "date": "2026-03-24",
+      "title": "パブリックプレビュー: AKS でのメッシュレス Istio によるアプリケーションルーティング",
+      "date": "2026-03-24T17:30:29.8186836Z",
       "category": "preview",
-      "summary": "ingress-nginx の廃止に伴い、Kubernetes オペレーターはフルサービスメッシュの複雑さを避けながら、サポートされた標準準拠のイングレス移行パスを必要としています。メッシュレス Istio を使用したアプリケーションルーティングにより、完全なサービスメッシュなしで Kubernetes Gateway API をイングレス管理に採用できます。",
+      "summary": "ingress-nginx の廃止に伴い、Kubernetes オペレーターはフルサービスメッシュの複雑さなしにイングレスのサポートされた標準準拠の移行パスが必要です。メッシュレス Istio を使用したアプリケーションルーティングにより、サイドカーベースのアーキテクチャを避けながら、イングレス管理のための Kubernetes Gateway API を採用できます。Microsoft は既存の ingress-nginx ベースのアプリケーションルーティングのサポートを延長し、オープンソースの ingress2gateway プロジェクトに貢献しています。",
       "products": [
         "Azure Kubernetes Service (AKS)"
       ],
@@ -340,10 +188,10 @@
     },
     {
       "id": "558825",
-      "title": "Azure Arc 対応 Kubernetes の Azure Monitor Prometheus コミュニティ推奨アラート",
-      "date": "2026-03-24",
+      "title": "一般提供: Azure Arc 対応 Kubernetes 向け Azure Monitor Prometheus コミュニティ推奨アラート",
+      "date": "2026-03-24T17:30:29.8186836Z",
       "category": "ga",
-      "summary": "Azure Monitor で Azure Arc 対応 Kubernetes クラスター向けの Prometheus 推奨アラートをワンクリックで有効化できるようになりました。Prometheus コミュニティルールを基にしたこれらのアラートは、クラスター、ノード、ポッドレベルにわたって包括的なカバレッジを提供します。",
+      "summary": "Azure Monitor では、Azure Arc 対応 Kubernetes クラスターに対して Azure ポータルで直接 Prometheus 推奨アラートのワンクリック有効化をサポートしました。これらのアラートは強化された Prometheus コミュニティルールに基づいており、クラスター、ノード、Pod レベルにわたる包括的なカバレッジを提供します。以前は手動でのテンプレートダウンロードと CLI デプロイが必要でしたが、不要になりました。",
       "products": [
         "Azure Monitor"
       ],
@@ -358,11 +206,163 @@
       "actionRequired": false
     },
     {
-      "id": "559273",
-      "title": "OpenTelemetry Collector を使用した Azure Monitor への OTLP データの取り込み",
-      "date": "2026-03-24",
+      "id": "558836",
+      "title": "一般提供: Microsoft Fabric でのプライベートエンドポイントを使用した Cosmos DB ミラーリング",
+      "date": "2026-03-25T20:00:39.2632249Z",
+      "category": "ga",
+      "summary": "Microsoft Fabric における Azure Cosmos DB ミラーリングのプライベートエンドポイントサポートが一般提供になりました。ネットワークセキュリティ体制を維持しながら運用データに対する強力な分析を実現できます。仮想ネットワーク制限の構成、プライベートエンドポイントのセットアップにより、データが Fabric ワークスペースにレプリケートされる際にプライベートネットワーク境界内で保護されます。",
+      "products": [
+        "Azure Cosmos DB"
+      ],
+      "productCategories": [
+        "Databases",
+        "Internet of Things"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558836",
+      "actionRequired": false
+    },
+    {
+      "id": "558841",
+      "title": "パブリックプレビュー: Azure Database for MySQL 向け Fabric ミラーリング統合",
+      "date": "2026-03-25T17:45:33.5422578Z",
       "category": "preview",
-      "summary": "Azure Monitor が OpenTelemetry Protocol（OTLP）シグナルのネイティブ取り込みをサポートするようになり、OpenTelemetry でインストルメントされたアプリケーションやプラットフォームから Azure Monitor に直接テレメトリデータを送信できます。OpenTelemetry Collector を設定して Azure Monitor クラウドに直接データを送信できます。",
+      "summary": "Azure Database for MySQL – フレキシブルサーバー向けの Fabric ミラーリング統合のパブリックプレビューが開始されました。ETL パイプラインを構築または保守することなく、MySQL の運用データをほぼリアルタイムで Microsoft Fabric にレプリケートできます。ミラーリングされたデータは Delta Parquet 形式で OneLake に保存され、Fabric の各エクスペリエンスで即座に分析に利用できます。",
+      "products": [
+        "Azure Database for MySQL"
+      ],
+      "productCategories": [
+        "Databases"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558841",
+      "actionRequired": false
+    },
+    {
+      "id": "558846",
+      "title": "一般提供: オンラインマイグレーションでの pgoutput プラグイン使用",
+      "date": "2026-03-25T17:30:45.7754801Z",
+      "category": "ga",
+      "summary": "pgoutput を使用したオンライン（最小ダウンタイム）マイグレーションで、信頼性とパフォーマンスが向上しました。PostgreSQL のネイティブ論理レプリケーションフレームワークに合わせることで、最新の PostgreSQL デプロイとのエコシステム互換性が向上し、レガシーデコードメカニズムへの依存が減少します。これにより PostgreSQL バージョンの進化に合わせた継続的な整合性が確保されます。",
+      "products": [
+        "Azure Database for PostgreSQL"
+      ],
+      "productCategories": [
+        "Databases",
+        "Hybrid + multicloud"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558846",
+      "actionRequired": false
+    },
+    {
+      "id": "558851",
+      "title": "一般提供: PostgreSQL 移行サービスが Google AlloyDB から Azure Database for PostgreSQL への移行をサポート",
+      "date": "2026-03-25T17:30:45.7754801Z",
+      "category": "ga",
+      "summary": "Google AlloyDB が Azure Database for PostgreSQL への移行ソースとしてサポートされるようになりました。最小ダウンタイムを実現する安全で信頼性の高いワークフローを使用して、Google AlloyDB から Azure に PostgreSQL のデータを移行および統合できます。エンドツーエンドでネイティブ PostgreSQL の互換性を維持しながら移行できます。",
+      "products": [
+        "Azure Database for PostgreSQL"
+      ],
+      "productCategories": [
+        "Databases",
+        "Hybrid + multicloud"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558851",
+      "actionRequired": false
+    },
+    {
+      "id": "558865",
+      "title": "一般提供: PostgreSQL 移行サービスが EDB ワークロードから Azure Database for PostgreSQL への移行をサポート",
+      "date": "2026-03-25T17:30:45.7754801Z",
+      "category": "ga",
+      "summary": "EDB PostgreSQL が Azure Database for PostgreSQL への移行ソースとしてサポートされるようになりました。最小ダウンタイムを実現する安全で信頼性の高いワークフローを使用して、EDB Postgres Extended Server から Azure に PostgreSQL のデータを移行および統合できます。エンドツーエンドでネイティブ PostgreSQL の互換性を維持しながら移行できます。",
+      "products": [
+        "Azure Database for PostgreSQL"
+      ],
+      "productCategories": [
+        "Databases",
+        "Hybrid + multicloud"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558865",
+      "actionRequired": false
+    },
+    {
+      "id": "558870",
+      "title": "一般提供: Azure Database for PostgreSQL での cron.timezone による pg_cron カスタムタイムゾーンサポート",
+      "date": "2026-03-25T17:30:45.7754801Z",
+      "category": "ga",
+      "summary": "Azure Database for PostgreSQL で cron.timezone サーバーパラメーターを変更できるようになりました。このパラメーターはスケジュールされたジョブを評価する際に pg_cron が使用するタイムゾーンを制御します。cron.timezone を設定することで、サーバーのデフォルト設定に依存するのではなく、希望するタイムゾーンに従ってスケジュールされたジョブが実行されます。地域のビジネス時間に合わせたジョブ実行に特に有効です。",
+      "products": [
+        "Azure Database for PostgreSQL"
+      ],
+      "productCategories": [
+        "Databases",
+        "Hybrid + multicloud"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558870",
+      "actionRequired": false
+    },
+    {
+      "id": "558879",
+      "title": "一般提供: 2026年3月下旬の Azure SQL アップデート",
+      "date": "2026-03-26T16:00:10.8422337Z",
+      "category": "ga",
+      "summary": "2026年3月下旬、Azure SQL に以下のアップデートと機能強化が行われました。プロジェクト XML を編集せずに組み込みの SQL コード分析ルールと重大度設定を構成できます。MSSQL 拡張機能から Fabric ワークスペースとデータベースに接続しながら新しいデータベースを作成する Fabric 接続およびプロビジョニングオプションが利用可能です。MSSQL 拡張機能でデータ層アプリケーションを使用して .dacpac ファイルのインポートとエクスポートが可能になりました。",
+      "products": [
+        "Azure SQL Database"
+      ],
+      "productCategories": [
+        "Databases",
+        "Hybrid + multicloud"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558879",
+      "actionRequired": false
+    },
+    {
+      "id": "558884",
+      "title": "パブリックプレビュー: Azure SQL Managed Instance の変更イベントストリーミング",
+      "date": "2026-03-25T17:30:45.7754801Z",
+      "category": "ga",
+      "summary": "Azure SQL Managed Instance から Azure Event Hubs へ、ほぼリアルタイムで行レベルのデータ変更（挿入、更新、削除）をストリーミングできるようになりました（変更イベントストリーミング: CES）。SQL はトランザクションのコミット時に変更を発行するため、ワークロードへの運用オーバーヘッドを最小限に抑えながらレイテンシを低減します。CES は変更データキャプチャ、変更追跡、カスタムポーリング、外部コネクタの必要性をなくすことでリアルタイム統合を簡素化します。",
+      "products": [
+        "Azure SQL Database",
+        "Azure SQL Managed Instance"
+      ],
+      "productCategories": [
+        "Databases",
+        "Hybrid + multicloud"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=558884",
+      "actionRequired": false
+    },
+    {
+      "id": "559273",
+      "title": "パブリックプレビュー: OpenTelemetry Collector を使用した Azure Monitor への OTLP データ取り込み",
+      "date": "2026-03-24T17:15:45.4044114Z",
+      "category": "preview",
+      "summary": "Azure Monitor は OpenTelemetry Protocol (OTLP) シグナルのネイティブ取り込みをサポートするようになりました。OpenTelemetry でインストルメント化されたアプリケーションとプラットフォームから Azure Monitor にテレメトリデータを直接送信できます。OpenTelemetry Collector を設定して Azure Monitor クラウド取り込みエンドポイントに直接データを送信し、Microsoft Entra を使用した認証で OTLP メトリクス、ログ、トレースを取り込むことができます。",
       "products": [
         "Azure Monitor"
       ],
