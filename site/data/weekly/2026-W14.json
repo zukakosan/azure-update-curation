@@ -4,13 +4,35 @@
     "from": "2026-03-30",
     "to": "2026-04-05"
   },
-  "fetchedAt": "2026-03-30T15:15:59Z",
-  "count": 0,
+  "fetchedAt": "2026-03-30T17:07:16Z",
+  "count": 1,
   "stats": {
-    "ga": 0,
+    "ga": 1,
     "preview": 0,
     "retirement": 0,
     "change": 0
   },
-  "entries": []
+  "entries": [
+    {
+      "id": "559526",
+      "title": "Azure Premium SSD v2 Disk が South India で一般提供開始",
+      "date": "2026-03-30",
+      "category": "ga",
+      "summary": "Azure Premium SSD v2 が South India（可用性ゾーンのないリージョン）で利用可能になりました。Azure Premium SSD v2 ディスクは、Azure Virtual Machines 向けの次世代汎用ブロック ストレージ オプションであり、サブミリ秒のレイテンシーと IO 集中型ワークロードに対する優れたコスト パフォーマンスを低コストで提供します。Premium SSD v2 は、SQL Server、Oracle、MariaDB、SAP、Cassandra、MongoDB、ビッグ データ/分析、Virtual Machines やステートフル コンテナーでのゲームなど、幅広いエンタープライズ本番シナリオに対応しています。",
+      "products": [
+        "Azure Disk Storage",
+        "Virtual Machines"
+      ],
+      "productCategories": [
+        "Storage",
+        "Compute"
+      ],
+      "tags": [
+        "Features",
+        "Services"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=559526",
+      "actionRequired": false
+    }
+  ]
 }
