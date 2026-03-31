@@ -1,0 +1,44 @@
+{
+  "week": "2026-W14",
+  "period": {
+    "from": "2026-03-30",
+    "to": "2026-04-05"
+  },
+  "fetchedAt": "2026-03-30T23:56:02Z",
+  "count": 2,
+  "stats": {
+    "ai": 0,
+    "devops": 0,
+    "security": 0,
+    "network": 0,
+    "database": 1,
+    "container": 0,
+    "serverless": 0,
+    "storage": 0,
+    "other": 1
+  },
+  "entries": [
+    {
+      "id": "blazor-download-file",
+      "title": "Blazor で JavaScript 相互運用を使ってファイルをダウンロードする",
+      "date": "2026-03-30T13:44:10Z",
+      "category": "other",
+      "summary": "はじめに\nBlazor アプリでファイルをダウンロードさせたいケースがあります。ブラウザでファイルをダウンロードさせるには JavaScript の力を借りる必要がありますが、Blazor には JavaScript 相互運用 (JS interop) 機能があるので、これを使って実現できます。\nこの記事では、MS Learn の公式ドキュメントで紹介されている推奨パターンを使ってファイルのダウンロードを実装する方法を紹介します。",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/blazor-download-file",
+      "source": "zenn",
+      "author": "Kazuki Ota"
+    },
+    {
+      "id": "310b47ab3858b2",
+      "title": "セカンダリ レプリカの永続統計",
+      "date": "2026-03-30T02:19:02Z",
+      "category": "database",
+      "summary": "超小ネタですが、わざわざ検証したのでメモ代わりに共有します。\n\nSQL Server 2025 から、「読み取り可能なセカンダリ レプリカの永続統計」という機能が使用可能です。\nこのドキュメントを読むと冒頭で、「インフラストラクチャにクエリ ストアを使用」とか、「既定で オン になっています」とか、クエリ ストアが有効な場合に動作するかのように書かれています。",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/310b47ab3858b2",
+      "source": "zenn",
+      "author": "takashi honma"
+    }
+  ]
+}
