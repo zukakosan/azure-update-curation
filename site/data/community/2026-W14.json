@@ -4,10 +4,10 @@
     "from": "2026-03-30",
     "to": "2026-04-05"
   },
-  "fetchedAt": "2026-03-31T17:32:18.805165+00:00",
+  "fetchedAt": "2026-03-31T19:34:06.042423+00:00",
   "count": 4,
   "stats": {
-    "ai": 1,
+    "ai": 2,
     "devops": 0,
     "security": 0,
     "network": 0,
@@ -15,15 +15,15 @@
     "container": 0,
     "serverless": 0,
     "storage": 0,
-    "other": 3
+    "other": 2
   },
   "entries": [
     {
       "id": "63b7d94382877f1e714b",
       "title": "Microsoft Agent FrameworkでサポートされたAgent Skillsを解説",
       "date": "2026-03-31T11:25:00+09:00",
-      "category": "other",
-      "summary": "本記事では、Microsoft Agent Framework（以降、Agent Framework）が採用する Agent Skills の仕組みに焦点を当てます。Agent Skills のオープン仕様の概要から、Agent Framework（Python）での具体的な実装方法まで解説します。 Skills は現在、AI コーディングアシスタントで広く普及していますが、Agent Framework を利用することで、同様のスキル機能を自社の LLM アプリケーションにも容易に組み込むことができます。 なお、2026年3月時点で Agent Framework はプレビュー段階（Pyth",
+      "category": "ai",
+      "summary": "本記事では、Microsoft Agent Framework（以降、Agent Framework）が採用する **Agent Skills** の仕組みに焦点を当てます。Agent Skills のオープン仕様の概要から、Agent Framework（Python）での具体的な実装方法まで解説します。 Skills は現在、AI コーディングアシスタントで広く普及していますが、Agent Framework を利用することで、**同様のスキル機能を自社の LLM アプリケーションにも容易に組み込むことができます**。 なお、2026年3月時点で Agent Framework はプレビュ",
       "tags": [
         "Microsoft",
         "Azure",
