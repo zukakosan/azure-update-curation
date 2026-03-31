@@ -209,11 +209,11 @@
   // --- Helpers ---
   function currentISOWeek() {
     const now = new Date();
-    const thu = new Date(now);
-    thu.setDate(thu.getDate() - ((thu.getDay() + 6) % 7) + 3);
-    const jan4 = new Date(thu.getFullYear(), 0, 4);
-    const weekNum = Math.ceil(((thu - jan4) / 86400000 + jan4.getDay() + 1) / 7);
-    return `${thu.getFullYear()}-W${String(weekNum).padStart(2, "0")}`;
+    const d = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
+    d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
+    const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+    const weekNum = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+    return `${d.getUTCFullYear()}-W${String(weekNum).padStart(2, "0")}`;
   }
 
   function truncate(str, len) {
