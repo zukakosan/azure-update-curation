@@ -73,6 +73,7 @@ main{
   background:var(--surface);
   color:var(--text);
   font-size:.9rem;
+  cursor:pointer;
 }
 .period-label{
   font-size:.85rem;

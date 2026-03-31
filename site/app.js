@@ -35,8 +35,8 @@
   let currentTab = "official";
 
   // --- Init ---
-  function init() {
-    weekPicker.value = currentISOWeek();
+  async function init() {
+    await populateWeekPicker();
     weekPicker.addEventListener("change", () => loadCurrentTab());
 
     // Tab switching
@@ -214,6 +214,39 @@
     const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
     const weekNum = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
     return `${d.getUTCFullYear()}-W${String(weekNum).padStart(2, "0")}`;
+  }
+
+  function isoWeekToMonday(weekStr) {
+    const [y, w] = weekStr.split("-W").map(Number);
+    const jan4 = new Date(Date.UTC(y, 0, 4));
+    const mon = new Date(jan4);
+    mon.setUTCDate(jan4.getUTCDate() - ((jan4.getUTCDay() + 6) % 7) + (w - 1) * 7);
+    return mon;
+  }
+
+  function weekLabel(weekStr) {
+    const mon = isoWeekToMonday(weekStr);
+    const sun = new Date(mon);
+    sun.setUTCDate(sun.getUTCDate() + 6);
+    const fmt = d => `${d.getUTCMonth()+1}/${d.getUTCDate()}`;
+    return `${weekStr}（${fmt(mon)}〜${fmt(sun)}）`;
+  }
+
+  async function populateWeekPicker() {
+    const current = currentISOWeek();
+    // Generate a range of weeks around the current week
+    const weeks = [];
+    const [cy, cw] = current.split("-W").map(Number);
+    for (let offset = -12; offset <= 4; offset++) {
+      let y = cy, w = cw + offset;
+      while (w < 1) { y--; w += 52; }
+      while (w > 52) { y++; w -= 52; }
+      weeks.push(`${y}-W${String(w).padStart(2, "0")}`);
+    }
+    weekPicker.innerHTML = weeks.map(w =>
+      `<option value="${w}"${w === current ? " selected" : ""}>${weekLabel(w)}</option>`
+    ).join("");
+    weekPicker.value = current;
   }
 
   function truncate(str, len) {
