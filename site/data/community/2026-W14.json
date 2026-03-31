@@ -4,57 +4,25 @@
     "from": "2026-03-30",
     "to": "2026-04-05"
   },
-  "fetchedAt": "2026-03-31T15:42:44Z",
+  "fetchedAt": "2026-03-31T17:32:18.805165+00:00",
   "count": 4,
   "stats": {
-    "ai": 2,
+    "ai": 1,
     "devops": 0,
     "security": 0,
     "network": 0,
-    "database": 1,
+    "database": 0,
     "container": 0,
     "serverless": 0,
     "storage": 0,
-    "other": 1
+    "other": 3
   },
   "entries": [
-    {
-      "id": "ms-extensions-ai-skills",
-      "title": "Microsoft.Extensions.AIでもSkillsを使いたい",
-      "date": "2026-03-31T00:03:00Z",
-      "summary": "最近、AIエージェントに「スキル」という形でドメイン知識を渡すエコシステムが急速に広がっています。Agent Skills はAnthropicが主導して発表したオープンスタンダードで、エージェントが必要に応じて手続き的な知識やチーム固有のコンテキストをオンデマンドでロードできる仕組みを定義しています。すでに Claude、Codex、GitHub Copilot をはじめとする多くのエージェント製品が対応済みで、スキルを一度書けば複数のエージェントで使い回せる世界が現実になりつつあります。 .NETの世界でも、2026年3月2日にMicrosoft Agent FrameworkがSk...",
-      "tags": [],
-      "url": "https://zenn.dev/microsoft/articles/ms-extensions-ai-skills",
-      "source": "zenn",
-      "author": "Junpei Tsuchida（07JP27）",
-      "category": "ai"
-    },
-    {
-      "id": "blazor-download-file",
-      "title": "Blazor で JavaScript 相互運用を使ってファイルをダウンロードする",
-      "date": "2026-03-30T13:44:10Z",
-      "summary": "はじめに Blazor アプリでファイルをダウンロードさせたいケースがあります。ブラウザでファイルをダウンロードさせるには JavaScript の力を借りる必要がありますが、Blazor には JavaScript 相互運用 (JS interop) 機能があるので、これを使って実現できます。 この記事では、MS Learn の公式ドキュメントで紹介されている推奨パターンを使ってファイルのダウンロードを実装する方法を紹介します。 URL からファイルをダウンロードする Blob の URL など、ダウンロード対象のファイルの URL が分かっている場合のパターンです。公式ドキュ...",
-      "tags": [],
-      "url": "https://zenn.dev/microsoft/articles/blazor-download-file",
-      "source": "zenn",
-      "author": "Kazuki Ota",
-      "category": "other"
-    },
-    {
-      "id": "310b47ab3858b2",
-      "title": "セカンダリ レプリカの永続統計",
-      "date": "2026-03-30T02:19:02Z",
-      "summary": "超小ネタですが、わざわざ検証したのでメモ代わりに共有します。 セカンダリ レプリカの永続統計 SQL Server 2025 から、「読み取り可能なセカンダリ レプリカの永続統計」という機能が使用可能です。 このドキュメントを読むと冒頭で、「インフラストラクチャにクエリ ストアを使用」とか、「既定で オン になっています」とか、クエリ ストアが有効な場合に動作するかのように書かれています。 統計永続化メカニズムでは、読み取り可能なセカンダリ レプリカ インフラストラクチャにクエリ ストアを使用します。 読み取り可能なセカンダリ レプリカのクエリ ストア は、SQL Server 2...",
-      "tags": [],
-      "url": "https://zenn.dev/microsoft/articles/310b47ab3858b2",
-      "source": "zenn",
-      "author": "takashi honma",
-      "category": "database"
-    },
     {
       "id": "63b7d94382877f1e714b",
       "title": "Microsoft Agent FrameworkでサポートされたAgent Skillsを解説",
       "date": "2026-03-31T11:25:00+09:00",
+      "category": "other",
       "summary": "本記事では、Microsoft Agent Framework（以降、Agent Framework）が採用する Agent Skills の仕組みに焦点を当てます。Agent Skills のオープン仕様の概要から、Agent Framework（Python）での具体的な実装方法まで解説します。 Skills は現在、AI コーディングアシスタントで広く普及していますが、Agent Framework を利用することで、同様のスキル機能を自社の LLM アプリケーションにも容易に組み込むことができます。 なお、2026年3月時点で Agent Framework はプレビュー段階（Pyth",
       "tags": [
         "Microsoft",
@@ -64,8 +32,40 @@
       ],
       "url": "https://qiita.com/matayuuu/items/63b7d94382877f1e714b",
       "source": "qiita",
-      "author": "matayuuu",
-      "category": "ai"
+      "author": "matayuuu"
+    },
+    {
+      "id": "ms-extensions-ai-skills",
+      "title": "Microsoft.Extensions.AIでもSkillsを使いたい",
+      "date": "2026-03-31T00:03:00+00:00",
+      "category": "ai",
+      "summary": "最近、AIエージェントに「スキル」という形でドメイン知識を渡すエコシステムが急速に広がっています。Agent Skills はAnthropicが主導して発表したオープンスタンダードで、エージェントが必要に応じて手続き的な知識やチーム固有のコンテキストをオンデマンドでロードできる仕組みを定義しています。すでに Claude、Codex、GitHub Copilot をはじめとする多くのエージェント製品が対応済みで、スキルを一度書けば複数のエージェントで使い回せる世界が現実になりつつあります。 .NETの世界でも、2026年3月2日にMicrosoft Agent FrameworkがSk...",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/ms-extensions-ai-skills",
+      "source": "zenn",
+      "author": "Junpei Tsuchida（07JP27）"
+    },
+    {
+      "id": "blazor-download-file",
+      "title": "Blazor で JavaScript 相互運用を使ってファイルをダウンロードする",
+      "date": "2026-03-30T13:44:10+00:00",
+      "category": "other",
+      "summary": "はじめに Blazor アプリでファイルをダウンロードさせたいケースがあります。ブラウザでファイルをダウンロードさせるには JavaScript の力を借りる必要がありますが、Blazor には JavaScript 相互運用 (JS interop) 機能があるので、これを使って実現できます。 この記事では、MS Learn の公式ドキュメントで紹介されている推奨パターンを使ってファイルのダウンロードを実装する方法を紹介します。 URL からファイルをダウンロードする Blob の URL など、ダウンロード対象のファイルの URL が分かっている場合のパターンです。公式ドキュ...",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/blazor-download-file",
+      "source": "zenn",
+      "author": "Kazuki Ota"
+    },
+    {
+      "id": "310b47ab3858b2",
+      "title": "セカンダリ レプリカの永続統計",
+      "date": "2026-03-30T02:19:02+00:00",
+      "category": "other",
+      "summary": "超小ネタですが、わざわざ検証したのでメモ代わりに共有します。 セカンダリ レプリカの永続統計 SQL Server 2025 から、「読み取り可能なセカンダリ レプリカの永続統計」という機能が使用可能です。 このドキュメントを読むと冒頭で、「インフラストラクチャにクエリ ストアを使用」とか、「既定で オン になっています」とか、クエリ ストアが有効な場合に動作するかのように書かれています。 統計永続化メカニズムでは、読み取り可能なセカンダリ レプリカ インフラストラクチャにクエリ ストアを使用します。 読み取り可能なセカンダリ レプリカのクエリ ストア は、SQL Server 2...",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/310b47ab3858b2",
+      "source": "zenn",
+      "author": "takashi honma"
     }
   ]
 }
