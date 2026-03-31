@@ -4,7 +4,7 @@
     "from": "2026-03-30",
     "to": "2026-04-05"
   },
-  "fetchedAt": "2026-03-31T21:49:59Z",
+  "fetchedAt": "2026-03-31T22:45:54Z",
   "count": 13,
   "stats": {
     "ga": 7,
@@ -18,7 +18,7 @@
       "title": "一般提供開始: Azure Event Grid がよりスマートで安全なイベント駆動アーキテクチャのための新機能を提供",
       "date": "2026-03-31T17:30:08.6418325Z",
       "category": "ga",
-      "summary": "Azure Event Grid では、大規模な分散システムの管理を改善し、相互運用性と制御性を向上させるためのさまざまな新機能が提供されるようになりました。一般提供済み機能として、MQTT メッセージ順序付け（クライアントセッション内でのメッセージの順序通りの配信を保証し、シーケンスの整合性が必要なワークフローに不可欠）、MQTT 接続レート制限（クライアントあたり1秒に1回の接続試行を制限し、システムの安定性を向上）、MQTT トピック スペースが含まれます。",
+      "summary": "Azure Event Grid は、大規模な分散システムの管理を改善し、相互運用性と制御を強化するための新機能を多数提供します。一般提供開始の機能: MQTT メッセージ順序付け（クライアントセッション内の順序通りのメッセージ配信を保証）、MQTT 接続レート制限（システムの安定性を向上させるためクライアントあたり毎秒 1 回の接続試行を制限）、MQTT トピックセグメント拡張（最大 15 のトピックセグメントをサポート）。",
       "products": [
         "Event Grid"
       ],
@@ -35,10 +35,10 @@
     },
     {
       "id": "550519",
-      "title": "廃止予定: Azure Monitor マネージドサービス (Prometheus) の remote-write 用サイドカーの非推奨化",
+      "title": "廃止予定: Azure Monitor マネージドサービス (Prometheus) の remote-write 用サイドカーが非推奨に",
       "date": "2026-03-30T21:30:50.0933440Z",
       "category": "retirement",
-      "summary": "2027年3月31日に、Azure Monitor は Azure Monitor Workspace への Prometheus メトリクスの remote-write 用サイドカーを非推奨にします。これは、信頼性を向上させ複雑さを軽減する継続的な取り組みの一環です。セルフホスト型 Prometheus または Prometheus Operator を Azure Monitor Workspace に直接 remote-write するように設定することを推奨します。Prometheus remote-write 設定ではすべての認証方法がサポートされており、ダイレクト remote-write は完全に機能します。",
+      "summary": "2027年3月31日より、Azure Monitor は Prometheus メトリクスを Azure Monitor Workspace に remote-write するためのサイドカーを非推奨とします。これは信頼性の向上と複雑性の軽減に向けた継続的な取り組みの一環です。セルフホスト型 Prometheus または Prometheus Operator を Azure Monitor Workspace への direct remote-write に移行することを推奨します。すべての認証方式がサポートされており、direct remote-write は Prometheus Operator と完全に互換性があります。",
       "products": [
         "Azure Kubernetes Service (AKS)",
         "Azure Monitor"
@@ -60,7 +60,7 @@
       "title": "廃止予定: Azure Cosmos DB for PostgreSQL が 2029年3月31日に廃止されます",
       "date": "2026-03-30T17:45:08.2587317Z",
       "category": "retirement",
-      "summary": "2029年3月31日に、Azure Cosmos DB for PostgreSQL が廃止されるため、その日までに Azure Database for PostgreSQL Elastic Cluster に移行する必要があります。Azure Database for PostgreSQL Elastic Cluster は、Citus 拡張機能上に構築された完全な機能パリティを持つ同等の分散 PostgreSQL 機能を提供します。より単純で透明な価格モデル、広範なコンピューティングの選択肢、新しい PostgreSQL バージョンのサポートを追加しています。",
+      "summary": "2029年3月31日に Azure Cosmos DB for PostgreSQL が廃止されます。その日までに Azure Database for PostgreSQL Elastic Cluster へ移行する必要があります。Elastic Cluster は同等の分散 PostgreSQL 機能を提供し、よりシンプルな価格モデル、幅広いコンピューティングの選択肢、新しい PostgreSQL バージョンのサポート、組み込みの高可用性、自動バックアップ、ポイントインタイムリストア、ディザスターリカバリーを備えています。",
       "products": [],
       "productCategories": [],
       "tags": [
@@ -71,10 +71,10 @@
     },
     {
       "id": "557395",
-      "title": "廃止予定: Azure Government および 21Vianet が運用する Microsoft Azure クラウドにおける手動登録済み Azure VPN クライアントが 2029年3月31日に廃止されます",
+      "title": "廃止予定: Azure Government および 21Vianet が運用する Microsoft Azure クラウドの手動登録 Azure VPN クライアントが 2029年3月31日に廃止されます",
       "date": "2026-03-31T16:45:33.5681052Z",
       "category": "retirement",
-      "summary": "2029年3月31日に、Azure Government および 21Vianet が運用する Microsoft Azure クラウドにおける Microsoft Entra ID 認証を使用したポイント対サイト接続の手動登録済み Azure VPN クライアントが廃止されます。推奨アクション: 中断を防ぐために、2029年3月31日までに手動登録済み Azure VPN クライアントを Microsoft 登録済み VPN クライアントに移行してください。移行手順の詳細については、ドキュメントをご参照ください。",
+      "summary": "2029年3月31日より、Azure Government および 21Vianet が運用する Microsoft Azure クラウドにおける Microsoft Entra ID 認証を使用したポイント対サイト接続の手動登録 Azure VPN クライアントが廃止されます。中断を防ぐため、2029年3月31日以前に手動登録クライアントを Microsoft 登録済み VPN クライアントへ移行してください。その日以降は Microsoft 登録済み VPN クライアントのみがサポートされます。",
       "products": [
         "VPN Gateway"
       ],
@@ -94,7 +94,7 @@
       "title": "廃止予定: Azure Machine Learning の外部データインポートおよびデータ接続が 2026年9月30日に廃止されます",
       "date": "2026-03-31T20:00:35.9196595Z",
       "category": "retirement",
-      "summary": "外部ソース（S3、Snowflake、Azure SQL DB）からのデータインポート（プレビュー）および Azure Machine Learning の外部データ接続（プレビュー）が非推奨になります。これらの機能は 2026年9月30日以降、利用できなくなります。影響: 既存の外部データ接続は利用できなくなり、新しいデータインポートの作成や新しい外部データ接続の追加もできなくなります。事前にインポートされた既存のアセットは引き続き利用できますが、新規の接続は作成できません。",
+      "summary": "Azure Machine Learning の外部ソース（S3、Snowflake、Azure SQL Db）からのデータインポート（プレビュー）および外部データ接続（プレビュー）が非推奨となります。これらの機能は 2026年9月30日以降利用できなくなります。既存の外部データ接続は利用不可となり、新規データインポートや外部データ接続の作成もできなくなります。インポート済みのアセットは引き続き利用可能ですが、スケジュールされた更新は機能しなくなります。",
       "products": [
         "Azure Machine Learning"
       ],
@@ -113,7 +113,7 @@
       "title": "パブリック プレビュー: VM/VMSS の完全キャッシュを使用した一時 OS ディスク",
       "date": "2026-03-30T21:45:47.4558873Z",
       "category": "preview",
-      "summary": "完全キャッシュを使用した一時 OS ディスクが Azure VM/VMSS のパブリック プレビューで利用可能になりました。これにより、ワークロードに対して大幅に高速で信頼性の高い OS ディスクパフォーマンスが提供されます。OS ディスクイメージ全体をローカル VM ストレージ（キャッシュ ディスク、リソース ディスク、または NVMe ディスク）にキャッシュすることで、一貫して低レイテンシの優れた IO パフォーマンスが実現し、リモートストレージの中断時にも高い耐障害性が確保されます。この機能は、AI ワークロードを含むステートレスな IO 負荷の高いワークロードに非常に有効です。",
+      "summary": "完全キャッシュを使用した一時 OS ディスクが Azure VM/VMSS のパブリック プレビューとして利用可能になりました。ローカル VM ストレージにOS ディスク イメージ全体をキャッシュすることで、より高速かつ信頼性の高い OS ディスク パフォーマンスを実現します。優れた IO パフォーマンスと一貫した低レイテンシを提供し、リモート ストレージの障害時にも高い回復力を発揮します。AI ワークロード、クォーラムベースのデータベース、データ分析、大規模なステートレス サービスなど、ステートレスで IO 集約型のワークロードに最適です。",
       "products": [
         "Virtual Machine Scale Sets",
         "Virtual Machines"
@@ -132,7 +132,7 @@
       "title": "一般提供開始: Microsoft Azure がデンマークの新しいクラウドリージョンから利用可能になりました",
       "date": "2026-03-31T17:15:56.0929401Z",
       "category": "ga",
-      "summary": "Microsoft はデジタルトランスフォーメーションと AI イノベーションを加速するためのデンマークのクラウドリージョンの開設を発表します。Denmark East リージョンは、デンマークの顧客にローカルでセキュアなクラウドインフラを提供し、ローカルデータレジデンシー、低レイテンシ、および高度なクラウドと AI サービスへのアクセスをサポートします。新しいリージョンと可用性ゾーンを活用したいお客様には、Azure Resource Mover を使用して複数リソースのリージョン間移行が可能です。",
+      "summary": "Microsoft はデジタル変革と AI イノベーションを加速するため、デンマークでのクラウドリージョン開設を発表しました。Denmark East リージョンにより、デンマークのお客様はローカルでセキュアなクラウド インフラストラクチャを利用でき、ローカル データ所在地要件、低レイテンシ、高度なクラウドおよび AI サービスへのアクセスをサポートします。新リージョンと可用性ゾーンを活用するお客様向けに、Azure Resource Mover を使用したリージョン移行も提供しています。",
       "products": [],
       "productCategories": [],
       "tags": [
@@ -146,7 +146,7 @@
       "title": "一般提供開始: Azure Premium SSD v2 ディスクがインド南部で利用可能になりました",
       "date": "2026-03-30T16:30:50.9886051Z",
       "category": "ga",
-      "summary": "Azure Premium SSD v2 がインド南部（可用性ゾーンなしのリージョン）で利用可能になりました。Azure Premium SSD v2 ディスクは、Azure 仮想マシン向けの次世代汎用ブロックストレージオプションで、低コストで IO 集約型ワークロードに対してサブミリ秒のレイテンシと卓越したコストパフォーマンスを提供します。Premium SSD v2 は、SQL Server、Oracle、MariaDB、SAP、Cassandra、MongoDB、ビッグデータ/分析など、幅広い企業向け本番シナリオに適しています。",
+      "summary": "Azure Premium SSD v2 がインド南部（可用性ゾーンなしのリージョン）で利用可能になりました。Azure Premium SSD v2 ディスクは、Azure 仮想マシン向けの次世代汎用ブロック ストレージで、サブミリ秒のレイテンシと IO 集約型ワークロードに対する優れたコストパフォーマンスを低コストで実現します。SQL Server、Oracle、MariaDB、SAP、Cassandra、MongoDB、ビッグ データ/分析、仮想マシンやステートフル コンテナ上でのゲームなど、幅広いエンタープライズ本番シナリオに対応します。",
       "products": [
         "Azure Disk Storage",
         "Virtual Machines"
@@ -167,7 +167,7 @@
       "title": "一般提供開始: Azure Tables、Azure Files、Azure Queues のユーザー委任 SAS",
       "date": "2026-03-31T17:30:08.6418325Z",
       "category": "ga",
-      "summary": "Azure Tables、Azure Files、Azure Queues のユーザー委任 SAS が一般提供になりました。ユーザー委任 SAS を使用すると、SAS トークンを委任者に紐付けることで、アカウントまたはサービス SAS よりも安全な SAS トークンを作成できます。この UDK SAS の拡張により、テーブル、テーブルエンティティ、キュー、キューエンティティ、ファイルコンテナー、および個々のファイルレベルで SAS トークンを設定できるようになります。上位レベルで設定された SAS トークンは、その中のすべてのテーブル/キュー/ファイルエンティティへのアクセスを提供します。",
+      "summary": "Azure Tables、Azure Files、Azure Queues のユーザー委任 SAS が一般提供開始になりました。ユーザー委任 SAS により、SAS トークンを委任者に紐付けることで、アカウントまたはサービス SAS よりもセキュアな SAS トークンを作成できます。テーブル、テーブル エンティティ、キュー、キュー エンティティ、ファイル コンテナー、個別ファイル レベルで SAS トークンを設定できます。上位レベルで設定した SAS トークンはその下のすべてのエンティティへのアクセスを提供し、基本レベルで設定した SAS トークンはその個別エンティティへのアクセスのみを提供します。",
       "products": [
         "Azure Files",
         "Queue Storage",
@@ -189,7 +189,7 @@
       "title": "一般提供開始: インドネシア中部での Azure Red Hat OpenShift",
       "date": "2026-03-30T21:30:50.0933440Z",
       "category": "ga",
-      "summary": "Azure Red Hat OpenShift (ARO) がインドネシア中部 Azure リージョンで一般提供となり、Azure 上でミッションクリティカルな OpenShift ワークロードを実行するお客様のリージョン可用性が拡大しました。このリリースにより、インドネシアおよびより広い東南アジアリージョンの組織が、Azure のセキュリティ、ネットワーキング、および運用を統合した完全マネージドの Red Hat OpenShift クラスターをデプロイできるようになります。インドネシア中部での GA 提供により、お客様はアプリケーションのモダナイズや規制対応ワークロードの実行が可能です。",
+      "summary": "Azure Red Hat OpenShift (ARO) がインドネシア中部 Azure リージョンで一般提供開始になりました。これにより、Azure 上でミッションクリティカルな OpenShift ワークロードを実行するお客様のリージョン可用性が拡大します。インドネシアおよび東南アジア全域の組織が、Azure セキュリティ、ネットワーク、運用が統合された完全マネージドの Red Hat OpenShift クラスターをデプロイできるようになります。アプリケーションのモダナイゼーション、規制対応ワークロードの実行、ローカル データ所在地要件への対応が可能になります。",
       "products": [
         "Azure Red Hat OpenShift"
       ],
@@ -207,7 +207,7 @@
       "title": "一般提供開始: Azure DevOps 2026年3月の更新",
       "date": "2026-03-31T18:15:10.6713801Z",
       "category": "ga",
-      "summary": "2026年3月に Azure DevOps に以下の更新が行われました。Remote MCP Server がパブリック プレビューになり、ローカルサーバーなしで Azure DevOps との AI を活用したシームレスな統合が可能になりました。セキュリティの改善には、ブランチポリシーに直接統合される新しい Advanced Security PR ステータスチェック、シークレットプッシュ保護バイパスとセキュリティ有効化変更の監査ログ強化、セキュリティ概要データを CSV にエクスポートする機能が含まれます。",
+      "summary": "2026年3月の Azure DevOps の更新内容: Remote MCP Server がパブリック プレビューに移行し、ローカル サーバーなしで Azure DevOps との AI 連携が可能になりました。セキュリティ強化として、ブランチ ポリシーに直接統合される Advanced Security PR ステータス チェック、シークレット プッシュ保護のバイパスとセキュリティ有効化変更に対する監査ログの強化、セキュリティ概要データの CSV エクスポート機能が追加されました。Azure Pipelines では展開の可視性が向上しました。",
       "products": [
         "Azure DevOps"
       ],
@@ -227,7 +227,7 @@
       "title": "一般提供開始: Azure Premium SSD v2 ディスクが US Gov Arizona で利用可能になりました",
       "date": "2026-03-31T16:30:51.6348366Z",
       "category": "ga",
-      "summary": "Azure Premium SSD v2 が US Gov Arizona（可用性ゾーンなしのリージョン）で利用可能になりました。Azure Premium SSD v2 ディスクは、Azure 仮想マシン向けの次世代汎用ブロックストレージオプションで、低コストで IO 集約型ワークロードに対してサブミリ秒のレイテンシと卓越したコストパフォーマンスを提供します。Premium SSD v2 は、SQL Server、Oracle、MariaDB、SAP、Cassandra、MongoDB、ビッグデータ/分析など、幅広い企業向け本番シナリオに適しています。",
+      "summary": "Azure Premium SSD v2 が US Gov Arizona（可用性ゾーンなしのリージョン）で利用可能になりました。Azure Premium SSD v2 ディスクは、Azure 仮想マシン向けの次世代汎用ブロック ストレージで、サブミリ秒のレイテンシと IO 集約型ワークロードに対する優れたコストパフォーマンスを低コストで実現します。SQL Server、Oracle、MariaDB、SAP、Cassandra、MongoDB、ビッグ データ/分析、仮想マシンやステートフル コンテナ上でのゲームなど、幅広いエンタープライズ本番シナリオに対応します。",
       "products": [
         "Azure Disk Storage",
         "Virtual Machines"
@@ -248,7 +248,7 @@
       "title": "パブリック プレビュー: Azure Event Grid がよりスマートで安全なイベント駆動アーキテクチャのための新機能を提供",
       "date": "2026-03-31T17:45:46.9375071Z",
       "category": "preview",
-      "summary": "Azure Event Grid はパブリック プレビューのさまざまな機能を提供しています。クロステナント Webhook 配信は、Event Grid 名前空間でマネージド ID を使用したセキュアなクロステナント配信を可能にします。ネットワーク セキュリティ境界は、セキュリティ強化のためのインバウンドとアウトバウンドの通信ルールでアクセス境界を定義します。マネージド ID による認証強化により、イベント駆動アーキテクチャのセキュリティと管理性が向上します。",
+      "summary": "Azure Event Grid は、大規模な分散システムの管理を改善し、相互運用性と制御を強化するためのパブリック プレビュー機能を多数提供します。クロス テナント Webhook 配信（Event Grid 名前空間のマネージド ID を使用したセキュアなクロス テナント配信）、ネットワーク セキュリティ境界（セキュリティ強化のためのアクセス境界の定義）、Webhook 用マネージド ID（Event Grid と Webhook エンドポイント間のセキュアな認証の自動化）などが含まれます。",
       "products": [],
       "productCategories": [],
       "tags": [
