@@ -4,7 +4,7 @@
     "from": "2026-03-30",
     "to": "2026-04-05"
   },
-  "fetchedAt": "2026-03-31T11:58:04Z",
+  "fetchedAt": "2026-03-31T13:56:48Z",
   "count": 5,
   "stats": {
     "ga": 2,
@@ -37,7 +37,7 @@
       "title": "廃止: Azure Monitor managed service for Prometheus の remote-write 向けサイドカーの非推奨化",
       "date": "2026-03-30",
       "category": "retirement",
-      "summary": "2027 年 3 月 31 日、Azure Monitor は Azure Monitor Workspace への Prometheus メトリクスの remote-write に使用するサイドカーを非推奨化します。信頼性の向上と複雑性の軽減を目的とした取り組みの一環です。セルフホスト型 Prometheus または Prometheus Operator を Azure Monitor Workspace へ直接 remote-write するよう設定することを推奨します。すべての認証方式がサポートされており、直接 remote-write は Prometheus Operator と完全に互換性があります。",
+      "summary": "2027 年 3 月 31 日、Azure Monitor は Azure Monitor Workspace への Prometheus メトリクスの remote-write に使用するサイドカーを非推奨化します。信頼性の向上と複雑性の軽減を目的とした取り組みの一環です。セルフホスト型 Prometheus または Prometheus Operator を Azure Monitor Workspace へ直接 remote-write するよう設定することを推奨します。",
       "products": [
         "Azure Kubernetes Service (AKS)",
         "Azure Monitor"
