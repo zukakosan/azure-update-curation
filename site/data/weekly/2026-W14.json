@@ -4,7 +4,7 @@
     "from": "2026-03-30",
     "to": "2026-04-05"
   },
-  "fetchedAt": "2026-03-31T05:18:44Z",
+  "fetchedAt": "2026-03-31T07:26:17Z",
   "count": 5,
   "stats": {
     "ga": 2,
@@ -15,10 +15,10 @@
   "entries": [
     {
       "id": "559322",
-      "title": "パブリックプレビュー: VM/VMSS 向けフルキャッシュ対応エフェメラル OS ディスク",
+      "title": "パブリック プレビュー: VM/VMSS 向けフルキャッシングを使用したエフェメラル OS ディスク",
       "date": "2026-03-30",
       "category": "preview",
-      "summary": "Azure VM/VMSS 向けフルキャッシュ対応エフェメラル OS ディスクがパブリックプレビューとして利用可能になりました。OS ディスクイメージ全体をローカル VM ストレージ（キャッシュディスク、リソースディスク、または NVMe ディスク）にキャッシュすることで、より高い IO パフォーマンスと一貫して低いレイテンシを実現し、リモートストレージの障害時にも高い耐障害性を提供します。AI ワークロードを含むステートレスで IO 負荷の高いワークロードに特に有効です。",
+      "summary": "エフェメラル OS ディスクのフルキャッシングが Azure VM/VMSS のパブリック プレビューで利用可能になりました。ローカル VM ストレージ（キャッシュ ディスク、リソース ディスク、または NVMe ディスク）に OS ディスク イメージ全体をキャッシュすることで、IO パフォーマンスの向上と一貫して低いレイテンシを実現し、リモート ストレージの障害時でも高い耐障害性を提供します。この機能は、AI ワークロードを含むステートレスかつ IO 集約型のワークロードに特に有用です。",
       "products": [
         "Virtual Machine Scale Sets",
         "Virtual Machines"
@@ -34,10 +34,10 @@
     },
     {
       "id": "550519",
-      "title": "Retirement: Azure Monitor managed service for Prometheus のリモートライト用サイドカーの廃止",
+      "title": "廃止予定: Azure Monitor マネージド サービス for Prometheus におけるリモートライト用サイドカーの非推奨化",
       "date": "2026-03-30",
       "category": "retirement",
-      "summary": "2027年3月31日に、Azure Monitor は Prometheus メトリクスを Azure Monitor Workspace にリモートライトするためのサイドカーを廃止します。信頼性の向上と複雑性の軽減を目的とした取り組みの一環です。セルフホスト型 Prometheus または Prometheus Operator を Azure Monitor Workspace に直接リモートライトするよう設定することを推奨します。すべての認証方式がサポートされており、直接リモートライトは Prometheus Operator との完全な互換性を持ちます。",
+      "summary": "2027年3月31日に、Azure Monitor は Azure Monitor Workspace への Prometheus メトリクスのリモートライト用サイドカーを廃止します。信頼性の向上と複雑性の低減に向けた取り組みの一環として、セルフホスト型の Prometheus または Prometheus Operator を Azure Monitor Workspace に直接リモートライトするよう設定することを推奨します。すべての認証方式がサポートされています。",
       "products": [
         "Azure Kubernetes Service (AKS)",
         "Azure Monitor"
@@ -56,10 +56,10 @@
     },
     {
       "id": "559552",
-      "title": "一般提供開始: Azure Red Hat OpenShift がインドネシア中部リージョンで利用可能に",
+      "title": "一般提供: インドネシア中部リージョンでの Azure Red Hat OpenShift",
       "date": "2026-03-30",
       "category": "ga",
-      "summary": "Azure Red Hat OpenShift (ARO) がインドネシア中部 Azure リージョンで一般提供開始となり、Azure 上でミッションクリティカルな OpenShift ワークロードを実行するお客様のリージョン展開が拡大されました。インドネシアおよびより広い東南アジア地域の組織が、Azure のセキュリティ、ネットワーク、運用機能と統合されたフルマネージド Red Hat OpenShift クラスターをデプロイできるようになります。",
+      "summary": "Azure Red Hat OpenShift（ARO）がインドネシア中部 Azure リージョンで一般提供となりました。これにより、Azure 上でミッション クリティカルな OpenShift ワークロードを実行するお客様のリージョン展開が拡充されます。インドネシアおよび東南アジア地域の組織は、Azure のセキュリティ、ネットワーク、運用機能と統合された完全マネージドの Red Hat OpenShift クラスターをデプロイできるようになりました。",
       "products": [
         "Azure Red Hat OpenShift"
       ],
@@ -74,10 +74,10 @@
     },
     {
       "id": "556085",
-      "title": "Retirement: Azure Cosmos DB for PostgreSQL は2029年3月31日に廃止予定",
+      "title": "廃止: Azure Cosmos DB for PostgreSQL が 2029年3月31日に廃止",
       "date": "2026-03-30",
       "category": "retirement",
-      "summary": "2029年3月31日に Azure Cosmos DB for PostgreSQL が廃止されます。それまでに Azure Database for PostgreSQL Elastic Cluster への移行が必要です。Azure Database for PostgreSQL Elastic Cluster は Citus 拡張機能をベースに同等の分散 PostgreSQL 機能を提供し、よりシンプルで透明性の高い料金モデル、幅広いコンピュート選択肢、および新しい PostgreSQL バージョンのサポートが追加されています。",
+      "summary": "2029年3月31日に Azure Cosmos DB for PostgreSQL が廃止となるため、それまでに Azure Database for PostgreSQL Elastic Cluster へ移行する必要があります。Azure Database for PostgreSQL Elastic Cluster は Citus 拡張機能をベースに構築されており、Azure Cosmos DB for PostgreSQL と同等の分散 PostgreSQL 機能を提供しつつ、よりシンプルで透明性の高い料金モデル、幅広いコンピューティングの選択肢、新しい PostgreSQL バージョンのサポートを実現します。",
       "products": [],
       "productCategories": [],
       "tags": [
@@ -88,10 +88,10 @@
     },
     {
       "id": "559526",
-      "title": "一般提供開始: Azure Premium SSD v2 ディスクがインド南部で利用可能に",
+      "title": "一般提供: Azure Premium SSD v2 ディスクが南インドリージョンで利用可能に",
       "date": "2026-03-30",
       "category": "ga",
-      "summary": "Azure Premium SSD v2 がインド南部（可用性ゾーンのないリージョン）で利用可能になりました。次世代の汎用ブロックストレージとして、サブミリ秒のレイテンシと優れたコストパフォーマンスを提供し、IO 集約型ワークロードに対応します。SQL Server、Oracle、MariaDB、SAP、Cassandra、MongoDB、ビッグデータ/分析、仮想マシン上のゲームなど、幅広いエンタープライズ本番環境シナリオに適しています。",
+      "summary": "Azure Premium SSD v2 が南インド（可用性ゾーンなしのリージョン）で一般提供となりました。Azure Premium SSD v2 ディスクは Azure 仮想マシン向けの次世代汎用ブロック ストレージで、サブミリ秒のレイテンシと優れた価格パフォーマンスを低コストで IO 集約型ワークロードに提供します。SQL Server、Oracle、MariaDB、SAP、Cassandra、MongoDB、ビッグデータ/分析など、幅広いエンタープライズ本番環境シナリオに適しています。",
       "products": [
         "Azure Disk Storage",
         "Virtual Machines"
