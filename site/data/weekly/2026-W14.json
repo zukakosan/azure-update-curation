@@ -4,7 +4,7 @@
     "from": "2026-03-30",
     "to": "2026-04-05"
   },
-  "fetchedAt": "2026-03-31T13:56:48Z",
+  "fetchedAt": "2026-03-31T15:14:57.737727+00:00",
   "count": 5,
   "stats": {
     "ga": 2,
@@ -15,10 +15,10 @@
   "entries": [
     {
       "id": "559322",
-      "title": "パブリック プレビュー: VM/VMSS 向けフルキャッシングを使用したエフェメラル OS ディスク",
-      "date": "2026-03-30",
+      "title": "VM/VMSS 向けフルキャッシングを使用したエフェメラル OS ディスク（パブリック プレビュー）",
+      "date": "2026-03-30T21:45:47.4558873Z",
       "category": "preview",
-      "summary": "Azure VM/VMSS 向けフルキャッシングを使用したエフェメラル OS ディスクがパブリック プレビューで利用可能になりました。ローカル VM ストレージ（キャッシュ ディスク、リソース ディスク、または NVMe ディスク）に OS ディスク イメージ全体をキャッシュすることで、より優れた IO パフォーマンスと一貫して低いレイテンシを実現し、リモート ストレージの障害時にも高い耐障害性を提供します。この機能は、AI ワークロードを含むステートレスで IO 負荷の高いワークロードに非常に有用です。",
+      "summary": "Azure VM/VMSS 向けフルキャッシングを使用したエフェメラル OS ディスクがパブリック プレビューで利用可能になりました。ローカル VM ストレージ（キャッシュ ディスク、リソース ディスク、または NVMe ディスク）に OS ディスク イメージ全体をキャッシュすることで、より優れた IO パフォーマンスと一貫して低いレイテンシを実現し、リモート ストレージの障害時にも高い耐障害性を提供します。この機能は、AI ワークロード、クォーラム ベースのデータベース、データ分析、汎用 VM ファミリー上の大規模なステートレス サービスなど、ステートレスで IO 集約型のワークロードに特に有効です。",
       "products": [
         "Virtual Machine Scale Sets",
         "Virtual Machines"
@@ -34,10 +34,10 @@
     },
     {
       "id": "550519",
-      "title": "廃止: Azure Monitor managed service for Prometheus の remote-write 向けサイドカーの非推奨化",
-      "date": "2026-03-30",
+      "title": "Azure Monitor managed service for Prometheus の remote-write 向けサイドカーの廃止（非推奨化）",
+      "date": "2026-03-30T21:30:50.0933440Z",
       "category": "retirement",
-      "summary": "2027 年 3 月 31 日、Azure Monitor は Azure Monitor Workspace への Prometheus メトリクスの remote-write に使用するサイドカーを非推奨化します。信頼性の向上と複雑性の軽減を目的とした取り組みの一環です。セルフホスト型 Prometheus または Prometheus Operator を Azure Monitor Workspace へ直接 remote-write するよう設定することを推奨します。",
+      "summary": "2027 年 3 月 31 日、Azure Monitor は Azure Monitor Workspace への Prometheus メトリクスの remote-write に使用するサイドカーを非推奨化します。信頼性の向上と複雑性の軽減を目的とした取り組みの一環です。セルフホスト型 Prometheus または Prometheus Operator を Azure Monitor Workspace に直接 remote-write するよう設定することを推奨します。すべての認証方法がサポートされており、直接 remote-write は Prometheus Operator と完全に互換性があります。詳細な設定ガイダンスは公式ドキュメントを参照してください。",
       "products": [
         "Azure Kubernetes Service (AKS)",
         "Azure Monitor"
@@ -56,10 +56,10 @@
     },
     {
       "id": "559552",
-      "title": "一般提供開始: インドネシア中部での Azure Red Hat OpenShift",
-      "date": "2026-03-30",
+      "title": "Azure Red Hat OpenShift が Indonesia Central で一般提供開始",
+      "date": "2026-03-30T21:30:50.0933440Z",
       "category": "ga",
-      "summary": "Azure Red Hat OpenShift (ARO) がインドネシア中部リージョンで一般提供開始になりました。インドネシアおよびアジア南東部地域のお客様が、Azure のセキュリティ、ネットワーク、および運用機能と統合されたフルマネージドの Red Hat OpenShift クラスターをデプロイできるようになります。インドネシア中部での GA 提供により、組織はアプリケーションの最新化、規制対応ワークロードの実行、低レイテンシが求められるシナリオへの対応が可能になります。",
+      "summary": "Azure Red Hat OpenShift (ARO) がインドネシア中部リージョンで一般提供開始になりました。インドネシアおよびアジア南東部地域のお客様が、Azure のセキュリティ、ネットワーク、および運用機能と統合されたフルマネージドの Red Hat OpenShift クラスターをデプロイできるようになります。この提供開始により、組織はアプリケーションの最新化、規制対象および遅延に敏感なワークロードをエンドユーザーの近くで実行、ローカル データ レジデンシー要件の充足が可能になります。",
       "products": [
         "Azure Red Hat OpenShift"
       ],
@@ -74,10 +74,10 @@
     },
     {
       "id": "556085",
-      "title": "廃止: Azure Cosmos DB for PostgreSQL は 2029 年 3 月 31 日に廃止されます",
-      "date": "2026-03-30",
+      "title": "Azure Cosmos DB for PostgreSQL は 2029 年 3 月 31 日に廃止されます",
+      "date": "2026-03-30T17:45:08.2587317Z",
       "category": "retirement",
-      "summary": "2029 年 3 月 31 日に Azure Cosmos DB for PostgreSQL が廃止されます。それまでに Azure Database for PostgreSQL Elastic Cluster へ移行する必要があります。Azure Database for PostgreSQL Elastic Cluster は、Azure Cosmos DB for PostgreSQL と同等の分散 PostgreSQL 機能を Citus 拡張機能上で提供し、よりシンプルで透明性の高い価格モデル、幅広いコンピューティング オプション、新しい PostgreSQL バージョンのサポートを追加し、組み込みの高可用性を提供します。",
+      "summary": "2029 年 3 月 31 日に Azure Cosmos DB for PostgreSQL が廃止されます。それまでに Azure Database for PostgreSQL Elastic Cluster へ移行する必要があります。Azure Database for PostgreSQL Elastic Cluster は、Citus 拡張機能を基盤とし、Azure Cosmos DB for PostgreSQL と同等の分散 PostgreSQL 機能を完全なフィーチャー パリティで提供します。さらに、シンプルで透明性の高い価格モデル、幅広いコンピューティング選択肢、新しい PostgreSQL バージョンのサポート、組み込みの高可用性、自動バックアップ、ポイントインタイム リストア、ディザスター リカバリーを提供します。",
       "products": [],
       "productCategories": [],
       "tags": [
@@ -88,10 +88,10 @@
     },
     {
       "id": "559526",
-      "title": "一般提供開始: Azure Premium SSD v2 ディスクが南インドで利用可能になりました",
-      "date": "2026-03-30",
+      "title": "Azure Premium SSD v2 ディスクが South India で一般提供開始",
+      "date": "2026-03-30T16:30:50.9886051Z",
       "category": "ga",
-      "summary": "Azure Premium SSD v2 が南インド（可用性ゾーンのないリージョン）で利用可能になりました。Azure 仮想マシン向けの次世代汎用ブロック ストレージ オプションである Azure Premium SSD v2 ディスクは、サブミリ秒のレイテンシと優れたコスト パフォーマンスを IO 集約型ワークロードに低コストで提供します。SQL Server、Oracle、MariaDB、SAP、Cassandra、MongoDB、ビッグデータ/分析、仮想マシン上のゲームなど、幅広いエンタープライズ本番シナリオに適しています。",
+      "summary": "Azure Premium SSD v2 が南インド（可用性ゾーンのないリージョン）で利用可能になりました。Azure 仮想マシン向けの次世代汎用ブロック ストレージ オプションである Azure Premium SSD v2 ディスクは、サブミリ秒のレイテンシと優れたコスト パフォーマンスを IO 集約型ワークロードに低コストで提供します。SQL Server、Oracle、MariaDB、SAP、Cassandra、MongoDB、ビッグ データ/分析、仮想マシンまたはステートフル コンテナー上のゲームなど、幅広いエンタープライズ本番シナリオに適しています。",
       "products": [
         "Azure Disk Storage",
         "Virtual Machines"
