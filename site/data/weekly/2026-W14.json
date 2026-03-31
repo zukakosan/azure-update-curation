@@ -4,15 +4,56 @@
     "from": "2026-03-30",
     "to": "2026-04-05"
   },
-  "fetchedAt": "2026-03-31T15:14:57.737727+00:00",
-  "count": 5,
+  "fetchedAt": "2026-03-31T17:09:45.126562+00:00",
+  "count": 7,
   "stats": {
-    "ga": 2,
+    "ga": 3,
     "preview": 1,
-    "retirement": 2,
+    "retirement": 3,
     "change": 0
   },
   "entries": [
+    {
+      "id": "557395",
+      "title": "手動登録された Azure VPN クライアント（Azure Government および 21Vianet が運用する Microsoft Azure クラウド向け）は 2029 年 3 月 31 日に廃止されます",
+      "date": "2026-03-31T16:45:33.5681052Z",
+      "category": "retirement",
+      "summary": "2029 年 3 月 31 日に、Azure Government および 21Vianet が運用する Microsoft Azure クラウド向けの Microsoft Entra ID 認証を使用したポイント対サイト接続の手動登録 Azure VPN クライアントが廃止されます。推奨アクション: Entra ID ネイティブ対応の VPN クライアント（Azure VPN Client アプリ）へ移行することをお勧めします。移行の詳細についてはドキュメントを参照してください。",
+      "products": [
+        "VPN Gateway"
+      ],
+      "productCategories": [
+        "Networking",
+        "Security"
+      ],
+      "tags": [
+        "Retirements",
+        "Security"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=557395",
+      "actionRequired": true
+    },
+    {
+      "id": "559677",
+      "title": "Azure Premium SSD v2 ディスクが US Gov Arizona で一般提供開始",
+      "date": "2026-03-31T16:30:51.6348366Z",
+      "category": "ga",
+      "summary": "Azure Premium SSD v2 が US Gov Arizona（可用性ゾーンのないリージョン）で利用可能になりました。Azure Premium SSD v2 ディスクは Azure 仮想マシン向けの次世代汎用ブロック ストレージ オプションで、サブミリ秒のレイテンシと低コストで IO 集約型ワークロードに優れた価格パフォーマンスを提供します。SQL Server、Oracle、MariaDB、SAP、Cassandra、MongoDB、ビッグ データ/分析、仮想マシンまたはステートフル コンテナ上のゲームなど幅広いエンタープライズ本番シナリオに適しています。",
+      "products": [
+        "Azure Disk Storage",
+        "Virtual Machines"
+      ],
+      "productCategories": [
+        "Storage",
+        "Compute"
+      ],
+      "tags": [
+        "Features",
+        "Services"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=559677",
+      "actionRequired": false
+    },
     {
       "id": "559322",
       "title": "VM/VMSS 向けフルキャッシングを使用したエフェメラル OS ディスク（パブリック プレビュー）",
