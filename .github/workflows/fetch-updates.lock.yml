@@ -21,13 +21,13 @@
 # For more information: https://github.github.com/gh-aw/introduction/overview/
 #
 #
-# gh-aw-metadata: {"schema_version":"v3","frontmatter_hash":"ae3fc6fbc1bd50955f6c435d219287c0eb337cc507af19afbdeaf0460a7a2deb","compiler_version":"v0.62.5","strict":true,"agent_id":"copilot"}
+# gh-aw-metadata: {"schema_version":"v3","frontmatter_hash":"6d27d46f83078226a556a0561483351327a0f55d513bd586c354e13c29414caf","compiler_version":"v0.62.5","strict":true,"agent_id":"copilot"}
 
 name: "Azure Update 週次収集"
 "on":
   schedule:
-  - cron: "0 */1 * * *"
-    # Friendly format: hourly (scattered)
+  - cron: "0 1 * * *"
+    # Friendly format: daily (scattered)
   workflow_dispatch:
 
 permissions: {}
