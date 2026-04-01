@@ -4,25 +4,53 @@
     "from": "2026-03-30",
     "to": "2026-04-05"
   },
-  "fetchedAt": "2026-03-31T23:56:52Z",
-  "count": 4,
+  "fetchedAt": "2026-04-01T03:49:57Z",
+  "count": 6,
   "stats": {
     "ai": 2,
-    "devops": 0,
+    "devops": 1,
     "security": 0,
     "network": 0,
-    "database": 1,
+    "database": 0,
     "container": 0,
     "serverless": 0,
-    "storage": 1,
-    "other": 0
+    "storage": 0,
+    "other": 3
   },
   "entries": [
     {
+      "id": "github-copilot-rewind",
+      "title": "GitHub Copilot CLI の rewind で会話を巻き戻す",
+      "date": "2026-04-01T01:02:02Z",
+      "category": "devops",
+      "summary": "はじめに\n個人的には CLI よりも GUI 派で、GUI が使えるなら GUI を選びたいタイプです。ただ、GitHub Copilot に関しては CLI のほうが開発が活発で面白い機能がどんどん出てきているので、そちらをメインで使っています。最近の CLI はリッチな UI を持つようになってきていて、GUI と使い勝手がそんなに変わらなくなってきているのも嬉しいところです。ということで、今回は GitHub Copilot CLI の rewind 機能について軽く紹介してみます。\n\n rewind とは\nrewind は、GitHub Copilot CLI で会話を巻き戻...",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/github-copilot-rewind",
+      "source": "zenn",
+      "author": "Kazuki Ota"
+    },
+    {
+      "id": "ab9647b45d59d9618819",
+      "title": "AIスクラムチームにセキュリティ監査がやってきた",
+      "date": "2026-04-01T00:24:16Z",
+      "category": "ai",
+      "summary": "> **この記事のまとめ**: 前回は『AIエージェントだけでスクラムを回す』話でしたが、今回はそこに外部監査イベントを差し込みました。追加したのは渡辺という監査役と、監査を回すための7つのスキル群。そして、あえて認証不要で走らせているシステムをどう裁くか、という実験でもあります。\n\nはじめに\n\n[\"AIエージェントだけでスクラムを回してみた\"](https://qiita.com/shyamagu/items/0ff827a1c2deef68ba9a)という記事を先日公開しました。AIエージェントだけでスクラムチームを構成し、アプリを開発するという試みです。本記事はその続編として、突然のセキ",
+      "tags": [
+        "scrum",
+        "GitHubCopilot",
+        "AI駆動開発",
+        "githubcopilotcli",
+        "AIエージェント"
+      ],
+      "url": "https://qiita.com/shyamagu/items/ab9647b45d59d9618819",
+      "source": "qiita",
+      "author": "shyamagu"
+    },
+    {
       "id": "63b7d94382877f1e714b",
       "title": "Microsoft Agent FrameworkでサポートされたAgent Skillsを解説",
-      "date": "2026-03-31T11:25:00+09:00",
-      "category": "ai",
+      "date": "2026-03-31T02:25:00Z",
+      "category": "other",
       "summary": "本記事では、Microsoft Agent Framework（以降、Agent Framework）が採用する **Agent Skills** の仕組みに焦点を当てます。Agent Skills のオープン仕様の概要から、Agent Framework（Python）での具体的な実装方法まで解説します。\n\nSkills は現在、AI コーディングアシスタントで広く普及していますが、Agent Framework を利用することで、**同様のスキル機能を自社の LLM アプリケーションにも容易に組み込むことができます**。\n\nなお、2026年3月時点で Agent Framework はプレ",
       "tags": [
         "Microsoft",
@@ -49,7 +77,7 @@
       "id": "blazor-download-file",
       "title": "Blazor で JavaScript 相互運用を使ってファイルをダウンロードする",
       "date": "2026-03-30T13:44:10Z",
-      "category": "storage",
+      "category": "other",
       "summary": "はじめに\nBlazor アプリでファイルをダウンロードさせたいケースがあります。ブラウザでファイルをダウンロードさせるには JavaScript の力を借りる必要がありますが、Blazor には JavaScript 相互運用 (JS interop) 機能があるので、これを使って実現できます。\nこの記事では、MS Learn の公式ドキュメントで紹介されている推奨パターンを使ってファイルのダウンロードを実装する方法を紹介します。\n\n URL からファイルをダウンロードする\nBlob の URL など、ダウンロード対象のファイルの URL が分かっている場合のパターンです。公式ドキュ...",
       "tags": [],
       "url": "https://zenn.dev/microsoft/articles/blazor-download-file",
@@ -60,7 +88,7 @@
       "id": "310b47ab3858b2",
       "title": "セカンダリ レプリカの永続統計",
       "date": "2026-03-30T02:19:02Z",
-      "category": "database",
+      "category": "other",
       "summary": "超小ネタですが、わざわざ検証したのでメモ代わりに共有します。\n\n セカンダリ レプリカの永続統計\nSQL Server 2025 から、「読み取り可能なセカンダリ レプリカの永続統計」という機能が使用可能です。\nこのドキュメントを読むと冒頭で、「インフラストラクチャにクエリ ストアを使用」とか、「既定で オン になっています」とか、クエリ ストアが有効な場合に動作するかのように書かれています。\n\n統計永続化メカニズムでは、読み取り可能なセカンダリ レプリカ インフラストラクチャにクエリ ストアを使用します。\n読み取り可能なセカンダリ レプリカのクエリ ストア は、SQL Server 2...",
       "tags": [],
       "url": "https://zenn.dev/microsoft/articles/310b47ab3858b2",
