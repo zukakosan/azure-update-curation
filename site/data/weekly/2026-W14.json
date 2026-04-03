@@ -4,125 +4,51 @@
     "from": "2026-03-30",
     "to": "2026-04-05"
   },
-  "fetchedAt": "2026-04-02T03:41:37Z",
-  "count": 20,
+  "fetchedAt": "2026-04-03T03:46:31Z",
+  "count": 22,
   "stats": {
     "ga": 9,
     "preview": 4,
-    "retirement": 7,
+    "retirement": 9,
     "change": 0
   },
   "entries": [
     {
-      "id": "550519",
-      "title": "Azure Monitor managed service for Prometheus のリモート書き込み用サイドカーの廃止",
-      "date": "2026-03-30T21:30:50.0933440Z",
+      "id": "558027",
+      "title": "Azure App Service および Azure Functions on Windows の Python サポートが 2027 年 3 月 31 日に廃止",
+      "date": "2026-04-02T16:45:52.7122053Z",
       "category": "retirement",
-      "summary": "2027年3月31日に、Azure Monitor は Prometheus メトリクスを Azure Monitor Workspace にリモート書き込みするためのサイドカーを廃止します。信頼性の向上と複雑性の低減に向けた取り組みの一環です。セルフホスト型 Prometheus または Prometheus Operator を Azure Monitor Workspace に直接リモート書き込みするよう設定することを推奨します。すべての認証方法がサポートされています。",
+      "summary": "2027 年 3 月 31 日より、Windows の Azure App Service および Azure Functions でホストされている Python アプリケーションは実行されなくなります。この日以降、アプリケーションの構成とコンテンツはそのまま維持されますが、アプリは停止し、これらのワークロードに対する技術サポートも提供されなくなります。Windows の App Service 上の Python は 2021 年 12 月以降サポートされておらず、今回の変更によりランタイムが正式に廃止されます。サービス中断を回避するために、Linux ベースの Azure App Service または Azure Functions への移行を推奨します。",
       "products": [
-        "Azure Kubernetes Service (AKS)",
-        "Azure Monitor"
+        "App Service"
       ],
       "productCategories": [
         "Compute",
-        "Containers",
-        "DevOps",
-        "Management and governance"
+        "Mobile",
+        "Web"
       ],
       "tags": [
         "Retirements"
       ],
-      "url": "https://azure.microsoft.com/updates?id=550519",
+      "url": "https://azure.microsoft.com/updates?id=558027",
       "actionRequired": true
     },
     {
-      "id": "556085",
-      "title": "Azure Cosmos DB for PostgreSQL は 2029 年 3 月 31 日に廃止",
-      "date": "2026-03-30T17:45:08.2587317Z",
+      "id": "558276",
+      "title": "Azure ストレージアカウントの AzureDnsZone エンドポイントが 2027 年 3 月に廃止",
+      "date": "2026-04-02T16:30:09.2101811Z",
       "category": "retirement",
-      "summary": "2029年3月31日に Azure Cosmos DB for PostgreSQL が廃止されます。同日までに Azure Database for PostgreSQL Elastic Cluster への移行が必要です。Azure Database for PostgreSQL Elastic Cluster は Citus 拡張機能をベースに構築され、同等の分散 PostgreSQL 機能を提供しながら、よりシンプルな価格モデル、幅広いコンピューティングの選択肢、新しい PostgreSQL バージョンのサポート、および組み込みの高可用性を提供します。",
-      "products": [],
-      "productCategories": [],
-      "tags": [
-        "Retirements"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=556085",
-      "actionRequired": true
-    },
-    {
-      "id": "557394",
-      "title": "一部の Azure AI Language 機能が 2027 年 3 月 20 日に廃止",
-      "date": "2026-04-01T18:00:10.4921362Z",
-      "category": "retirement",
-      "summary": "2027年3月20日に、Microsoft は次の8つの Azure AI Language 機能を廃止します: キーフレーズ抽出、感情分析と意見マイニング、カスタムテキスト分類、会話言語理解（CLU）、カスタム質問応答（CQA）、オーケストレーションワークフロー、要約（抽出型・生成型、文書および会話向け）、エンティティリンキング。以降、これらの機能へのリクエストはエラーを返します。",
+      "summary": "Azure Blob ストレージアカウントの AzureDnsZone エンドポイント（プレビュー）は 2027 年 3 月に廃止となります。AzureDnsZone エンドポイント（プレビュー）を使用しているお客様は、2027 年 4 月 1 日までに、新規および既存のすべての Blob ストレージアカウントで Standard エンドポイントへ移行する必要があります。Standard エンドポイントは一般提供済みで、本番ワークロードに完全サポートされています。既存のストレージアカウントへの影響はなく、削除されることもありません。",
       "products": [
-        "Azure AI Language"
+        "Azure Blob Storage"
       ],
       "productCategories": [
-        "AI + machine learning"
+        "Storage"
       ],
       "tags": [
         "Retirements"
       ],
-      "url": "https://azure.microsoft.com/updates?id=557394",
-      "actionRequired": true
-    },
-    {
-      "id": "557395",
-      "title": "Azure Government および 21Vianet 運営の Microsoft Azure クラウド向け手動登録済み Azure VPN クライアントが 2029 年 3 月 31 日に廃止",
-      "date": "2026-03-31T16:45:33.5681052Z",
-      "category": "retirement",
-      "summary": "2029年3月31日に、Azure Government および 21Vianet が運営する Microsoft Azure において、Microsoft Entra ID 認証を使用したポイント対サイト接続の手動登録済み Azure VPN クライアントが廃止されます。サービス中断を防ぐため、2029年3月31日までに Microsoft 登録済み VPN クライアントへの移行を推奨します。セキュリティ強化のため、Microsoft 登録済みクライアントのみがサポートされます。",
-      "products": [
-        "VPN Gateway"
-      ],
-      "productCategories": [
-        "Networking",
-        "Security"
-      ],
-      "tags": [
-        "Retirements",
-        "Security"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=557395",
-      "actionRequired": true
-    },
-    {
-      "id": "557406",
-      "title": "Azure Machine Learning の外部データインポートおよびデータ接続が 2026 年 9 月 30 日に廃止",
-      "date": "2026-03-31T20:00:35.9196595Z",
-      "category": "retirement",
-      "summary": "S3、Snowflake、Azure SQL DB などの外部ソースからのデータインポート（プレビュー）および Azure Machine Learning の外部データ接続（プレビュー）が廃止されます。2026年9月30日以降、これらの機能は利用できなくなります。既存のインポート済みアセットは引き続き利用可能ですが、スケジュールされた更新は停止されます。新しいデータインポートや外部データ接続の作成もできなくなります。",
-      "products": [
-        "Azure Machine Learning"
-      ],
-      "productCategories": [
-        "AI + machine learning",
-        "Internet of Things"
-      ],
-      "tags": [
-        "Retirements"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=557406",
-      "actionRequired": true
-    },
-    {
-      "id": "558246",
-      "title": "Service Fabric の Windows Server 2019 サポートが 2027 年 3 月 31 日に終了 - Windows Server 2025 へのアップグレードが必要",
-      "date": "2026-04-01T20:30:41.7066612Z",
-      "category": "retirement",
-      "summary": "Service Fabric は 2027年3月31日に Windows Server 2019 上で稼働するすべてのクラスターのサポートを終了します。サポートされた状態を維持するには、同日までに Windows Server 2025 へのアップグレードが必要です。この変更は Service Fabric の Windows OS イメージサポートモデルを主流の OS サポートタイムラインに合わせるものであり、Linux やその他の Azure プラットフォームと一貫性が保たれます。",
-      "products": [
-        "Azure Service Fabric"
-      ],
-      "productCategories": [
-        "Compute",
-        "Containers"
-      ],
-      "tags": [
-        "Retirements"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=558246",
+      "url": "https://azure.microsoft.com/updates?id=558276",
       "actionRequired": true
     },
     {
@@ -145,178 +71,23 @@
       "actionRequired": true
     },
     {
-      "id": "492542",
-      "title": "Azure Event Grid がよりスマートでセキュアなイベント駆動型アーキテクチャのための新機能を提供",
-      "date": "2026-03-31T17:30:08.6418325Z",
-      "category": "ga",
-      "summary": "Azure Event Grid は、大規模な分散システムをより適切に管理できるよう、相互運用性と制御性を向上させた様々な新機能を一般提供しました。MQTT メッセージ順序保証（クライアントセッション内でのインオーダー配信）、MQTT 接続レート制限（クライアントあたり毎秒1回の接続試行制限）、MQTT トピックセグメント拡張（最大15セグメント対応）などが含まれます。",
+      "id": "558246",
+      "title": "Service Fabric の Windows Server 2019 サポートが 2027 年 3 月 31 日に終了 - Windows Server 2025 へのアップグレードが必要",
+      "date": "2026-04-01T20:30:41.7066612Z",
+      "category": "retirement",
+      "summary": "Service Fabric は 2027年3月31日に Windows Server 2019 上で稼働するすべてのクラスターのサポートを終了します。サポートされた状態を維持するには、同日までに Windows Server 2025 へのアップグレードが必要です。この変更は Service Fabric の Windows OS イメージサポートモデルを主流の OS サポートタイムラインに合わせるものであり、Linux やその他の Azure プラットフォームと一貫性が保たれます。",
       "products": [
-        "Event Grid"
+        "Azure Service Fabric"
       ],
       "productCategories": [
-        "Integration",
-        "Internet of Things"
-      ],
-      "tags": [
-        "Features",
-        "Microsoft Build"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=492542",
-      "actionRequired": false
-    },
-    {
-      "id": "559406",
-      "title": "Microsoft Azure がデンマークの新しいクラウドリージョンから利用可能に",
-      "date": "2026-03-31T17:15:56.0929401Z",
-      "category": "ga",
-      "summary": "Microsoft はデジタルトランスフォーメーションと AI イノベーションを加速するため、デンマークにクラウドリージョンを開設しました。Denmark East リージョンは、デンマークの顧客にローカルでセキュアなクラウドインフラを提供し、ローカルデータレジデンシー、低レイテンシ、高度なクラウドおよび AI サービスへのアクセスをサポートします。Azure Resource Mover を使用して新リージョンへのリソース移行が可能です。",
-      "products": [],
-      "productCategories": [],
-      "tags": [
-        "Regions & Datacenters"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=559406",
-      "actionRequired": false
-    },
-    {
-      "id": "559526",
-      "title": "Azure Premium SSD v2 ディスクが South India で利用可能に",
-      "date": "2026-03-30T16:30:50.9886051Z",
-      "category": "ga",
-      "summary": "Azure Premium SSD v2 が South India リージョン（可用性ゾーンなし）で利用可能になりました。Azure Premium SSD v2 ディスクは、Azure 仮想マシン向けの次世代汎用ブロックストレージオプションで、IO 集約型ワークロードに対してサブミリ秒のレイテンシと優れたコストパフォーマンスを低コストで提供します。SQL Server、Oracle、MariaDB、SAP、Cassandra、MongoDB、ビッグデータ/分析、ゲームなど幅広いエンタープライズ本番シナリオに適しています。",
-      "products": [
-        "Azure Disk Storage",
-        "Virtual Machines"
-      ],
-      "productCategories": [
-        "Storage",
-        "Compute"
-      ],
-      "tags": [
-        "Features",
-        "Services"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=559526",
-      "actionRequired": false
-    },
-    {
-      "id": "559535",
-      "title": "Azure Tables、Azure Files、Azure Queues 向けユーザー委任 SAS の一般提供",
-      "date": "2026-03-31T17:30:08.6418325Z",
-      "category": "ga",
-      "summary": "Azure Tables、Azure Files、Azure Queues 向けユーザー委任 SAS が一般提供されました。ユーザー委任 SAS は、SAS トークンを委任者に紐付けることで、アカウントまたはサービス SAS よりもセキュアなトークンを作成できます。テーブル、テーブルエンティティ、キュー、キューエンティティ、ファイルコンテナー、個別ファイルレベルで SAS トークンを設定可能で、上位レベルのトークンはその配下のすべてのエンティティへのアクセスを提供します。",
-      "products": [
-        "Azure Files",
-        "Queue Storage",
-        "Table Storage"
-      ],
-      "productCategories": [
-        "Storage",
-        "Databases"
-      ],
-      "tags": [
-        "Features",
-        "Security"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=559535",
-      "actionRequired": false
-    },
-    {
-      "id": "559552",
-      "title": "Azure Red Hat OpenShift が Indonesia Central で一般提供",
-      "date": "2026-03-30T21:30:50.0933440Z",
-      "category": "ga",
-      "summary": "Azure Red Hat OpenShift (ARO) が Indonesia Central リージョンで一般提供されました。Azure 上でミッションクリティカルな OpenShift ワークロードを実行する顧客のリージョン可用性が拡大します。インドネシアおよびアジア太平洋地域の組織が、Azure のセキュリティ、ネットワーク、運用が統合されたフルマネージドの Red Hat OpenShift クラスターをデプロイできるようになります。規制対応や低レイテンシが求められるアプリケーションの近代化に対応します。",
-      "products": [
-        "Azure Red Hat OpenShift"
-      ],
-      "productCategories": [
+        "Compute",
         "Containers"
       ],
       "tags": [
-        "Open Source"
+        "Retirements"
       ],
-      "url": "https://azure.microsoft.com/updates?id=559552",
-      "actionRequired": false
-    },
-    {
-      "id": "559660",
-      "title": "Azure DevOps 2026 年 3 月の更新",
-      "date": "2026-03-31T18:15:10.6713801Z",
-      "category": "ga",
-      "summary": "2026年3月の Azure DevOps 更新内容: Remote MCP Server がパブリックプレビューに移行し、ローカルサーバー不要で Azure DevOps と AI を活用したシームレスな統合が可能になりました。セキュリティ改善として、ブランチポリシーに直接統合された Advanced Security PR ステータスチェック、シークレットプッシュ保護バイパスの監査ログ強化、セキュリティ概要データの CSV エクスポート機能が追加されました。Azure Pipelines の改善も含まれます。",
-      "products": [
-        "Azure DevOps"
-      ],
-      "productCategories": [
-        "Developer tools",
-        "DevOps",
-        "Hybrid + multicloud"
-      ],
-      "tags": [
-        "Features"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=559660",
-      "actionRequired": false
-    },
-    {
-      "id": "559677",
-      "title": "Azure Premium SSD v2 ディスクが US Gov Arizona で利用可能に",
-      "date": "2026-03-31T16:30:51.6348366Z",
-      "category": "ga",
-      "summary": "Azure Premium SSD v2 が US Gov Arizona リージョン（可用性ゾーンなし）で利用可能になりました。Azure Premium SSD v2 ディスクは、Azure 仮想マシン向けの次世代汎用ブロックストレージオプションで、IO 集約型ワークロードに対してサブミリ秒のレイテンシと優れたコストパフォーマンスを低コストで提供します。SQL Server、Oracle、MariaDB、SAP、Cassandra、MongoDB などのエンタープライズ本番シナリオに対応しています。",
-      "products": [
-        "Azure Disk Storage",
-        "Virtual Machines"
-      ],
-      "productCategories": [
-        "Storage",
-        "Compute"
-      ],
-      "tags": [
-        "Features",
-        "Services"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=559677",
-      "actionRequired": false
-    },
-    {
-      "id": "559767",
-      "title": "Azure Data Box が Azure Files Provisioned v2 をサポート",
-      "date": "2026-04-01T18:15:44.8377397Z",
-      "category": "ga",
-      "summary": "Azure Data Box が Azure Files Provisioned v2 ストレージアカウントへのデータ取り込みをサポートしました。Azure Files Provisioned v2 は、顧客が特定の容量、IOPS、スループット値をプロビジョニングして支払う課金モデルで、ファイル共有ワークロードの柔軟性とコスト管理を向上させます。この更新により、ほとんどのパブリックリージョンで Azure Data Box を使用して Azure Files Provisioned v2 ストレージアカウントに直接データを転送できます。",
-      "products": [
-        "Azure Data Box"
-      ],
-      "productCategories": [
-        "Migration",
-        "Storage"
-      ],
-      "tags": [
-        "Features"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=559767",
-      "actionRequired": false
-    },
-    {
-      "id": "559772",
-      "title": "Azure Data Box が自動セキュア消去証明書でコンプライアンスを強化",
-      "date": "2026-04-01T18:30:16.1809536Z",
-      "category": "ga",
-      "summary": "Azure Data Box は、完了したすべての注文に対してダウンロード可能なセキュア消去証明書を自動生成するようになりました。NIST 800-88 Revision 2 標準に従ってデバイス上のすべてのデータが安全に消去されたことを証明します。証明書は標準クリーンアッププロセスの一部として作成され、Azure Portal から直接アクセスできます。監査の複雑性を低減し、手動検証の必要性を排除し、コンプライアンスの透明性を向上させます。",
-      "products": [
-        "Azure Data Box"
-      ],
-      "productCategories": [
-        "Migration",
-        "Storage"
-      ],
-      "tags": [
-        "Features"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=559772",
-      "actionRequired": false
+      "url": "https://azure.microsoft.com/updates?id=558246",
+      "actionRequired": true
     },
     {
       "id": "537234",
@@ -342,22 +113,22 @@
       "actionRequired": false
     },
     {
-      "id": "559322",
-      "title": "VM/VMSS 向けエフェメラル OS ディスクのフルキャッシュ対応",
-      "date": "2026-03-30T21:45:47.4558873Z",
-      "category": "preview",
-      "summary": "Azure VM/VMSS 向けエフェメラル OS ディスクのフルキャッシュ機能がパブリックプレビューで利用可能になりました。OS ディスクイメージ全体をローカル VM ストレージ（キャッシュディスク、リソースディスク、または NVMe ディスク）にキャッシュすることで、大幅に高速かつ信頼性の高い IO パフォーマンスと安定した低レイテンシを実現します。AI ワークロードを含むステートレスで IO 集約的なワークロードに特に有効です。",
+      "id": "559772",
+      "title": "Azure Data Box が自動セキュア消去証明書でコンプライアンスを強化",
+      "date": "2026-04-01T18:30:16.1809536Z",
+      "category": "ga",
+      "summary": "Azure Data Box は、完了したすべての注文に対してダウンロード可能なセキュア消去証明書を自動生成するようになりました。NIST 800-88 Revision 2 標準に従ってデバイス上のすべてのデータが安全に消去されたことを証明します。証明書は標準クリーンアッププロセスの一部として作成され、Azure Portal から直接アクセスできます。監査の複雑性を低減し、手動検証の必要性を排除し、コンプライアンスの透明性を向上させます。",
       "products": [
-        "Virtual Machine Scale Sets",
-        "Virtual Machines"
+        "Azure Data Box"
       ],
       "productCategories": [
-        "Compute"
+        "Migration",
+        "Storage"
       ],
       "tags": [
         "Features"
       ],
-      "url": "https://azure.microsoft.com/updates?id=559322",
+      "url": "https://azure.microsoft.com/updates?id=559772",
       "actionRequired": false
     },
     {
@@ -379,6 +150,82 @@
       "actionRequired": false
     },
     {
+      "id": "559767",
+      "title": "Azure Data Box が Azure Files Provisioned v2 をサポート",
+      "date": "2026-04-01T18:15:44.8377397Z",
+      "category": "ga",
+      "summary": "Azure Data Box が Azure Files Provisioned v2 ストレージアカウントへのデータ取り込みをサポートしました。Azure Files Provisioned v2 は、顧客が特定の容量、IOPS、スループット値をプロビジョニングして支払う課金モデルで、ファイル共有ワークロードの柔軟性とコスト管理を向上させます。この更新により、ほとんどのパブリックリージョンで Azure Data Box を使用して Azure Files Provisioned v2 ストレージアカウントに直接データを転送できます。",
+      "products": [
+        "Azure Data Box"
+      ],
+      "productCategories": [
+        "Migration",
+        "Storage"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=559767",
+      "actionRequired": false
+    },
+    {
+      "id": "557394",
+      "title": "一部の Azure AI Language 機能が 2027 年 3 月 20 日に廃止",
+      "date": "2026-04-01T18:00:10.4921362Z",
+      "category": "retirement",
+      "summary": "2027年3月20日に、Microsoft は次の8つの Azure AI Language 機能を廃止します: キーフレーズ抽出、感情分析と意見マイニング、カスタムテキスト分類、会話言語理解（CLU）、カスタム質問応答（CQA）、オーケストレーションワークフロー、要約（抽出型・生成型、文書および会話向け）、エンティティリンキング。以降、これらの機能へのリクエストはエラーを返します。",
+      "products": [
+        "Azure AI Language"
+      ],
+      "productCategories": [
+        "AI + machine learning"
+      ],
+      "tags": [
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=557394",
+      "actionRequired": true
+    },
+    {
+      "id": "557406",
+      "title": "Azure Machine Learning の外部データインポートおよびデータ接続が 2026 年 9 月 30 日に廃止",
+      "date": "2026-03-31T20:00:35.9196595Z",
+      "category": "retirement",
+      "summary": "S3、Snowflake、Azure SQL DB などの外部ソースからのデータインポート（プレビュー）および Azure Machine Learning の外部データ接続（プレビュー）が廃止されます。2026年9月30日以降、これらの機能は利用できなくなります。既存のインポート済みアセットは引き続き利用可能ですが、スケジュールされた更新は停止されます。新しいデータインポートや外部データ接続の作成もできなくなります。",
+      "products": [
+        "Azure Machine Learning"
+      ],
+      "productCategories": [
+        "AI + machine learning",
+        "Internet of Things"
+      ],
+      "tags": [
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=557406",
+      "actionRequired": true
+    },
+    {
+      "id": "559660",
+      "title": "Azure DevOps 2026 年 3 月の更新",
+      "date": "2026-03-31T18:15:10.6713801Z",
+      "category": "ga",
+      "summary": "2026年3月の Azure DevOps 更新内容: Remote MCP Server がパブリックプレビューに移行し、ローカルサーバー不要で Azure DevOps と AI を活用したシームレスな統合が可能になりました。セキュリティ改善として、ブランチポリシーに直接統合された Advanced Security PR ステータスチェック、シークレットプッシュ保護バイパスの監査ログ強化、セキュリティ概要データの CSV エクスポート機能が追加されました。Azure Pipelines の改善も含まれます。",
+      "products": [
+        "Azure DevOps"
+      ],
+      "productCategories": [
+        "Developer tools",
+        "DevOps",
+        "Hybrid + multicloud"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=559660",
+      "actionRequired": false
+    },
+    {
       "id": "559695",
       "title": "Azure Event Grid がよりスマートでセキュアなイベント駆動型アーキテクチャのための新機能をパブリックプレビューで提供",
       "date": "2026-03-31T17:45:46.9375071Z",
@@ -391,6 +238,197 @@
         "Microsoft Build"
       ],
       "url": "https://azure.microsoft.com/updates?id=559695",
+      "actionRequired": false
+    },
+    {
+      "id": "492542",
+      "title": "Azure Event Grid がよりスマートでセキュアなイベント駆動型アーキテクチャのための新機能を提供",
+      "date": "2026-03-31T17:30:08.6418325Z",
+      "category": "ga",
+      "summary": "Azure Event Grid は、大規模な分散システムをより適切に管理できるよう、相互運用性と制御性を向上させた様々な新機能を一般提供しました。MQTT メッセージ順序保証（クライアントセッション内でのインオーダー配信）、MQTT 接続レート制限（クライアントあたり毎秒1回の接続試行制限）、MQTT トピックセグメント拡張（最大15セグメント対応）などが含まれます。",
+      "products": [
+        "Event Grid"
+      ],
+      "productCategories": [
+        "Integration",
+        "Internet of Things"
+      ],
+      "tags": [
+        "Features",
+        "Microsoft Build"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=492542",
+      "actionRequired": false
+    },
+    {
+      "id": "559535",
+      "title": "Azure Tables、Azure Files、Azure Queues 向けユーザー委任 SAS の一般提供",
+      "date": "2026-03-31T17:30:08.6418325Z",
+      "category": "ga",
+      "summary": "Azure Tables、Azure Files、Azure Queues 向けユーザー委任 SAS が一般提供されました。ユーザー委任 SAS は、SAS トークンを委任者に紐付けることで、アカウントまたはサービス SAS よりもセキュアなトークンを作成できます。テーブル、テーブルエンティティ、キュー、キューエンティティ、ファイルコンテナー、個別ファイルレベルで SAS トークンを設定可能で、上位レベルのトークンはその配下のすべてのエンティティへのアクセスを提供します。",
+      "products": [
+        "Azure Files",
+        "Queue Storage",
+        "Table Storage"
+      ],
+      "productCategories": [
+        "Storage",
+        "Databases"
+      ],
+      "tags": [
+        "Features",
+        "Security"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=559535",
+      "actionRequired": false
+    },
+    {
+      "id": "559406",
+      "title": "Microsoft Azure がデンマークの新しいクラウドリージョンから利用可能に",
+      "date": "2026-03-31T17:15:56.0929401Z",
+      "category": "ga",
+      "summary": "Microsoft はデジタルトランスフォーメーションと AI イノベーションを加速するため、デンマークにクラウドリージョンを開設しました。Denmark East リージョンは、デンマークの顧客にローカルでセキュアなクラウドインフラを提供し、ローカルデータレジデンシー、低レイテンシ、高度なクラウドおよび AI サービスへのアクセスをサポートします。Azure Resource Mover を使用して新リージョンへのリソース移行が可能です。",
+      "products": [],
+      "productCategories": [],
+      "tags": [
+        "Regions & Datacenters"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=559406",
+      "actionRequired": false
+    },
+    {
+      "id": "557395",
+      "title": "Azure Government および 21Vianet 運営の Microsoft Azure クラウド向け手動登録済み Azure VPN クライアントが 2029 年 3 月 31 日に廃止",
+      "date": "2026-03-31T16:45:33.5681052Z",
+      "category": "retirement",
+      "summary": "2029年3月31日に、Azure Government および 21Vianet が運営する Microsoft Azure において、Microsoft Entra ID 認証を使用したポイント対サイト接続の手動登録済み Azure VPN クライアントが廃止されます。サービス中断を防ぐため、2029年3月31日までに Microsoft 登録済み VPN クライアントへの移行を推奨します。セキュリティ強化のため、Microsoft 登録済みクライアントのみがサポートされます。",
+      "products": [
+        "VPN Gateway"
+      ],
+      "productCategories": [
+        "Networking",
+        "Security"
+      ],
+      "tags": [
+        "Retirements",
+        "Security"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=557395",
+      "actionRequired": true
+    },
+    {
+      "id": "559677",
+      "title": "Azure Premium SSD v2 ディスクが US Gov Arizona で利用可能に",
+      "date": "2026-03-31T16:30:51.6348366Z",
+      "category": "ga",
+      "summary": "Azure Premium SSD v2 が US Gov Arizona リージョン（可用性ゾーンなし）で利用可能になりました。Azure Premium SSD v2 ディスクは、Azure 仮想マシン向けの次世代汎用ブロックストレージオプションで、IO 集約型ワークロードに対してサブミリ秒のレイテンシと優れたコストパフォーマンスを低コストで提供します。SQL Server、Oracle、MariaDB、SAP、Cassandra、MongoDB などのエンタープライズ本番シナリオに対応しています。",
+      "products": [
+        "Azure Disk Storage",
+        "Virtual Machines"
+      ],
+      "productCategories": [
+        "Storage",
+        "Compute"
+      ],
+      "tags": [
+        "Features",
+        "Services"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=559677",
+      "actionRequired": false
+    },
+    {
+      "id": "559322",
+      "title": "VM/VMSS 向けエフェメラル OS ディスクのフルキャッシュ対応",
+      "date": "2026-03-30T21:45:47.4558873Z",
+      "category": "preview",
+      "summary": "Azure VM/VMSS 向けエフェメラル OS ディスクのフルキャッシュ機能がパブリックプレビューで利用可能になりました。OS ディスクイメージ全体をローカル VM ストレージ（キャッシュディスク、リソースディスク、または NVMe ディスク）にキャッシュすることで、大幅に高速かつ信頼性の高い IO パフォーマンスと安定した低レイテンシを実現します。AI ワークロードを含むステートレスで IO 集約的なワークロードに特に有効です。",
+      "products": [
+        "Virtual Machine Scale Sets",
+        "Virtual Machines"
+      ],
+      "productCategories": [
+        "Compute"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=559322",
+      "actionRequired": false
+    },
+    {
+      "id": "550519",
+      "title": "Azure Monitor managed service for Prometheus のリモート書き込み用サイドカーの廃止",
+      "date": "2026-03-30T21:30:50.0933440Z",
+      "category": "retirement",
+      "summary": "2027年3月31日に、Azure Monitor は Prometheus メトリクスを Azure Monitor Workspace にリモート書き込みするためのサイドカーを廃止します。信頼性の向上と複雑性の低減に向けた取り組みの一環です。セルフホスト型 Prometheus または Prometheus Operator を Azure Monitor Workspace に直接リモート書き込みするよう設定することを推奨します。すべての認証方法がサポートされています。",
+      "products": [
+        "Azure Kubernetes Service (AKS)",
+        "Azure Monitor"
+      ],
+      "productCategories": [
+        "Compute",
+        "Containers",
+        "DevOps",
+        "Management and governance"
+      ],
+      "tags": [
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=550519",
+      "actionRequired": true
+    },
+    {
+      "id": "559552",
+      "title": "Azure Red Hat OpenShift が Indonesia Central で一般提供",
+      "date": "2026-03-30T21:30:50.0933440Z",
+      "category": "ga",
+      "summary": "Azure Red Hat OpenShift (ARO) が Indonesia Central リージョンで一般提供されました。Azure 上でミッションクリティカルな OpenShift ワークロードを実行する顧客のリージョン可用性が拡大します。インドネシアおよびアジア太平洋地域の組織が、Azure のセキュリティ、ネットワーク、運用が統合されたフルマネージドの Red Hat OpenShift クラスターをデプロイできるようになります。規制対応や低レイテンシが求められるアプリケーションの近代化に対応します。",
+      "products": [
+        "Azure Red Hat OpenShift"
+      ],
+      "productCategories": [
+        "Containers"
+      ],
+      "tags": [
+        "Open Source"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=559552",
+      "actionRequired": false
+    },
+    {
+      "id": "556085",
+      "title": "Azure Cosmos DB for PostgreSQL は 2029 年 3 月 31 日に廃止",
+      "date": "2026-03-30T17:45:08.2587317Z",
+      "category": "retirement",
+      "summary": "2029年3月31日に Azure Cosmos DB for PostgreSQL が廃止されます。同日までに Azure Database for PostgreSQL Elastic Cluster への移行が必要です。Azure Database for PostgreSQL Elastic Cluster は Citus 拡張機能をベースに構築され、同等の分散 PostgreSQL 機能を提供しながら、よりシンプルな価格モデル、幅広いコンピューティングの選択肢、新しい PostgreSQL バージョンのサポート、および組み込みの高可用性を提供します。",
+      "products": [],
+      "productCategories": [],
+      "tags": [
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=556085",
+      "actionRequired": true
+    },
+    {
+      "id": "559526",
+      "title": "Azure Premium SSD v2 ディスクが South India で利用可能に",
+      "date": "2026-03-30T16:30:50.9886051Z",
+      "category": "ga",
+      "summary": "Azure Premium SSD v2 が South India リージョン（可用性ゾーンなし）で利用可能になりました。Azure Premium SSD v2 ディスクは、Azure 仮想マシン向けの次世代汎用ブロックストレージオプションで、IO 集約型ワークロードに対してサブミリ秒のレイテンシと優れたコストパフォーマンスを低コストで提供します。SQL Server、Oracle、MariaDB、SAP、Cassandra、MongoDB、ビッグデータ/分析、ゲームなど幅広いエンタープライズ本番シナリオに適しています。",
+      "products": [
+        "Azure Disk Storage",
+        "Virtual Machines"
+      ],
+      "productCategories": [
+        "Storage",
+        "Compute"
+      ],
+      "tags": [
+        "Features",
+        "Services"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=559526",
       "actionRequired": false
     }
   ]
