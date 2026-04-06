@@ -1,0 +1,66 @@
+{
+  "week": "2026-W15",
+  "period": {
+    "from": "2026-04-06",
+    "to": "2026-04-12"
+  },
+  "fetchedAt": "2026-04-06T23:02:31.719071+00:00",
+  "count": 4,
+  "stats": {
+    "ai": 0,
+    "devops": 2,
+    "security": 1,
+    "network": 0,
+    "database": 0,
+    "container": 0,
+    "serverless": 0,
+    "storage": 0,
+    "other": 1
+  },
+  "entries": [
+    {
+      "id": "agentframework-v1-006",
+      "title": "チャット履歴の管理 - Microsoft Agent Framework (C#) V1 その6",
+      "date": "2026-04-06T21:56:04+00:00",
+      "category": "other",
+      "summary": "シリーズ記事 その1: V1 リリース！ - Microsoft Agent Framework (C) V1 その1 その2: GA された機能を触ってみよう - Microsoft Agent Framework (C) V1 その2 その3: ワークフローとマルチエージェント - Microsoft Agent Framework (C) V1 その3 その4: シングルエージェントの裏側を覗いてみよう - Microsoft Agent Framework (C) V1 その4 その5: ツール呼び出しの承認 (Human-in-the-Loop) - Micros...",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/agentframework-v1-006",
+      "source": "zenn",
+      "author": "Kazuki Ota"
+    },
+    {
+      "id": "91df843374fbde",
+      "title": "Microsoft Entra Agent ID を作成する方法試してみた！ Microsoft Graph 編 (サンプルコード付き)",
+      "date": "2026-04-06T09:00:12+00:00",
+      "category": "security",
+      "summary": "シリーズ記事 Microsoft Entra Agent ID 入門編 Microsoft Entra Agent ID を作成する方法試してみた！ Microsoft Graph 編 (サンプルコード付き) (本記事) はじめに Microsoft Entra Agent ID の条件付きアクセスや ID Protection などの機能がプレビューで公開されています。 実際どのようなことができるのか動作を検証するためにも、まずは Agent ID 自体が必要であるということで、Agent ID を作成する方法を試してみました。 一緒に下準備しておきましょう！ ! Mic...",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/91df843374fbde",
+      "source": "zenn",
+      "author": "YUKA NATSUKI"
+    },
+    {
+      "id": "4d24574d8aebf9",
+      "title": "入社Day１から始めるGitHub Copilot生活！~非エンジニアこそ使ってほしいメモエディターVScode~",
+      "date": "2026-04-06T06:20:39+00:00",
+      "category": "devops",
+      "summary": "! 本記事は GitHub Copilot を活用して執筆しています。 ゴール この記事では日々の業務メモを「GitHub Copilot × Markdown」で資産化していく実践方法を紹介します。 はじめに ── AI時代の新卒の生存戦略 2026年4月1日、社会人としての第一歩を踏み出しました。 配属先のデスクに座り、真新しいPCを開いた瞬間、ふと気づいたことがあります。 ──周りの先輩たちは、みんな当たり前のようにAIを使いこなしている。 「AIを使いこなす」ということは、もはや特別なスキルではなく、 日々の業務を進める上での前提条件になっていました。 しかし、AIの性...",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/4d24574d8aebf9",
+      "source": "zenn",
+      "author": "Ken10"
+    },
+    {
+      "id": "72b748e995a8da",
+      "title": "OTel で GitHub Copilot のカスタマイズを A/B テストする",
+      "date": "2026-04-06T04:08:22+00:00",
+      "category": "devops",
+      "summary": "! この記事は2026年4月時点の情報です。 以前、GitHub Copilot の OTel（OpenTelemetry）エクスポート機能を紹介しました。 GitHub Copilot Chat エージェントの振る舞いを OTel で分析する GitHub Copilot CLI も OTel で観測する その中で、「OTel を使ってcopilot の動作を評価する仕組みができそう」という示唆が得られたので、今回はそれを実際にやってみたという内容です。評価のためのフレームワークは、下記で公開しています。 https://github.com/openjny/copilot-ev...",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/72b748e995a8da",
+      "source": "zenn",
+      "author": "Junya Yamaguchi"
+    }
+  ]
+}
