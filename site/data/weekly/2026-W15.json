@@ -4,21 +4,117 @@
     "from": "2026-04-06",
     "to": "2026-04-12"
   },
-  "fetchedAt": "2026-04-07T03:47:45Z",
-  "count": 2,
+  "fetchedAt": "2026-04-08T03:53:04Z",
+  "count": 6,
   "stats": {
-    "ga": 1,
+    "ga": 5,
     "preview": 1,
     "retirement": 0,
     "change": 0
   },
   "entries": [
     {
+      "id": "559547",
+      "title": "一般提供開始: Azure Red Hat OpenShift が NVIDIA H100 および H200 GPU サポートを追加",
+      "date": "2026-04-07",
+      "category": "ga",
+      "summary": "Azure Red Hat OpenShift (ARO) が NVIDIA H100 および H200 GPU ベースの Azure Virtual Machine SKU をサポートするようになりました。これにより、フルマネージドの OpenShift サービス上で大規模な AI、機械学習、高性能コンピューティング (HPC) ワークロードを実行できます。この更新により、エンタープライズ Kubernetes と組み込みのセキュリティ、ライフサイクル管理、Azure 統合を活用して GPU アクセラレーションコンテナをデプロイできます。H100 および H200 GPU により、大規模言語モデルのトレーニングと推論、データ分析、高度なシミュレーションワークロードに次世代パフォーマンスを活用できます。",
+      "products": [
+        "Azure Red Hat OpenShift"
+      ],
+      "productCategories": [
+        "Containers"
+      ],
+      "tags": [
+        "Open Source",
+        "Regions & Datacenters"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=559547",
+      "actionRequired": false
+    },
+    {
+      "id": "557857",
+      "title": "一般提供開始: AKS での HTTP プロキシの無効化機能",
+      "date": "2026-04-07",
+      "category": "ga",
+      "summary": "HTTP プロキシを使用してアウトバウンドトラフィックを制御している組織は、ネットワーク要件の変化に応じてプロキシ設定を変更または削除する必要があり、実行中のクラスターに支障をきたすことがありました。Azure Kubernetes Service では、管理者がコントロールプレーンのプロキシ設定を保持しつつ、ノードおよび Pod の HTTP プロキシ変数を無効化できるようになり、変更時にはノードプールの再イメージングがトリガーされてクラスターの整合性が確保されます。これにより、アウトバウンドネットワークの動作をより明確に制御でき、クラスターの完全な再構築を必要とせずに継続的なメンテナンスが簡素化されます。",
+      "products": [
+        "Azure Kubernetes Service (AKS)"
+      ],
+      "productCategories": [
+        "Compute",
+        "Containers"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=557857",
+      "actionRequired": false
+    },
+    {
+      "id": "559981",
+      "title": "一般提供開始: Azure Functions が MCP リソーストリガーをサポート",
+      "date": "2026-04-07",
+      "category": "ga",
+      "summary": "Azure Functions 上で MCP サーバーを構築する開発者はツールを公開できましたが、リソースは公開できませんでした。Azure Functions が MCP リソーストリガーをサポートするようになり、開発者は Azure Functions でホストされた Model Context Protocol (MCP) サーバーから直接リソースを公開できます。リソースには静的または動的ファイル、アプリケーションメタデータ、MCP ホストによってネイティブにレンダリングされる HTML ベースのウィジェットなどの MCP App UI コンテンツが含まれます。この機能は Python、TypeScript、.NET、Java 向けの Azure Functions MCP 拡張機能で利用可能です。",
+      "products": [
+        "Azure Functions"
+      ],
+      "productCategories": [
+        "Compute",
+        "Containers",
+        "Internet of Things"
+      ],
+      "tags": [
+        "Features",
+        "Services"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=559981",
+      "actionRequired": false
+    },
+    {
+      "id": "557907",
+      "title": "一般提供開始: AKS における Pod CIDR の拡張機能",
+      "date": "2026-04-07",
+      "category": "ga",
+      "summary": "クラスターで利用可能な Pod IP アドレスが枯渇すると、チームはこれまで環境を再構築して容量を回復する必要があり、運用上の混乱が生じていました。Pod CIDR 拡張機能により、オーバーレイベースの AKS クラスターがクラスターを再作成せずに Pod IP 範囲をインプレースで拡大できるようになります。これにより、チームは可用性を維持しながらワークロードをスケールでき、環境の成長に合わせた長期的な IP 計画が簡素化されます。",
+      "products": [
+        "Azure Kubernetes Service (AKS)"
+      ],
+      "productCategories": [
+        "Compute",
+        "Containers"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=557907",
+      "actionRequired": false
+    },
+    {
+      "id": "559899",
+      "title": "一般提供開始: Azure Service Bus のネットワーク セキュリティ境界",
+      "date": "2026-04-06",
+      "category": "ga",
+      "summary": "Azure Service Bus のネットワーク セキュリティ境界 (NSP) サポートが一般提供になりました。ネットワーク セキュリティ境界は Service Bus 名前空間およびその他の Azure PaaS リソースの周囲に論理的なネットワーク境界を作成し、デフォルトで不正なパブリックアクセスをブロックして境界内のサービス間のセキュアな通信を可能にします。これにより、各リソースのネットワークルールを個別に設定する代わりに、一元化された境界レベルの制御が提供されます。",
+      "products": [
+        "Service Bus"
+      ],
+      "productCategories": [
+        "Integration"
+      ],
+      "tags": [
+        "Security"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=559899",
+      "actionRequired": false
+    },
+    {
       "id": "559876",
-      "title": "Azure Network Watcher のルール影響分析",
-      "date": "2026-04-06T16:15:40.6397683Z",
+      "title": "パブリック プレビュー: Azure Network Watcher のルール影響分析",
+      "date": "2026-04-06",
       "category": "preview",
-      "summary": "Azure Network Watcher のルール影響分析を使用すると、セキュリティ管理ルールを環境に適用する前にその影響をプレビューできます。この機能は、ルールの動作を検証し、潜在的な競合を特定し、ライブトラフィックを妨げることなく接続要件を満たすのに役立ちます。提案したルール変更の影響を理解することで、自信を持って変更を計画し、コンプライアンスを維持し、仮想ネットワーク全体の設定ミスのリスクを軽減できます。",
+      "summary": "Azure Network Watcher のルール影響分析を使用すると、セキュリティ管理者ルールを環境に適用する前にその影響をプレビューできます。この機能により、ルールの動作を検証し、潜在的な競合を特定して、ライブトラフィックを中断させることなく接続要件が満たされていることを確認できます。提案されたルール変更の影響を理解することで、変更を安心して計画し、コンプライアンスを維持し、仮想ネットワーク全体での設定ミスのリスクを低減できます。",
       "products": [
         "Network Watcher"
       ],
@@ -31,24 +127,6 @@
         "Services"
       ],
       "url": "https://azure.microsoft.com/updates?id=559876",
-      "actionRequired": false
-    },
-    {
-      "id": "559899",
-      "title": "Azure Service Bus 向け Network Security Perimeter",
-      "date": "2026-04-06T18:00:04.7340299Z",
-      "category": "ga",
-      "summary": "Azure Service Bus の Network Security Perimeter（NSP）サポートが一般提供開始となりました。Network Security Perimeter は、Service Bus 名前空間やその他の Azure PaaS リソースの周囲に論理ネットワーク境界を作成し、デフォルトで不正なパブリックアクセスをブロックし、境界内のサービス間の安全な通信を可能にします。これは既存の Service Bus ネットワーク セキュリティ オプション（IP ファイアウォール ルール、VNet サービス エンドポイント、プライベート エンドポイント）を補完し、一元的な境界レベルの制御を提供します。リソースを個別に設定する代わりに、境界を作成して PaaS リソースを関連付けることができます。",
-      "products": [
-        "Service Bus"
-      ],
-      "productCategories": [
-        "Integration"
-      ],
-      "tags": [
-        "Security"
-      ],
-      "url": "https://azure.microsoft.com/updates?id=559899",
       "actionRequired": false
     }
   ]
