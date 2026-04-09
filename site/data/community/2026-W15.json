@@ -4,27 +4,121 @@
     "from": "2026-04-06",
     "to": "2026-04-12"
   },
-  "fetchedAt": "2026-04-08T23:06:25.223318+00:00",
-  "count": 9,
+  "fetchedAt": "2026-04-09T23:05:14Z",
+  "count": 15,
   "stats": {
     "ai": 6,
-    "devops": 0,
-    "security": 1,
+    "devops": 7,
+    "security": 2,
     "network": 0,
     "database": 0,
     "container": 0,
     "serverless": 0,
     "storage": 0,
-    "other": 2
+    "other": 0
   },
   "entries": [
     {
+      "id": "9caec69fe961c7007178",
+      "title": "Foundry Agent × Streamlit × Cosmos DB で会話履歴付き AI アプリ構築",
+      "date": "2026-04-09T19:35:17+09:00",
+      "category": "ai",
+      "summary": "Microsoft Foundry Agent Service × Streamlit × Cosmos DB で会話履歴付き AI チャットアプリを構築する はじめに AI チャットアプリを構築する際、「会話履歴をどこにどう保存するか」は設計上の重要なポイントです。本記事では、Microsoft Foundry Agent Service の Conversations API を活用し、Streamlit で UI を作成、Cosmos DB でメタデータを管理する構成を検証しました。 Azure Developer CLI（azd）と Bicep によるインフラ構築から、アプリケーション",
+      "tags": [
+        "Python",
+        "Agent",
+        "Foundry",
+        "CosmosDB",
+        "Streamlit"
+      ],
+      "url": "https://qiita.com/FukuharaYohei/items/9caec69fe961c7007178",
+      "source": "qiita",
+      "author": "FukuharaYohei"
+    },
+    {
+      "id": "54a6721a5aff60fa8631",
+      "title": "GitHub Copilot CLI の公式ハンズオンざっくり和訳 (第4章/7章) カスタムエージェント編",
+      "date": "2026-04-09T16:37:13+09:00",
+      "category": "devops",
+      "summary": "公式チュートリアル「GitHub Copilot CLI for Beginners」ハンズオンリポジトリを進めていきます！ https://github.com/github/copilot-cli-for-beginners このチュートリアルは (2026 年 4 月現在) 7 章までありますが、 今回は、第 4 章（特化型 (Specialized) AI アシスタントの作成）をざっくり和訳しながら進めていこうと思います。  https://github.com/github/copilot-cli-for-beginners/tree/main/04-agents-custom-in",
+      "tags": [
+        "チュートリアル",
+        "ハンズオン",
+        "エージェント",
+        "GitHubCopilot",
+        "githubcopilotcli"
+      ],
+      "url": "https://qiita.com/chomado/items/54a6721a5aff60fa8631",
+      "source": "qiita",
+      "author": "chomado"
+    },
+    {
+      "id": "entra-internet-access-security-profile-priority",
+      "title": "Entra Internet Access のセキュリティプロファイル優先順位を検証した",
+      "date": "2026-04-09T08:28:37+00:00",
+      "category": "security",
+      "summary": "Microsoft Entra Internet Access のセキュリティプロファイルにリンクされたポリシーが複数存在する場合、どのポリシーが優先されるのかについて、公式ドキュメントをもとに同一ユーザーに複数のセキュリティプロファイルが適用される場合の動作や、プロファイル内で複数ポリシーがリンクされている場合の解決順序について実環境で検証しました。",
+      "tags": [
+        "Entra",
+        "Security"
+      ],
+      "url": "https://zenn.dev/microsoft/articles/entra-internet-access-security-profile-priority",
+      "source": "zenn",
+      "author": "Nobufumi Murata"
+    },
+    {
+      "id": "fa9ce8817d744f",
+      "title": "Security Copilot Agent: フィッシング トリアージ エージェントの挙動を知る",
+      "date": "2026-04-09T00:20:05+00:00",
+      "category": "ai",
+      "summary": "Microsoft Security Copilot のフィッシング トリアージ エージェントを取り上げ、前提条件・セットアップ手順・実際の動作を紹介します。ユーザーが報告したフィッシングメールを自動でトリアージするAIエージェントの機能解説です。",
+      "tags": [
+        "Security",
+        "AI",
+        "Copilot"
+      ],
+      "url": "https://zenn.dev/microsoft/articles/fa9ce8817d744f",
+      "source": "zenn",
+      "author": "k.sato"
+    },
+    {
+      "id": "29e6434e065fee",
+      "title": "AIスクラムチーム、クラウドへゆく",
+      "date": "2026-04-08T23:42:09+00:00",
+      "category": "ai",
+      "summary": "GitHub Agentic Workflowsを活用し、ローカルで約6時間かかっていたAIスクラムのスプリント実行をクラウド化。ボタンひとつで8つのスクラムイベントが連鎖実行される環境を構築しました。AIスクラムチームシリーズ第3作。",
+      "tags": [
+        "GitHub",
+        "AI",
+        "DevOps"
+      ],
+      "url": "https://zenn.dev/microsoft/articles/29e6434e065fee",
+      "source": "zenn",
+      "author": "shuji yamaguchi"
+    },
+    {
+      "id": "4fbd7a02ad46f0",
+      "title": "VS Code で GitHub Copilot のメモリ機能を使ってみた",
+      "date": "2026-04-08T23:21:05+00:00",
+      "category": "devops",
+      "summary": "GitHub Copilot のメモリ機能についての連載第2回。VS Code v1.115（2026年4月）時点の情報に基づき、VS CodeでGitHub Copilotのメモリ機能を実際に使ってみた手順と結果を紹介します。",
+      "tags": [
+        "GitHub",
+        "Copilot",
+        "VS Code"
+      ],
+      "url": "https://zenn.dev/microsoft/articles/4fbd7a02ad46f0",
+      "source": "zenn",
+      "author": "Junya Yamaguchi"
+    },
+    {
       "id": "74e0361cf92bc5335723",
       "title": "GitHub Copilot CLI の公式ハンズオンざっくり和訳 (第3章/7章) 開発ワークフロー編",
-      "date": "2026-04-08T07:57:09+00:00",
-      "category": "ai",
-      "summary": "公式チュートリアル「GitHub Copilot CLI for Beginners」ハンズオンリポジトリを進めていきます！\n\nhttps://github.com/github/copilot-cli-for-beginners\n\nこのチュートリアルは (2026 年 3 月現在) 7 章までありますが、\n今回は、第 3 章（開発ワークフローへの組み込み方）をざっくり和訳しながら進めていこうと思います。 \n\nhttps://github.com/github/copilot-cli-for-beginners/blob/main/03-development-workflows/\n\n前回/前",
+      "date": "2026-04-08T16:57:09+09:00",
+      "category": "devops",
+      "summary": "公式チュートリアル「GitHub Copilot CLI for Beginners」ハンズオンリポジトリを進めていきます！ https://github.com/github/copilot-cli-for-beginners このチュートリアルは (2026 年 3 月現在) 7 章までありますが、 今回は、第 3 章（開発ワークフローへの組み込み方）をざっくり和訳しながら進めていこうと思います。  https://github.com/github/copilot-cli-for-beginners/blob/main/03-development-workflows/ 前回/前々回の記",
       "tags": [
+        "GitHub",
         "チュートリアル",
         "ハンズオン",
         "GitHubCopilot",
@@ -39,19 +133,26 @@
       "title": "エージェント開発の参考に！GitHub Copilotのシステムプロンプトを見てみよう",
       "date": "2026-04-08T02:45:41+00:00",
       "category": "ai",
-      "summary": "AIエージェント開発では、モデル選定やツールはもちろんですが、それらを正しくハンドリングするための振る舞いの指示となるプロンプト（コンテキスト）の設計が肝です。すでに多くの企業がエージェントを製品に組み込んでおり、先行者の知見を自身の開発しているAIエージェントに活かせると効率的です。\nとはいえ、実際のプロダクトがどんな指示やルールで動いているかは製品の価値そのものであるがゆえに、多くの企業はそれらを公開せず、外から見えないことがほとんどです。\n\n GitHub Copilotはプロンプトも含めてOSS\n実はGitHub Copilot（VS Code向け）のプロンプトを含むソースコード...",
-      "tags": [],
+      "summary": "AIエージェント開発ではプロンプト設計が肝心です。GitHub Copilot（VS Code向け）のプロンプトを含むソースコードはOSSとして公開されており、実際のシステムプロンプトを参照できます。エージェント開発の参考に解説します。",
+      "tags": [
+        "GitHub",
+        "AI",
+        "Copilot"
+      ],
       "url": "https://zenn.dev/microsoft/articles/github-copilot-prompts",
       "source": "zenn",
       "author": "Junpei Tsuchida（07JP27）"
     },
     {
       "id": "d1aa5068b432f9",
-      "title": "RAGとAgentic Searchの戦争を 終わらせに来た!!!",
+      "title": "RAGとAgentic Searchの戦争を終わらせに来た!!!",
       "date": "2026-04-08T01:47:31+00:00",
-      "category": "other",
-      "summary": "インフルエンサー「RAGは所詮 先の時代の敗北者じゃけェ」\n初学者「今までRAGをやってきた僕はまるで…バカじゃないですか!!?　時間がもったいだいっ!!!!」\nってなってると聞いたので、そもそもの誤解と実態について纏めたいと思う。勢いあまってアカウント作ったまま放置してたZennを解禁した。\n\n なんで争いは起こったのか\n発端は、私が把握する限りだと、1つは「Claude Codeの初期バージョンではRAG + ローカルベクトルDBを使用していましたが、エージェント型検索の方が一般的にうまく機能することがすぐにわかりました。」という下記のAnthropicエンジニア@bcherny氏か...",
-      "tags": [],
+      "category": "ai",
+      "summary": "RAGとAgentic Searchの誤解と実態について解説。Claude Codeの初期バージョンではRAG+ローカルベクトルDBを使用していたが、エージェント型検索の方が一般的にうまく機能することが判明した事例を踏まえ、両者の使い分けを整理します。",
+      "tags": [
+        "AI",
+        "RAG"
+      ],
       "url": "https://zenn.dev/microsoft/articles/d1aa5068b432f9",
       "source": "zenn",
       "author": "Hirosato Gamo"
@@ -60,9 +161,13 @@
       "id": "9fb85cdca2fb84",
       "title": "GitHub Copilot CLIを\"タダ\"で体系的に学べるコースをやってみた",
       "date": "2026-04-07T18:06:02+00:00",
-      "category": "ai",
-      "summary": "こんにちは、@chips0711 です。\n少し前に、GitHub から「GitHub Copilot CLI for Beginners」というGitHub Copilot CLI を学べるコースが公開されました。\nhttps://github.com/github/copilot-cli-for-beginners\n\n2,000 超のスター（2026 年 4 月時点）が付いている人気コース\n正直なところ、GitHub Copilot CLIを触り始める前は､「CLI でチャットするだけでしょ？」くらいに思ってました。\n使い慣れている VS Code の GitHub Copilot C...",
-      "tags": [],
+      "category": "devops",
+      "summary": "GitHubから公開された「GitHub Copilot CLI for Beginners」コースを実際にやってみた体験レポート。2,000超のスターが付く人気コースで、GitHub Copilot CLIの基本から実践的な使い方まで体系的に学べます。",
+      "tags": [
+        "GitHub",
+        "Copilot",
+        "CLI"
+      ],
       "url": "https://zenn.dev/microsoft/articles/9fb85cdca2fb84",
       "source": "zenn",
       "author": "Naoki Matsumoto"
@@ -71,9 +176,13 @@
       "id": "github-copilot-security-lab-automation",
       "title": "GitHub Copilot × 検証ラボ環境 — 検証の自動化から攻撃シミュレーションまで",
       "date": "2026-04-07T11:29:50+00:00",
-      "category": "ai",
-      "summary": "!\n本記事で紹介する活用例は、すべて 閉じたサンドボックス環境（個人のセキュリティラボ） で実施しているものです。本番環境やお客様環境での同様の運用を推奨するものではありません。権限管理・機密情報の取り扱いには十分ご注意ください。\n\n!\n本記事は GitHub Copilot の支援を受けて執筆しています。\n\n はじめに\nZenn で GitHub Copilot に関する記事を投稿しよう！ というコンテストが開催されており、せっかくの機会なので、私の GitHub Copilot の活用方法を紹介したいと思います。\n普段、Microsoft Security 製品（Microsoft...",
-      "tags": [],
+      "category": "devops",
+      "summary": "閉じたサンドボックス環境（個人のセキュリティラボ）でのGitHub Copilot x Microsoft Security製品の活用方法を紹介。検証の自動化から攻撃シミュレーションまでの実践例をまとめます。",
+      "tags": [
+        "GitHub",
+        "Security",
+        "Copilot"
+      ],
       "url": "https://zenn.dev/microsoft/articles/github-copilot-security-lab-automation",
       "source": "zenn",
       "author": "Nobufumi Murata"
@@ -82,9 +191,13 @@
       "id": "agentframework-v1-006",
       "title": "チャット履歴の管理 - Microsoft Agent Framework (C#) V1 その6",
       "date": "2026-04-06T21:56:04+00:00",
-      "category": "other",
-      "summary": "シリーズ記事\n\nその1: V1 リリース！ - Microsoft Agent Framework (C#) V1 その1\nその2: GA された機能を触ってみよう - Microsoft Agent Framework (C#) V1 その2\nその3: ワークフローとマルチエージェント - Microsoft Agent Framework (C#) V1 その3\nその4: シングルエージェントの裏側を覗いてみよう - Microsoft Agent Framework (C#) V1 その4\nその5: ツール呼び出しの承認 (Human-in-the-Loop) - Micros...",
-      "tags": [],
+      "category": "ai",
+      "summary": "Microsoft Agent Framework (C#) V1 シリーズ第6回。チャット履歴の管理について解説。V1リリース、GA機能、ワークフロー、マルチエージェント、シングルエージェント、ツール呼び出し承認に続く第6弾です。",
+      "tags": [
+        "AI",
+        "C#",
+        "AgentFramework"
+      ],
       "url": "https://zenn.dev/microsoft/articles/agentframework-v1-006",
       "source": "zenn",
       "author": "Kazuki Ota"
@@ -94,8 +207,12 @@
       "title": "Microsoft Entra Agent ID を作成する方法試してみた！ Microsoft Graph 編 (サンプルコード付き)",
       "date": "2026-04-06T09:00:12+00:00",
       "category": "security",
-      "summary": "シリーズ記事\n\nMicrosoft Entra Agent ID 入門編\nMicrosoft Entra Agent ID を作成する方法試してみた！ Microsoft Graph 編  (サンプルコード付き) (本記事)\n\n はじめに\nMicrosoft Entra Agent ID の条件付きアクセスや ID Protection などの機能がプレビューで公開されています。\n実際どのようなことができるのか動作を検証するためにも、まずは Agent ID 自体が必要であるということで、Agent ID を作成する方法を試してみました。\n一緒に下準備しておきましょう！\n!\nMic...",
-      "tags": [],
+      "summary": "Microsoft Entra Agent IDの条件付きアクセスやID Protectionなどの機能がプレビューで公開中。Agent IDをMicrosoft Graph APIを使って作成する方法を実際に試し、サンプルコード付きで解説します。",
+      "tags": [
+        "Entra",
+        "Security",
+        "Graph"
+      ],
       "url": "https://zenn.dev/microsoft/articles/91df843374fbde",
       "source": "zenn",
       "author": "YUKA NATSUKI"
@@ -104,9 +221,13 @@
       "id": "4d24574d8aebf9",
       "title": "入社Day１から始めるGitHub Copilot生活！~非エンジニアこそ使ってほしいメモエディターVScode~",
       "date": "2026-04-06T06:20:39+00:00",
-      "category": "ai",
-      "summary": "!\n本記事は GitHub Copilot を活用して執筆しています。\n\n ゴール\nこの記事では日々の業務メモを「GitHub Copilot × Markdown」で資産化していく実践方法を紹介します。\n\n はじめに ── AI時代の新卒の生存戦略\n2026年4月1日、社会人としての第一歩を踏み出しました。\n配属先のデスクに座り、真新しいPCを開いた瞬間、ふと気づいたことがあります。\n──周りの先輩たちは、みんな当たり前のようにAIを使いこなしている。\n「AIを使いこなす」ということは、もはや特別なスキルではなく、\n日々の業務を進める上での前提条件になっていました。\nしかし、AIの性...",
-      "tags": [],
+      "category": "devops",
+      "summary": "2026年4月1日入社の新社員が、日々の業務メモを「GitHub Copilot x Markdown」で資産化していく実践方法を紹介。非エンジニアこそ使ってほしいVS CodeとGitHub Copilotの活用術。",
+      "tags": [
+        "GitHub",
+        "Copilot",
+        "VS Code"
+      ],
       "url": "https://zenn.dev/microsoft/articles/4d24574d8aebf9",
       "source": "zenn",
       "author": "Ken10"
@@ -115,9 +236,13 @@
       "id": "72b748e995a8da",
       "title": "OTel で GitHub Copilot のカスタマイズを A/B テストする",
       "date": "2026-04-06T04:08:22+00:00",
-      "category": "ai",
-      "summary": "!\nこの記事は2026年4月時点の情報です。\n\n以前、GitHub Copilot の OTel（OpenTelemetry）エクスポート機能を紹介しました。\n\nGitHub Copilot Chat エージェントの振る舞いを OTel で分析する\nGitHub Copilot CLI も OTel で観測する\n\nその中で、「OTel を使ってcopilot の動作を評価する仕組みができそう」という示唆が得られたので、今回はそれを実際にやってみたという内容です。評価のためのフレームワークは、下記で公開しています。\nhttps://github.com/openjny/copilot-ev...",
-      "tags": [],
+      "category": "devops",
+      "summary": "GitHub Copilot のOTel（OpenTelemetry）エクスポート機能を活用してCopilotの動作を評価する仕組みを実装。OTelを使ったカスタマイズのA/Bテストの手順と評価フレームワークを紹介します。",
+      "tags": [
+        "GitHub",
+        "Copilot",
+        "OpenTelemetry"
+      ],
       "url": "https://zenn.dev/microsoft/articles/72b748e995a8da",
       "source": "zenn",
       "author": "Junya Yamaguchi"
