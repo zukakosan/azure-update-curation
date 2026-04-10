@@ -4,7 +4,7 @@
     "from": "2026-04-06",
     "to": "2026-04-12"
   },
-  "fetchedAt": "2026-04-09T03:45:00Z",
+  "fetchedAt": "2026-04-10T03:58:17Z",
   "count": 10,
   "stats": {
     "ga": 8,
@@ -15,10 +15,10 @@
   "entries": [
     {
       "id": "559623",
-      "title": "一般提供 (GA): Azure Database for PostgreSQL Flexible Server での PgBouncer 1.25.1 サポート",
+      "title": "Azure Database for PostgreSQL – Flexible Server における PgBouncer 1.25.1 サポートの一般提供開始",
       "date": "2026-04-08",
       "category": "ga",
-      "summary": "PgBouncer 1.25.1 が Azure Database for PostgreSQL で一般提供となりました。組み込みの接続プール機能として、PgBouncer はアイドル接続や短命の接続を効率的に管理し、低オーバーヘッドで数千の接続にスケールできるようにします。このアップデートにより、最新の累積的な改善（パフォーマンス強化、プロトコル改善、重要なセキュリティおよび安定性の修正）の恩恵を受けられます。PgBouncer は Flexible Server に完全統合されており、別途インストールや管理は不要です。",
+      "summary": "PgBouncer 1.25.1 が Azure Database for PostgreSQL で一般提供されました。組み込みの接続プール機能として、PgBouncer はアイドル接続や短命な接続を効率的に管理することで、低オーバーヘッドで何千もの接続にスケールするのに役立ちます。このアップデートにより、パフォーマンス強化、プロトコル改善、重要なセキュリティおよび安定性の修正を含む最近のコミュニティ リリースの累積的な改善の恩恵を受けることができます。",
       "products": [
         "Azure Database for PostgreSQL"
       ],
@@ -34,10 +34,10 @@
     },
     {
       "id": "559628",
-      "title": "一般提供 (GA): Azure Service Health でのメンテナンス通知の強化",
+      "title": "Azure Service Health におけるメンテナンス通知の強化の一般提供開始",
       "date": "2026-04-08",
       "category": "ga",
-      "summary": "Azure Database for PostgreSQL のメンテナンス情報の把握を簡素化するため、リージョン レベルでのメンテナンス通知の統合を導入しました。サーバーごとに個別の通知を受け取るのではなく、リージョンごとに 1 つの通知でメンテナンスの詳細が集約されます。これにより、管理負担が軽減され、計画メンテナンスの影響をより効率的に把握できます。",
+      "summary": "Azure Database for PostgreSQL のメンテナンス情報を把握しやすくするため、地域レベルの統合メンテナンス通知を導入しています。サーバーごとに通知を受け取る代わりに、サブスクリプション全体のすべての PostgreSQL サーバーのメンテナンス詳細を統合した地域ごとの単一通知を受け取るようになりました。この強化により通知のノイズが減少し、環境内の今後のメンテナンス アクティビティをより明確に把握できます。",
       "products": [
         "Azure Database for PostgreSQL"
       ],
@@ -53,10 +53,10 @@
     },
     {
       "id": "560025",
-      "title": "パブリック プレビュー: Azure Migrate を使用した Azure Files の評価が利用可能に",
+      "title": "Azure Migrate を使用した Azure Files アセスメントがパブリック プレビューで利用可能に",
       "date": "2026-04-08",
       "category": "preview",
-      "summary": "Azure Migrate で Azure Files の評価がサポートされ、オンプレミスの SMB および NFS ファイル共有（Windows および Linux）から Azure Files への移行計画を効率的に立てられるようになりました。この機能により、ファイル共有の検出、容量とソースの可視化、Azure Files の推奨事項の提供が可能になります。これにより、お客様とパートナーは移行作業を合理化し、適切なターゲット サービス階層を選択できます。",
+      "summary": "Azure Migrate が Azure Files のアセスメントをサポートするようになり、お客様とパートナーがオンプレミスの SMB および NFS ファイル共有（Windows および Linux）から Azure Files への移行を効率的に計画できるようになりました。この機能により、ファイル共有の検出、容量とソースの可視化、移行の意思決定のための Azure Files SKU の推奨事項の提供が可能になります。主なメリット：オンプレミスの SMB/NFS 共有の検出とレビュー、計画改善のための共有のグループ化・タグ付け・フィルタリングなどが含まれます。",
       "products": [
         "Azure Migrate"
       ],
@@ -72,10 +72,10 @@
     },
     {
       "id": "560039",
-      "title": "一般提供 (GA): AKS の名前空間とワークロード ビューでの可観測性",
+      "title": "AKS の名前空間とワークロード ビューにおけるオブザーバビリティの一般提供開始",
       "date": "2026-04-08",
       "category": "ga",
-      "summary": "AKS では、Azure Monitor managed service for Prometheus による可観測性データを名前空間とワークロード ビューに直接表示できるようになりました。これにより、クラスターとワークロードの正常性の監視、保留中または失敗した Pod のトラブルシューティング、ノード・名前空間・ワークロード・Pod 間のリソース使用率の分析が容易になります。",
+      "summary": "AKS が名前空間とワークロード ビュー内に Azure Monitor managed service for Prometheus を活用したオブザーバビリティ データを直接表示するようになりました。クラスターとワークロードの正常性の監視、保留中または失敗した Pod のトラブルシューティング、ノード・名前空間・ワークロード・Pod 全体のリソース使用率の分析、Pod のパフォーマンスをイベントと使用率サマリーで評価することが容易になります。",
       "products": [
         "Azure Monitor"
       ],
@@ -91,10 +91,10 @@
     },
     {
       "id": "559547",
-      "title": "一般提供 (GA): Azure Red Hat OpenShift への NVIDIA H100 および H200 GPU サポートの追加",
+      "title": "Azure Red Hat OpenShift が NVIDIA H100 および H200 GPU サポートを追加し一般提供開始",
       "date": "2026-04-07",
       "category": "ga",
-      "summary": "Azure Red Hat OpenShift (ARO) が NVIDIA H100 および H200 GPU ベースの Azure Virtual Machine SKU をサポートしました。これにより、お客様は完全マネージドの OpenShift サービス上で、大規模な AI、機械学習、ハイパフォーマンス コンピューティング (HPC) ワークロードを実行できます。GPU アクセラレーションによるワークロードを柔軟にデプロイし、インフラストラクチャ管理の負担を軽減しながら計算集約型タスクを処理できます。",
+      "summary": "Azure Red Hat OpenShift (ARO) が NVIDIA H100 および H200 GPU ベースの Azure Virtual Machine SKU をサポートするようになり、お客様は完全管理の OpenShift サービス上で大規模な AI、機械学習、高性能コンピューティング (HPC) ワークロードを実行できるようになりました。このアップデートにより、組み込みのセキュリティ、ライフサイクル管理、Azure 統合を備えたエンタープライズ Kubernetes を使用して GPU アクセラレートされたコンテナをデプロイできます。",
       "products": [
         "Azure Red Hat OpenShift"
       ],
@@ -110,10 +110,10 @@
     },
     {
       "id": "557857",
-      "title": "一般提供 (GA): AKS での HTTP プロキシの無効化",
+      "title": "AKS における HTTP プロキシの無効化が一般提供開始",
       "date": "2026-04-07",
       "category": "ga",
-      "summary": "ネットワーク要件の変化に応じて HTTP プロキシ設定の変更や削除が必要になる場合、実行中のクラスターへの影響が懸念されます。Azure Kubernetes Service (AKS) では、ノードと Pod の HTTP プロキシ変数を無効にしつつ、既存のクラスター設定を維持する機能を管理者に提供します。これにより、クラスターを再作成することなく、ネットワーク構成の変更に柔軟に対応できます。",
+      "summary": "HTTP プロキシを使用してアウトバウンド トラフィックを制御している組織は、ネットワーク要件の変化に応じてその設定を変更または削除する必要があることが多く、実行中のクラスターに混乱をもたらす可能性があります。Azure Kubernetes Service を使用すると、管理者はコントロール プレーンにプロキシ設定を保持したまま、ノードと Pod の HTTP プロキシ変数を無効にできます。変更はノード プールの再イメージ化をトリガーし、一貫したクラスター状態を確保します。",
       "products": [
         "Azure Kubernetes Service (AKS)"
       ],
@@ -129,10 +129,10 @@
     },
     {
       "id": "559981",
-      "title": "一般提供 (GA): Azure Functions での MCP リソース トリガーのサポート",
+      "title": "Azure Functions が MCP リソース トリガーをサポートし一般提供開始",
       "date": "2026-04-07",
       "category": "ga",
-      "summary": "Azure Functions 上で MCP サーバーを構築する開発者は、ツールを公開できましたが、リソースは公開できませんでした。Azure Functions が MCP リソース トリガーをサポートしたことで、開発者は Azure Functions でホストされた Model Context Protocol (MCP) サーバーから直接リソースを公開できるようになりました。リソースには静的または動的なファイル、データ、その他のコンテンツを含めることができます。",
+      "summary": "Azure Functions 上で MCP サーバーを構築している開発者はツールを公開できましたが、リソースは公開できませんでした。Azure Functions が MCP リソース トリガーをサポートするようになり、開発者は Azure Functions がホストする Model Context Protocol (MCP) サーバーから直接リソースを公開できるようになりました。リソースには静的または動的ファイル、アプリケーション メタデータ、MCP ホストによってネイティブにレンダリングされる HTML ベースのウィジェットなどの MCP App UI コンテンツが含まれます。",
       "products": [
         "Azure Functions"
       ],
@@ -150,10 +150,10 @@
     },
     {
       "id": "557907",
-      "title": "一般提供 (GA): AKS での Pod CIDR の拡張",
+      "title": "AKS における Pod CIDR の拡張が一般提供開始",
       "date": "2026-04-07",
       "category": "ga",
-      "summary": "クラスターが利用可能な Pod IP アドレスを使い果たした場合、従来は容量を回復するために環境を再構築する必要があり、運用上の障害が生じていました。Pod CIDR 拡張により、オーバーレイ ベースの AKS クラスターはクラスターを再作成せずに Pod IP 範囲をその場で拡張できるようになりました。これにより、中断なく容量を拡大でき、IP アドレス不足による問題を回避できます。",
+      "summary": "クラスターが利用可能な Pod IP アドレスを使い切ると、チームはキャパシティを回復するために環境を再構築せざるを得ず、運用上の混乱を引き起こしていました。Pod CIDR の拡張により、オーバーレイベースの AKS クラスターはクラスターを再作成することなく Pod IP の範囲をその場で拡大できるようになりました。これにより、チームは可用性を維持しながらワークロードをスケールでき、環境の成長に伴う長期的な IP 計画が簡素化されます。",
       "products": [
         "Azure Kubernetes Service (AKS)"
       ],
@@ -169,10 +169,10 @@
     },
     {
       "id": "559899",
-      "title": "一般提供 (GA): Azure Service Bus のネットワーク セキュリティ境界",
+      "title": "Azure Service Bus 向け Network Security Perimeter の一般提供開始",
       "date": "2026-04-06",
       "category": "ga",
-      "summary": "Azure Service Bus に対するネットワーク セキュリティ境界 (NSP) サポートが一般提供となりました。ネットワーク セキュリティ境界は、Service Bus 名前空間とその他の Azure PaaS リソースの周囲に論理的なネットワーク境界を作成し、デフォルトで不正なパブリック アクセスをブロックして、境界内のリソース間でのセキュアな通信を実現します。",
+      "summary": "Azure Service Bus 向け Network Security Perimeter (NSP) サポートが一般提供になりました。Network Security Perimeter は Service Bus 名前空間やその他の Azure PaaS リソースの周囲に論理的なネットワーク境界を作成し、デフォルトで承認されていないパブリック アクセスをブロックし、境界内のサービス間のセキュアな通信を可能にします。既存の Service Bus ネットワーク セキュリティ オプション（IP ファイアウォール ルール、VNet サービス エンドポイント、プライベート エンドポイント）を補完し、集中管理されたアクセス制御を提供します。",
       "products": [
         "Service Bus"
       ],
@@ -187,10 +187,10 @@
     },
     {
       "id": "559876",
-      "title": "パブリック プレビュー: Azure Network Watcher でのルール影響分析",
+      "title": "Azure Network Watcher におけるルール影響分析のパブリック プレビュー",
       "date": "2026-04-06",
       "category": "preview",
-      "summary": "Azure Network Watcher のルール影響分析により、セキュリティ管理ルールを環境に適用する前にその影響をプレビューできます。この機能はルールの動作を検証し、潜在的な競合を特定し、ライブ トラフィックを中断させることなく接続要件が満たされていることを確認するのに役立ちます。",
+      "summary": "Azure Network Watcher のルール影響分析により、セキュリティ管理ルールを環境に適用する前にその影響をプレビューできます。この機能はルールの動作を検証し、潜在的な競合を特定し、ライブ トラフィックを中断させることなく接続要件が満たされていることを確認するのに役立ちます。提案されたルール変更の影響を理解することで、変更を自信を持って計画し、コンプライアンスを維持し、仮想ネットワーク全体での設定ミスのリスクを軽減できます。",
       "products": [
         "Network Watcher"
       ],
