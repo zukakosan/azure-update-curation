@@ -1,0 +1,21 @@
+{
+  "week": "2026-W16",
+  "period": {
+    "from": "2026-04-13",
+    "to": "2026-04-19"
+  },
+  "fetchedAt": "2026-04-13T23:09:03Z",
+  "count": 0,
+  "stats": {
+    "ai": 0,
+    "devops": 0,
+    "security": 0,
+    "network": 0,
+    "database": 0,
+    "container": 0,
+    "serverless": 0,
+    "storage": 0,
+    "other": 0
+  },
+  "entries": []
+}
