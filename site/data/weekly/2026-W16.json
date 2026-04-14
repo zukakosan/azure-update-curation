@@ -1,0 +1,155 @@
+{
+  "week": "2026-W16",
+  "period": {
+    "from": "2026-04-13",
+    "to": "2026-04-19"
+  },
+  "fetchedAt": "2026-04-14T03:59:44Z",
+  "count": 7,
+  "stats": {
+    "ga": 4,
+    "preview": 2,
+    "retirement": 1,
+    "change": 0
+  },
+  "entries": [
+    {
+      "id": "557828",
+      "title": "Azure File Sync がベルギー中部、マレーシア西部、インドネシア中部リージョンで一般提供されました",
+      "date": "2026-04-13",
+      "category": "ga",
+      "summary": "Azure File Sync は、オンプレミスの Windows Server から Azure Files へのシームレスなデータ階層化を可能にし、ハイブリッド ユース ケースとシンプルな移行をサポートします。オンプレミス ファイル サーバーのパフォーマンス、柔軟性、互換性を活かしながら、Azure Files のスケールとコスト効率を活用できます。Belgium Central、Malaysia West、Indonesia Central への展開により、これらのリージョンの組織に対してより近いサービスを提供し、低レイテンシーとより高いパフォーマンスを実現します。",
+      "products": [
+        "Azure Files"
+      ],
+      "productCategories": [
+        "Storage"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=557828",
+      "actionRequired": false
+    },
+    {
+      "id": "560162",
+      "title": "Azure Bastion グラフィカル セッション記録のマネージド ID サポートがパブリック プレビューで利用可能になりました",
+      "date": "2026-04-13",
+      "category": "preview",
+      "summary": "Azure Bastion がグラフィカル セッション記録においてマネージド ID をサポートするようになりました。このアップデートにより、セッション記録の設定時にマネージド ID を構成し、VM 記録を保存するストレージ アカウント コンテナーを指定できます。マネージド ID がストレージ コンテナーへの書き込みアクセスで認証されると、Azure Bastion は VM セッションを指定のストレージ アカウントに自動的に記録します。",
+      "products": [
+        "Azure Bastion"
+      ],
+      "productCategories": [
+        "Networking",
+        "Security"
+      ],
+      "tags": [
+        "Features",
+        "Security",
+        "Services"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=560162",
+      "actionRequired": false
+    },
+    {
+      "id": "560198",
+      "title": "Azure Storage Mover が Azure Government (US) で一般提供されました",
+      "date": "2026-04-13",
+      "category": "ga",
+      "summary": "Azure Storage Mover が Azure Government (US) で利用可能になりました。これにより、米国政府機関のお客様やパートナーが、フル マネージドの移行サービスを使用して大規模なファイル データを Azure Government クラウド環境にセキュリティを確保しながら移行できます。Azure Storage Mover は集中管理、組み込みの回復性、可視性を提供するフル マネージド サービスです。",
+      "products": [
+        "Azure Storage Mover"
+      ],
+      "productCategories": [
+        "Migration",
+        "Storage"
+      ],
+      "tags": [
+        "Features",
+        "Regions & Datacenters",
+        "Services"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=560198",
+      "actionRequired": false
+    },
+    {
+      "id": "560001",
+      "title": "Azure Files の SMB および NFS に対するきめ細かい転送中暗号化制御が一般提供されました",
+      "date": "2026-04-13",
+      "category": "ga",
+      "summary": "Azure Files が SMB および NFS プロトコルに対する転送中暗号化の設定をストレージ アカウント レベルで個別に構成できるようになりました。プロトコル固有のセキュリティ ポリシーを定義でき、各プロトコルの暗号化要件を正確に制御できます。混合プロトコルのワークロードを実行し、カスタマイズされたセキュリティ構成が必要な環境に最適です。Azure portal、Azure CLI、Azure PowerShell、REST API を通じて利用できます。",
+      "products": [
+        "Azure Files"
+      ],
+      "productCategories": [
+        "Storage"
+      ],
+      "tags": [
+        "Security"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=560001",
+      "actionRequired": false
+    },
+    {
+      "id": "560119",
+      "title": "OpenTelemetry と Azure Monitor を使用した AKS アプリケーションの監視がパブリック プレビューで利用可能になりました",
+      "date": "2026-04-13",
+      "category": "preview",
+      "summary": "Azure Monitor が、OpenTelemetry を使用したインストルメンテーションとデータ収集により、Azure Kubernetes Service (AKS) 上で実行されるアプリケーションの監視をサポートするようになりました。自動インストルメンテーションを使用して Azure Monitor OpenTelemetry ディストリビューションをワークロードにデプロイするか、オープン ソースの OpenTelemetry SDK で既にインストルメント済みのアプリケーションから OTLP シグナルを Azure Monitor にルーティングできます。Application Insights でアプリケーションのパフォーマンスを監視・トラブルシューティングします。",
+      "products": [
+        "Azure Monitor"
+      ],
+      "productCategories": [
+        "DevOps",
+        "Management and governance"
+      ],
+      "tags": [
+        "Open Source"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=560119",
+      "actionRequired": false
+    },
+    {
+      "id": "559395",
+      "title": "Azure Managed Grafana Essential SKU は 2027 年 3 月 30 日に廃止されます",
+      "date": "2026-04-13",
+      "category": "retirement",
+      "summary": "Azure Managed Grafana Essential SKU は 2027 年 3 月 30 日に廃止されます。Essential SKU をご利用のお客様は、サービス中断（ダッシュボードへのアクセス喪失を含む）を避けるため、廃止日までに Azure Managed Grafana Standard SKU または Azure Monitor Dashboards with Grafana への移行を推奨します。2027 年 3 月 30 日まで、既存の Essential SKU リソースは引き続き中断なく使用できます。",
+      "products": [
+        "Azure Managed Grafana"
+      ],
+      "productCategories": [
+        "DevOps",
+        "Management and governance"
+      ],
+      "tags": [
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=559395",
+      "actionRequired": true
+    },
+    {
+      "id": "560207",
+      "title": "AKS のアウトバウンド タイプとして StandardV2 NAT Gateway がパブリック プレビューで利用可能になりました",
+      "date": "2026-04-13",
+      "category": "ga",
+      "summary": "AKS がマネージドおよびユーザー割り当ての StandardV2 NAT Gateway をアウトバウンド タイプとしてサポートするようになりました。これにより、AKS マネージドまたは BYO VNet においてゾーン冗長アウトバウンド接続、最大 100 Gbps のアウトバウンド スループット、IPv6 アウトバウンド サポートが利用できます。",
+      "products": [
+        "Azure Kubernetes Service (AKS)",
+        "Azure NAT Gateway"
+      ],
+      "productCategories": [
+        "Compute",
+        "Containers",
+        "Networking"
+      ],
+      "tags": [
+        "Features",
+        "Services"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=560207",
+      "actionRequired": false
+    }
+  ]
+}
