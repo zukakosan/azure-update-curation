@@ -4,18 +4,74 @@
     "from": "2026-04-13",
     "to": "2026-04-19"
   },
-  "fetchedAt": "2026-04-13T23:09:03Z",
-  "count": 0,
+  "fetchedAt": "2026-04-14T23:08:06Z",
+  "count": 5,
   "stats": {
-    "ai": 0,
-    "devops": 0,
-    "security": 0,
+    "ai": 1,
+    "devops": 2,
+    "security": 1,
     "network": 0,
     "database": 0,
     "container": 0,
     "serverless": 0,
     "storage": 0,
-    "other": 0
+    "other": 1
   },
-  "entries": []
+  "entries": [
+    {
+      "id": "534340fa03c79d",
+      "title": "Copilot Studio × Sentinel MCP サーバーでセキュリティレポートを自動生成するカスタムエージェントを作る",
+      "date": "2026-04-14T11:05:02Z",
+      "category": "security",
+      "summary": "はじめに Microsoft Defender や Sentinel のアラート・ログは日々増加しており、手動での週次集計やレポート作成は大きな運用負荷になっています。 Copilot Studio と Sentinel Data Exploration MCP サーバーの登場により、KQL によるログ分析からレポート生成・メール送信までを AI エージェントで自動化できるようになりました。 この記事では、実際に検証した 4 種類のカスタムエージェント（Defender / Entra ID / Intune / Purview DLP）の構築手順をハンズオン形式で解説します。 ...",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/534340fa03c79d",
+      "source": "zenn",
+      "author": ""
+    },
+    {
+      "id": "bdbed630a7df9b",
+      "title": "組織レベルでのGitHub Copilot の利用状況を API で取り込んで自作ダッシュボード on Azure して可視化してみた",
+      "date": "2026-04-14T10:18:24Z",
+      "category": "devops",
+      "summary": "どうも、@chips0711 です。 突然ですが・・・ GitHub Copilot を Organization で導入すると、次に気になるのは「で、実際どれくらい使われているの？」というところではないでしょうか。 GitHub Copilot usage metrics 全体は 2026 年 2 月 27 日に GA していて、GitHub.com では Copilot usage dashboard と Code generation dashboardを使えます。 どちらも 28 日ローリングの可視化が中心なので、四半期単位の振り返りや個人別の深掘りは、ダッシュボード単体より N...",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/bdbed630a7df9b",
+      "source": "zenn",
+      "author": ""
+    },
+    {
+      "id": "dd383498a556a9",
+      "title": "AI エージェントを攻撃してみる - AI Red Teaming Agent による安全性検証",
+      "date": "2026-04-14T08:49:12Z",
+      "category": "ai",
+      "summary": "! 本記事は GitHub Copilot を活用して執筆しています。 はじめに カスタムエージェントを本番環境にデプロイする前に、安全性の評価は欠かせません。前回の記事では Foundry の Evaluation 機能を使って品質・安全性の評価を行いました。 https://zenn.dev/microsoft/articles/539e982879fe18 Evaluation は「エージェントが正しく動作するか」を検証するのに対し、今回試す AI Red Teaming Agent は「エージェントが攻撃に対してどれだけ耐えられるか」を検証するものです。より外部からの攻撃シ...",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/dd383498a556a9",
+      "source": "zenn",
+      "author": ""
+    },
+    {
+      "id": "a365cli-agentdevelopment-02",
+      "title": "Agent365 CLI を利用したエージェント開発 ～GCP 編～",
+      "date": "2026-04-14T08:09:18Z",
+      "category": "other",
+      "summary": "はじめに GCP 上での Agent365 エージェント実行（Cross‑Cloud Runtime 構成） 前回の記事でAgent365 CLI を利用したエージェント開発 Agent365 Cli を利用して pro-code でのエージェント公開までを試しました。実態のアプリケーションを配置した場所は Azure App Service 上であり、Microsoft Platform に閉じていました。 一方で、前記事でも説明した通り Agent365 はエージェントの「実行環境（Runtime）」ではなく Microsoft Entra ID を基盤とした「Control...",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/a365cli-agentdevelopment-02",
+      "source": "zenn",
+      "author": ""
+    },
+    {
+      "id": "github-copilot-cli-remote-session",
+      "title": "遠隔で GitHub Copilot CLI を操作する - リモートコントロール機能を試してみた",
+      "date": "2026-04-14T07:26:51Z",
+      "category": "devops",
+      "summary": "! 本記事ではプレビュー版の機能を使用しているため、今後のバージョンアップで内容が変わる可能性があります。 ここで記載している内容は執筆時点 (2026/04/14) の情報に基づいています。 ! 本記事は GitHub Copilot を使用して執筆しています。 はじめに 2026/04/13 にリリースされた GitHub Copilot CLI v1.0.25 で、CLIセッションを GitHub.com や GitHub Mobile からリモート操作できるリモートセッション機能が Public Preview として追加されました[1]。 ターミナルで長時間タスクを実行...",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/github-copilot-cli-remote-session",
+      "source": "zenn",
+      "author": ""
+    }
+  ]
 }
