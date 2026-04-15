@@ -4,11 +4,11 @@
     "from": "2026-04-13",
     "to": "2026-04-19"
   },
-  "fetchedAt": "2026-04-14T03:59:44Z",
-  "count": 7,
+  "fetchedAt": "2026-04-15T04:01:24Z",
+  "count": 10,
   "stats": {
-    "ga": 4,
-    "preview": 2,
+    "ga": 6,
+    "preview": 3,
     "retirement": 1,
     "change": 0
   },
@@ -149,6 +149,64 @@
         "Services"
       ],
       "url": "https://azure.microsoft.com/updates?id=560207",
+      "actionRequired": false
+    },
+    {
+      "id": "559756",
+      "title": "低頻度アクセス ストレージ層の最小課金オブジェクト サイズの導入",
+      "date": "2026-04-14",
+      "category": "ga",
+      "summary": "Azure Blob または Azure Data Lake Storage (ADLS) を使用するストレージ アカウントで、クール、コールド、アーカイブ アクセス層に 128 KiB の最小課金オブジェクト サイズを導入します。これらの層にある 128 KiB 未満のオブジェクトは、対応する層のレートで 128 KiB として課金されます。課金は既存の容量課金メーター（保存データ）で行われます。トランザクションへの変更はありません。この課金動作は 2 段階で導入されます。第 1 段階: 2026 年 7 月 1 日",
+      "products": [
+        "Azure Blob Storage",
+        "Azure Data Lake Storage"
+      ],
+      "productCategories": [
+        "Storage",
+        "Analytics"
+      ],
+      "tags": [
+        "Pricing & Offerings"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=559756",
+      "actionRequired": false
+    },
+    {
+      "id": "560241",
+      "title": "NVMe ディスク コントローラーを搭載した Windows Azure VM に対する Azure Site Recovery サポート",
+      "date": "2026-04-14",
+      "category": "preview",
+      "summary": "Azure Site Recovery が Azure-to-Azure シナリオにおいて、Da/Ea/Fa v6 シリーズや Ebsv5/Ebdsv5 などの NVMe 対応第 2 世代 VM ファミリで動作する Windows Azure Virtual Machines のレプリケーションおよびディザスター リカバリーをサポートするようになりました。この機能強化により、NVMe ディスク コントローラーを使用した高性能かつ I/O 集約型ワークロード（ASR チャーン サポートに限定）を実行する Azure VM でディザスター リカバリーを有効化できます。すべての Azure パブリック クラウド リージョンでサポートされています。",
+      "products": [
+        "Azure Site Recovery"
+      ],
+      "productCategories": [
+        "Management and governance",
+        "Migration"
+      ],
+      "tags": [
+        "Features",
+        "Management"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=560241",
+      "actionRequired": false
+    },
+    {
+      "id": "559746",
+      "title": "Smart Tier（Azure Blob および Azure Data Lake Storage）の一般提供",
+      "date": "2026-04-14",
+      "category": "ga",
+      "summary": "Azure Blob および Azure Data Lake Storage (ADLS) の Smart Tier の一般提供（GA）を発表します。Smart Tier は本日、ほぼすべてのゾーン対応パブリック クラウド リージョンで一般提供されています（イスラエル中部、カタール中部、UAE 北部の Azure リージョンはこの GA 発表に含まれません）。Smart Tier はオブジェクト ストレージの標準オンライン層での手動による階層配置を不要にする、フル マネージドの自動データ階層化ソリューションです。データをホット、クール層間で自動的に移動します。",
+      "products": [
+        "Azure Blob Storage"
+      ],
+      "productCategories": [
+        "Storage"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=559746",
       "actionRequired": false
     }
   ]
