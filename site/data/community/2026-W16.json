@@ -4,11 +4,11 @@
     "from": "2026-04-13",
     "to": "2026-04-19"
   },
-  "fetchedAt": "2026-04-17T23:08:04.781915+00:00",
-  "count": 10,
+  "fetchedAt": "2026-04-18T23:02:20Z",
+  "count": 11,
   "stats": {
     "ai": 2,
-    "devops": 4,
+    "devops": 5,
     "security": 1,
     "network": 0,
     "database": 0,
@@ -19,11 +19,22 @@
   },
   "entries": [
     {
+      "id": "github-copilot-create-agents",
+      "title": "GitHub Copilot CLI でスキルを駆使していい感じのプログラムを書いてもらおう",
+      "date": "2026-04-18T08:07:29Z",
+      "category": "devops",
+      "summary": "! この記事では、GitHub Copilot CLI とのやり取りの要約に GitHub Copilot を使って記事内の文章の生成をしています。 はじめに ここでは、GitHub Copilot CLI を使って、いい感じの WPF アプリケーションを作るための手順を書いていこうと思います。ゼロからのスタートで、GitHub Copilot CLI を使いながら、WPF アプリケーションを作っていく流れを紹介します。 なるべくやったことは省略せずに、どういう感じで私がやっているのかを感じ取ってもらう事を目的としています。各やり取りの概要を引用ブロックで紹介し、完全なログは各章の...",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/github-copilot-create-agents",
+      "source": "zenn",
+      "author": "Kazuki Ota"
+    },
+    {
       "id": "378733288149ffb35160",
       "title": "GitHub Copilot に パケットキャプチャ解析をさせる！",
-      "date": "2026-04-17T00:25:44Z",
+      "date": "2026-04-17T09:25:44+09:00",
       "category": "devops",
-      "summary": "こんにちは、たまにしかパケットキャプチャしないので、Wireshark （パケットキャプチャ解析ツール）の表示フィルターや「まずどこを見るんだっけ？」を毎回思い出すところから始まりがちなアーキテクトのやまぱんです 😅 補足コメントや質問、いいね、拡散、ぜひお願いします 🥺！ 間違っていたら 優しく 教えてください！ 結論から言うと、GitHub Copilot でパケットキャプチャの解析、できちゃいました！ 🎉 をそのままコンテキストとして渡せたので、本格的なネットワークトラブルシューティングにもそのまま使えそうです。 TL;DR - GitHub Copilot は をコンテキストとして読め",
+      "summary": "こんにちは、たまにしかパケットキャプチャしないので、Wireshark （パケットキャプチャ解析ツール）の表示フィルターや「まずどこを見るんだっけ？」を毎回思い出すところから始まりがちなアーキテクトのやまぱんです 😅 補足コメントや質問、**いいね、拡散**、ぜひお願いします 🥺！ 間違っていたら **優しく** 教えてください！ 結論から言うと、**GitHub Copilot でパケットキャプチャの解析、できちゃいました！** 🎉 をそのままコンテキストとして渡せたので、本格的なネットワークトラブルシューティングにもそのまま使えそうです。 TL;DR - **GitHub Copilot ",
       "tags": [
         "Network",
         "Wireshark",
@@ -38,7 +49,7 @@
     {
       "id": "84d3372ce33e08291581",
       "title": "Logic Apps で MCP Server 経由で SharePoint Listの更新",
-      "date": "2026-04-16T09:11:50Z",
+      "date": "2026-04-16T18:11:50+09:00",
       "category": "serverless",
       "summary": "Logic Apps で MCP Server 経由で SharePoint Listの更新をしてみました。 基本的なAzure Logic Apps での MCP Serverの作り方は以下を参照。 https://qiita.com/FukuharaYohei/items/8df745f7dde11d63435c#3-microsoft-foundry 前提 - Logic Appsのリソース作成済 - SharePoint接続のためのユーザあり - Foundryリソースがあり、Agent定義済(MCP ClientであればFoundry以外でもOK) Steps 1. ワークフロー定義",
       "tags": [
@@ -55,9 +66,9 @@
     {
       "id": "86295bdd04a0fe4685b2",
       "title": "GitHub Copilot CLI の公式ハンズオンざっくり和訳 (第5章/7章) skills 編",
-      "date": "2026-04-15T11:41:14Z",
+      "date": "2026-04-15T20:41:14+09:00",
       "category": "devops",
-      "summary": "公式チュートリアル「GitHub Copilot CLI for Beginners」ハンズオンリポジトリを進めていきます！ https://github.com/github/copilot-cli-for-beginners このチュートリアルは (2026 年 4 月現在) 7 章までありますが、 今回は、第 5 章（skills の作成）をざっくり和訳しながら進めていこうと思います。 https://github.com/github/copilot-cli-for-beginners/tree/main/05-skills ! この第 5 章では、skills を学びます。 機能 役",
+      "summary": "公式チュートリアル「GitHub Copilot CLI for Beginners」ハンズオンリポジトリを進めていきます！ https://github.com/github/copilot-cli-for-beginners このチュートリアルは (2026 年 4 月現在) 7 章までありますが、 今回は、第 5 章（skills の作成）をざっくり和訳しながら進めていこうと思います。 https://github.com/github/copilot-cli-for-beginners/tree/main/05-skills ![](https://github.com/github/",
       "tags": [
         "GitHub",
         "チュートリアル",
@@ -71,7 +82,7 @@
     {
       "id": "8df745f7dde11d63435c",
       "title": "Azure Logic Apps で MCP Server を作ってみた",
-      "date": "2026-04-15T08:36:43Z",
+      "date": "2026-04-15T17:36:43+09:00",
       "category": "serverless",
       "summary": "本記事では、Azure Logic Apps (Standard) を使って MCP Server を構築し、GitHub Copilot Chat / Microsoft Foundry から実際に呼び出せるかを検証しました。2026年4月現在、Previewなので注意しましょう。 検証の目的は以下です。 - Logic Apps で MCP Server が本当に構築できるのか - MCP Server に登録した Tool を Copilot から呼び出せるのか - Key ベース認証や実行ログの挙動を確認する 以下の情報を参考に実施。 https://learn.microsoft.c",
       "tags": [
