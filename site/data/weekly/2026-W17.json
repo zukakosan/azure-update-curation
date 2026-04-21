@@ -4,13 +4,33 @@
     "from": "2026-04-20",
     "to": "2026-04-26"
   },
-  "fetchedAt": "2026-04-20T04:18:13.793Z",
-  "count": 0,
+  "fetchedAt": "2026-04-21T04:14:29.000Z",
+  "count": 1,
   "stats": {
     "ga": 0,
-    "preview": 0,
+    "preview": 1,
     "retirement": 0,
     "change": 0
   },
-  "entries": []
+  "entries": [
+    {
+      "id": "560530",
+      "title": "パブリック プレビュー: Azure Monitor が Azure Monitor Agent を使用したネイティブ OTLP インジェストをサポート",
+      "date": "2026-04-20T17:30:53.1895130Z",
+      "category": "preview",
+      "summary": "Azure Monitor は、OpenTelemetry Protocol (OTLP) シグナルのネイティブ インジェストをサポートするようになりました。Azure Monitor Agent (AMA) を使用してアプリから OTLP を受信し、Azure Monitor にエクスポートすることで、OpenTelemetry でインスツルメントされたアプリケーションから直接テレメトリを送信できます。Azure VM、VM スケール セット、Azure Arc 対応プラットフォームでサポートされています。OpenTelemetry SDK でワークロードをインスツルメントし、AMA を構成することで、Application Insights を使用して取り込まれた OTLP データでアプリのパフォーマンスを監視・トリアージ・トラブルシュートできます。",
+      "products": [
+        "Azure Monitor"
+      ],
+      "productCategories": [
+        "DevOps",
+        "Management and governance"
+      ],
+      "tags": [
+        "Open Source"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=560530",
+      "actionRequired": false
+    }
+  ]
 }
