@@ -1,0 +1,188 @@
+{
+  "week": "2026-W18",
+  "period": {
+    "from": "2026-04-27",
+    "to": "2026-05-03"
+  },
+  "fetchedAt": "2026-04-30T07:07:18Z",
+  "count": 9,
+  "stats": {
+    "ga": 6,
+    "preview": 2,
+    "retirement": 1,
+    "change": 0
+  },
+  "entries": [
+    {
+      "id": "561135",
+      "title": "Microsoft Azure Red Hat OpenShift が Austria East リージョンで一般提供開始",
+      "date": "2026-04-29T21:00:48.0646160Z",
+      "category": "ga",
+      "summary": "Austria East リージョンが Azure Red Hat OpenShift のお客様とパートナー向けに一般提供を開始しました。このリージョンには3つの可用性ゾーンが含まれており、回復力とスケーラビリティに優れた運用をサポートします。主なメリット：国内データ所在地として Austria East に保存されたデータはオーストリア国内に留まり GDPR などの規制要件を満たせます。ローカルインフラストラクチャにより低レイテンシを実現し、公共部門や規制業種もデータの所在地を制御しながらクラウドを採用できます。",
+      "products": [
+        "Azure Red Hat OpenShift"
+      ],
+      "productCategories": [
+        "Containers"
+      ],
+      "tags": [
+        "Features",
+        "Compliance",
+        "Management",
+        "Open Source",
+        "Security"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=561135",
+      "actionRequired": false
+    },
+    {
+      "id": "560982",
+      "title": "Microsoft Agent Framework 1.0 が一般提供開始",
+      "date": "2026-04-29T18:15:05.0734203Z",
+      "category": "ga",
+      "summary": "Microsoft Agent Framework が .NET および Python の両方でバージョン 1.0 となり、安定した API と長期サポートのコミットメントが提供されます。Agent Framework 1.0 はマルチエージェントオーケストレーション、マルチプロバイダーモデルサポート、および A2A と MCP を介したクロスランタイム相互運用性をサポートします。",
+      "products": [
+        "Microsoft Foundry"
+      ],
+      "productCategories": [
+        "AI + machine learning"
+      ],
+      "tags": [
+        "Features",
+        "SDK and Tools"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=560982",
+      "actionRequired": false
+    },
+    {
+      "id": "560992",
+      "title": "Foundry Agent Service のメモリ機能がパブリックプレビューに",
+      "date": "2026-04-29T00:00:55.6154862Z",
+      "category": "preview",
+      "summary": "Foundry のメモリ（プレビュー）は、Foundry Agent Service に直接組み込まれたマネージドの長期メモリ機能であり、Microsoft Agent Framework および LangGraph とネイティブに統合されます。外部データベースのプロビジョニング、スケーリング、セキュリティ設定は不要です。",
+      "products": [
+        "Microsoft Foundry"
+      ],
+      "productCategories": [
+        "AI + machine learning"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=560992",
+      "actionRequired": false
+    },
+    {
+      "id": "561020",
+      "title": "Container Network Insights エージェントがパブリックプレビューに",
+      "date": "2026-04-28T21:30:30.7748260Z",
+      "category": "ga",
+      "summary": "Kubernetes のネットワーク問題のトラブルシューティングは複数ツールへのログやメトリクスの分散により遅延しがちです。Container Network Insights エージェントは、自然言語による問題説明を AKS クラスターのライブテレメトリを使用した読み取り専用の診断に変換する軽量なウェブベースインターフェースを提供します。安全な診断ワークフローをオーケストレーションし、次のステップの推奨事項を含む構造化されたサマリーにネットワークインサイトを集約することで、インシデント対応の迅速化を支援します。",
+      "products": [
+        "Azure Kubernetes Service (AKS)"
+      ],
+      "productCategories": [
+        "Compute",
+        "Containers"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=561020",
+      "actionRequired": false
+    },
+    {
+      "id": "560914",
+      "title": "VM 拡張機能を使用して Windows VM から Elastic SAN に接続する機能が一般提供開始",
+      "date": "2026-04-28T20:30:56.1623683Z",
+      "category": "ga",
+      "summary": "Azure Elastic SAN が Azure Portal から Elastic SAN VM 拡張機能を使用して Windows 仮想マシンへのボリューム接続をサポートするようになりました。この機能により、仮想マシンのデプロイ時に Elastic SAN ボリュームを接続でき、デプロイ後の手動設定の手間を削減してセットアップを簡素化します。",
+      "products": [
+        "Azure Elastic SAN"
+      ],
+      "productCategories": [
+        "Storage"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=560914",
+      "actionRequired": false
+    },
+    {
+      "id": "561067",
+      "title": "Azure Virtual Network Manager でのクロスリージョン IPAM プール関連付けが一般提供開始",
+      "date": "2026-04-28T17:45:04.6636535Z",
+      "category": "ga",
+      "summary": "複数のリージョンにわたる IP アドレス空間の管理はスケールが難しく設定ミスが生じやすいです。クロスリージョン IPAM プール関連付けにより、単一の IPAM プールを複数の Azure リージョンにわたる仮想ネットワークと関連付けられるようになり、アドレス計画の集中管理、ガバナンスの簡素化、グローバル環境全体での一貫した CIDR 割り当ての維持が可能になります。既存の単一リージョン IPAM プールはそのまま利用可能で変更は不要です。",
+      "products": [
+        "Azure Virtual Network Manager"
+      ],
+      "productCategories": [
+        "Networking"
+      ],
+      "tags": [
+        "Features",
+        "Management",
+        "Services"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=561067",
+      "actionRequired": false
+    },
+    {
+      "id": "561148",
+      "title": "Azure Front Door Premium の Azure WAF 向け Microsoft HTTP DDoS ルールセットがパブリックプレビューに",
+      "date": "2026-04-28T17:45:04.6636535Z",
+      "category": "preview",
+      "summary": "Azure Front Door Premium で HTTP DDoS ルールセットのパブリックプレビューを発表します。Azure WAF 向け新しい HTTP DDoS ルールセットは、最小限の設定で学習・検出・防御を行う自動適応型レイヤー 7 保護を提供します。割り当て後、ルールセットは各 Azure Front Door プロファイルの通常トラフィックを継続的にベースライン化し、攻撃急増時に緊急チューニングなしで問題のあるクライアントを選択的にブロックします。Microsoft の脅威インテリジェンスを活用した2つのコアルールを含みます。",
+      "products": [
+        "Azure DDoS Protection",
+        "Azure Front Door",
+        "Web Application Firewall"
+      ],
+      "productCategories": [
+        "Networking",
+        "Security"
+      ],
+      "tags": [
+        "Features",
+        "Security",
+        "Services"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=561148",
+      "actionRequired": false
+    },
+    {
+      "id": "561002",
+      "title": "Foundry Agent Service での自社 AI ゲートウェイの利用（Bring Your Own AI Gateway）が一般提供開始",
+      "date": "2026-04-27T18:00:52.3058355Z",
+      "category": "ga",
+      "summary": "Foundry Agent Service が独自モデル利用（Bring Your Own Model）シナリオをサポートするようになりました。Azure API Management などのエンタープライズ AI ゲートウェイの背後にホストされているモデルを含む、Foundry 外でデプロイ・管理された AI モデルをエージェントで使用できます。モデルエンドポイント、セキュリティポリシー、ガバナンスを維持しながらカスタム・ファインチューニング済み・オープンソース・サードパーティのモデルを Foundry エージェントに統合できます。",
+      "products": [
+        "Microsoft Foundry"
+      ],
+      "productCategories": [
+        "AI + machine learning"
+      ],
+      "tags": [
+        "Features"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=561002",
+      "actionRequired": false
+    },
+    {
+      "id": "502936",
+      "title": "Azure ML と Foundry における Prompt Flow の廃止",
+      "date": "2026-04-27T16:15:55.7068873Z",
+      "category": "retirement",
+      "summary": "Prompt Flow は 2027 年 4 月 20 日に Microsoft Foundry および Azure Machine Learning から廃止され、単一のモダンなオーケストレーションプラットフォーム「Microsoft Agent Framework」に置き換えられます。重要な日程：2026 年 4 月 3 日：Microsoft Agent Framework の一般提供開始。2026 年 4 月 20 日：Prompt Flow の非推奨化の公式発表。2027 年 4 月 20 日：Azure ML、Microsoft Foundry、VS Code からの Prompt Flow の完全廃止。ほとんどのオーケストレーションシナリオでは Microsoft Agent Framework が推奨される移行パスです。",
+      "products": [],
+      "productCategories": [],
+      "tags": [
+        "Retirements"
+      ],
+      "url": "https://azure.microsoft.com/updates?id=502936",
+      "actionRequired": true
+    }
+  ]
+}
