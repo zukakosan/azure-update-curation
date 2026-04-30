@@ -1,0 +1,94 @@
+{
+  "week": "2026-W18",
+  "period": {
+    "from": "2026-04-27",
+    "to": "2026-05-03"
+  },
+  "fetchedAt": "2026-04-30T23:21:45Z",
+  "count": 5,
+  "stats": {
+    "ai": 5,
+    "devops": 0,
+    "security": 0,
+    "network": 0,
+    "database": 0,
+    "container": 0,
+    "serverless": 0,
+    "storage": 0,
+    "other": 0
+  },
+  "entries": [
+    {
+      "id": "a822339fce5c92",
+      "title": "Microsoft Sentinel プレイブック作成ハンズオン - Security Copilot でインシデント自動分析・通知",
+      "date": "2026-04-30T03:37:32Z",
+      "category": "ai",
+      "summary": "!\n本コンテンツは GitHub Copilot を活用して作成しています。\n\n\n はじめに\nMicrosoft Sentinel のプレイブック (Logic Apps) は、ノーコードでインシデント対応の自動化フローを構築できる便利なツールです。しかし、動的コンテンツの扱いやコネクタごとの設定にクセがあり、実際に手を動かさないとわからないポイントが少なくありません。\n最近では生成 AI ツールで Logic Apps のフローを自動生成することも可能になってきましたが、生成された内容を正しく理解し、トラブル時に修正・メンテナンスするためには、各ステップの仕組みを把握しておく必要があり...",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/a822339fce5c92",
+      "source": "zenn",
+      "author": "k.sato"
+    },
+    {
+      "id": "4dcfe2d60ea4c9",
+      "title": "AIスクラムチームはナレッジを横展開する",
+      "date": "2026-04-27T23:27:26Z",
+      "category": "ai",
+      "summary": "はじめに\nGitHub Copilotで実現したAIスクラムチームが自律的な開発を行うようになってから、かなりの時間が経ちました。人間世界では1か月強ですが、AI世界では1年近くの開発を続けている形になっています。（前回の記事は\"AIスクラムチームは朝に唱和する\"です。）\nそこでAIスクラムチームに、彼らが自発的に積み上げてきた改善やノウハウを、他のプロジェクトにも持っていけるナレッジとしてまとめてもらいました。\nというわけで、今回はAIたちによる改善内容について紹介します。\n実際には長期記憶を持たないAIスクラムチームのために、スクラムカルチャーやワーキングアグリーメントといった内...",
+      "tags": [],
+      "url": "https://zenn.dev/microsoft/articles/4dcfe2d60ea4c9",
+      "source": "zenn",
+      "author": "shuji yamaguchi"
+    },
+    {
+      "id": "6e96542f6451f8a52ee1",
+      "title": "App Service を Public IP なしで社外公開する：Entra Application Proxy を使った構成を検証してみた",
+      "date": "2026-04-30T22:47:26Z",
+      "category": "ai",
+      "summary": "はじめに Azure App Service を社外向けに公開したいけれど、「Public IP は持たせたくない」「IP 制限ではなくユーザー単位で認証・認可をかけたい」というご相談を頂くことがあります。 このようなケースで使える選択肢の 1 つが Microsoft Entra Application Proxy（以下、App Proxy） です。本記事では App Service の （パブリックアクセス無効）の状態で、App Proxy 経由で社外ブラウザからアクセスできる構成を実際に検証してみました。実際に E2E で疎通まで確認できたので、構成と手順、ハマりどころを残しておきます。",
+      "tags": [
+        "GitHub",
+        "Azure",
+        "AzureAD",
+        "#AppService",
+        "#GitHubCopilot"
+      ],
+      "url": "https://qiita.com/ManabuYamamoto/items/6e96542f6451f8a52ee1",
+      "source": "qiita",
+      "author": "ManabuYamamoto"
+    },
+    {
+      "id": "c12a37748f294996ce58",
+      "title": "Microsoft Foundry Agent Tracing 検証",
+      "date": "2026-04-30T19:05:43Z",
+      "category": "ai",
+      "summary": "Microsoft Foundry Agent Tracing 検証 1. 概要 Microsoft Foundry の Agent Tracing 機能を包括的に検証した。4つのトレーシングオプションを同一条件で実行し、セットアップの容易さ・取得データ・パフォーマンス・ユースケース適合性を比較分析した。 | 項目 | 内容 | |------|------| | 検証日 | 2026-04-27 | | リージョン | East US | | モデル | gpt-4.1-nano (GlobalStandard, 50K TPM) | | SDK バージョン | azure-ai-proje",
+      "tags": [
+        "Python",
+        "Trace",
+        "Agent",
+        "tracing",
+        "Foundry"
+      ],
+      "url": "https://qiita.com/FukuharaYohei/items/c12a37748f294996ce58",
+      "source": "qiita",
+      "author": "FukuharaYohei"
+    },
+    {
+      "id": "2165d456f6ecf62483e8",
+      "title": "Microsoft Foundry を BYO VNet(閉域ネットワーク)で構築",
+      "date": "2026-04-30T14:44:05Z",
+      "category": "ai",
+      "summary": "はじめに :::note 本記事記述および実装内容は、多くの部分をAIで処理しており、人間チェックは甘いです ::: Azure AI Foundry の Agent Service を完全閉域ネットワーク（BYO VNet） で構築する検証を行いました。 公式ドキュメントやサンプル Bicep は存在しますが、実際にデプロイして初めてわかるポイントが多くあります。本記事では、Bicep テンプレートの設計からデプロイ、動作確認までの一連の流れを、実環境のスクリーンショットとコードを交えて解説します。 この記事で扱うこと - BYO VNet 構成の全体アーキテクチャと設計判断 - / / の",
+      "tags": [
+        "private",
+        "Foundry",
+        "vnet",
+        "閉域接続"
+      ],
+      "url": "https://qiita.com/FukuharaYohei/items/2165d456f6ecf62483e8",
+      "source": "qiita",
+      "author": "FukuharaYohei"
+    }
+  ]
+}
