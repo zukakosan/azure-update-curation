@@ -4,7 +4,7 @@
     "from": "2026-04-27",
     "to": "2026-05-03"
   },
-  "fetchedAt": "2026-05-01T23:14:05Z",
+  "fetchedAt": "2026-05-02T23:09:52Z",
   "count": 7,
   "stats": {
     "ai": 4,
@@ -21,9 +21,9 @@
     {
       "id": "f0271472077b906915e6",
       "title": "GitHub Copilot CLI Cheatsheet",
-      "date": "2026-05-01T23:07:38Z",
+      "date": "2026-05-01T14:07:38Z",
       "category": "devops",
-      "summary": "GitHub Copilot CLIを最近よく使うので、ちょっと真面目に見てみました。 使えそうなリンクとコマンドを置いておきます。 参考リンク GitHub Copilot CLI のベスト プラクティス https://docs.github.com/ja/copilot/how-tos/copilot-cli/cli-best-practices ここにAgentなどのサンプルある https://github.com/github/awesome-copilot/tree/main 初心者向けのチュートリアルあり https://github.com/github/copilot-cl",
+      "summary": "GitHub Copilot CLIを最近よく使うので、ちょっと真面目に見てみました。\n使えそうなリンクとコマンドを置いておきます。\n\n参考リンク\nGitHub Copilot CLI のベスト プラクティス\n\nhttps://docs.github.com/ja/copilot/how-tos/copilot-cli/cli-best-practices\n\nここにAgentなどのサンプルある\n\nhttps://github.com/github/awesome-copilot/tree/main\n\n初心者向けのチュートリアルあり\n\nhttps://github.com/github/copi",
       "tags": [
         "GitHub",
         "GithubCLI",
@@ -36,9 +36,9 @@
     {
       "id": "6aabcccf701b6d918022",
       "title": "Microsoft Foundry Hosted Agent をゼロからデプロイして分かったこと",
-      "date": "2026-05-01T14:16:24Z",
+      "date": "2026-05-01T05:16:24Z",
       "category": "ai",
-      "summary": "はじめに :::note 本記事記述および実装内容は、多くの部分をAIで処理しており、人間チェックは甘いです ::: Microsoft Foundry の Hosted Agent（Public Preview）を実際にゼロから IaC 構築 → デプロイ → 呼び出し → 監視確認まで一通り検証しました。 公式ドキュメントだけでは分かりにくいハマりポイントが多く、特に API バージョンの互換性問題 と RBAC の複雑さ には苦労しました。この記事では、検証で得た知見を実践ベースで共有します。 この記事で分かること - Hosted Agent の仕組みとデプロイ方法（4パターン） - ",
+      "summary": "はじめに\n\n:::note\n本記事記述および実装内容は、多くの部分をAIで処理しており、人間チェックは甘いです\n:::\n\nMicrosoft Foundry の Hosted Agent（Public Preview）を実際にゼロから IaC 構築 → デプロイ → 呼び出し → 監視確認まで一通り検証しました。\n\n公式ドキュメントだけでは分かりにくいハマりポイントが多く、特に API バージョンの互換性問題 と RBAC の複雑さ には苦労しました。この記事では、検証で得た知見を実践ベースで共有します。\n\nこの記事で分かること\n\n- Hosted Agent の仕組みとデプロイ方法（4パター",
       "tags": [
         "Python",
         "Azure",
@@ -52,9 +52,9 @@
     {
       "id": "6e96542f6451f8a52ee1",
       "title": "App Service を Public IP なしで社外公開する：Entra Application Proxy を使った構成を検証してみた",
-      "date": "2026-04-30T22:47:26Z",
+      "date": "2026-04-30T13:47:26Z",
       "category": "devops",
-      "summary": "はじめに Azure App Service を社外向けに公開したいけれど、「Public IP は持たせたくない」「IP 制限ではなくユーザー単位で認証・認可をかけたい」というご相談を頂くことがあります。 このようなケースで使える選択肢の 1 つが Microsoft Entra Application Proxy（以下、App Proxy） です。本記事では App Service の publicNetworkAccess = Disabled（パブリックアクセス無効）の状態で、App Proxy 経由で社外ブラウザからアクセスできる構成を実際に検証してみました。実際に E2E で疎通ま",
+      "summary": "はじめに\n\nAzure App Service を社外向けに公開したいけれど、「Public IP は持たせたくない」「IP 制限ではなくユーザー単位で認証・認可をかけたい」というご相談を頂くことがあります。\n\nこのようなケースで使える選択肢の 1 つが Microsoft Entra Application Proxy（以下、App Proxy） です。本記事では App Service の （パブリックアクセス無効）の状態で、App Proxy 経由で社外ブラウザからアクセスできる構成を実際に検証してみました。実際に E2E で疎通まで確認できたので、構成と手順、ハマりどころを残しておきま",
       "tags": [
         "GitHub",
         "Azure",
@@ -69,9 +69,9 @@
     {
       "id": "c12a37748f294996ce58",
       "title": "Microsoft Foundry Agent Tracing 検証",
-      "date": "2026-04-30T19:05:43Z",
+      "date": "2026-04-30T10:05:43Z",
       "category": "ai",
-      "summary": "Microsoft Foundry Agent Tracing 検証 1. 概要 Microsoft Foundry の Agent Tracing 機能を包括的に検証した。4つのトレーシングオプションを同一条件で実行し、セットアップの容易さ・取得データ・パフォーマンス・ユースケース適合性を比較分析した。 | 項目 | 内容 | |------|------| | 検証日 | 2026-04-27 | | リージョン | East US | | モデル | gpt-4.1-nano (GlobalStandard, 50K TPM) | | SDK バージョン | azure-ai-proje",
+      "summary": "Microsoft Foundry Agent Tracing 検証\n\n1. 概要\n\nMicrosoft Foundry の Agent Tracing 機能を包括的に検証した。4つのトレーシングオプションを同一条件で実行し、セットアップの容易さ・取得データ・パフォーマンス・ユースケース適合性を比較分析した。\n\n| 項目 | 内容 |\n\n| 検証日 | 2026-04-27 |\n| リージョン | East US |\n| モデル | gpt-4.1-nano (GlobalStandard, 50K TPM) |\n| SDK バージョン | azure-ai-projects 2.1.0, o",
       "tags": [
         "Python",
         "Trace",
@@ -86,9 +86,9 @@
     {
       "id": "2165d456f6ecf62483e8",
       "title": "Microsoft Foundry を BYO VNet(閉域ネットワーク)で構築",
-      "date": "2026-04-30T14:44:05Z",
+      "date": "2026-04-30T05:44:05Z",
       "category": "ai",
-      "summary": "はじめに :::note 本記事記述および実装内容は、多くの部分をAIで処理しており、人間チェックは甘いです ::: Azure AI Foundry の Agent Service を完全閉域ネットワーク（BYO VNet） で構築する検証を行いました。 公式ドキュメントやサンプル Bicep は存在しますが、実際にデプロイして初めてわかるポイントが多くあります。本記事では、Bicep テンプレートの設計からデプロイ、動作確認までの一連の流れを、実環境のスクリーンショットとコードを交えて解説します。 この記事で扱うこと - BYO VNet 構成の全体アーキテクチャと設計判断 - netwo",
+      "summary": "はじめに\n\n:::note\n本記事記述および実装内容は、多くの部分をAIで処理しており、人間チェックは甘いです\n:::\n\nAzure AI Foundry の Agent Service を完全閉域ネットワーク（BYO VNet） で構築する検証を行いました。\n\n公式ドキュメントやサンプル Bicep は存在しますが、実際にデプロイして初めてわかるポイントが多くあります。本記事では、Bicep テンプレートの設計からデプロイ、動作確認までの一連の流れを、実環境のスクリーンショットとコードを交えて解説します。\n\nこの記事で扱うこと\n\n- BYO VNet 構成の全体アーキテクチャと設計判断\n- ",
       "tags": [
         "private",
         "Foundry",
@@ -104,7 +104,7 @@
       "title": "Microsoft Sentinel プレイブック作成ハンズオン - Security Copilot でインシデント自動分析・通知",
       "date": "2026-04-30T03:37:32Z",
       "category": "security",
-      "summary": "! 本コンテンツは GitHub Copilot を活用して作成しています。 はじめに Microsoft Sentinel のプレイブック (Logic Apps) は、ノーコードでインシデント対応の自動化フローを構築できる便利なツールです。しかし、動的コンテンツの扱いやコネクタごとの設定にクセがあり、実際に手を動かさないとわからないポイントが少なくありません。 最近では生成 AI ツールで Logic Apps のフローを自動生成することも可能になってきましたが、生成された内容を正しく理解し、トラブル時に修正・メンテナンスするためには、各ステップの仕組みを把握しておく必要があり...",
+      "summary": "!\n本コンテンツは GitHub Copilot を活用して作成しています。\n\n\n はじめに\nMicrosoft Sentinel のプレイブック (Logic Apps) は、ノーコードでインシデント対応の自動化フローを構築できる便利なツールです。しかし、動的コンテンツの扱いやコネクタごとの設定にクセがあり、実際に手を動かさないとわからないポイントが少なくありません。\n最近では生成 AI ツールで Logic Apps のフローを自動生成することも可能になってきましたが、生成された内容を正しく理解し、トラブル時に修正・メンテナンスするためには、各ステップの仕組みを把握しておく必要があり...",
       "tags": [],
       "url": "https://zenn.dev/microsoft/articles/a822339fce5c92",
       "source": "zenn",
@@ -115,7 +115,7 @@
       "title": "AIスクラムチームはナレッジを横展開する",
       "date": "2026-04-27T23:27:26Z",
       "category": "ai",
-      "summary": "はじめに GitHub Copilotで実現したAIスクラムチームが自律的な開発を行うようになってから、かなりの時間が経ちました。人間世界では1か月強ですが、AI世界では1年近くの開発を続けている形になっています。（前回の記事は\"AIスクラムチームは朝に唱和する\"です。） そこでAIスクラムチームに、彼らが自発的に積み上げてきた改善やノウハウを、他のプロジェクトにも持っていけるナレッジとしてまとめてもらいました。 というわけで、今回はAIたちによる改善内容について紹介します。 実際には長期記憶を持たないAIスクラムチームのために、スクラムカルチャーやワーキングアグリーメントといった内...",
+      "summary": "はじめに\nGitHub Copilotで実現したAIスクラムチームが自律的な開発を行うようになってから、かなりの時間が経ちました。人間世界では1か月強ですが、AI世界では1年近くの開発を続けている形になっています。（前回の記事は\"AIスクラムチームは朝に唱和する\"です。）\nそこでAIスクラムチームに、彼らが自発的に積み上げてきた改善やノウハウを、他のプロジェクトにも持っていけるナレッジとしてまとめてもらいました。\nというわけで、今回はAIたちによる改善内容について紹介します。\n実際には長期記憶を持たないAIスクラムチームのために、スクラムカルチャーやワーキングアグリーメントといった内...",
       "tags": [],
       "url": "https://zenn.dev/microsoft/articles/4dcfe2d60ea4c9",
       "source": "zenn",
